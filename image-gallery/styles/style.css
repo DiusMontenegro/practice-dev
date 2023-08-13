@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+}
+
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3em;
@@ -6,6 +10,8 @@ h1 {
   width: 400px;
   text-align: center;
   color: brown;
+  margin-top: 10px;
+  box-shadow: 4px 4px 5px #888888;
 }
 
 .container {
@@ -18,4 +24,9 @@ img {
   width: 450px;
   height: 300px;
   margin: 10px;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: all 1s;
 }
