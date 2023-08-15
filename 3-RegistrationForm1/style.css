@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background: linear-gradient(to bottom right, #ff00ff, #ff0099);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,51 +9,53 @@ body {
 }
 
 .registration-container {
-  background-color: #ff00ff;
+  background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   width: 350px;
 }
 
 .registration-container h2 {
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #ff00ff;
   text-align: center;
 }
 
 .registration-form {
   display: grid;
-  gap: 10px;
+  gap: 15px;
 }
 
 .registration-label {
-  color: #ffffff;
+  color: #ff00ff;
 }
 
 .registration-input {
-  padding: 8px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 .registration-input:focus {
   outline: none;
-  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 8px rgba(255, 0, 255, 0.5);
 }
 
 .registration-button {
-  background-color: #ffffff;
-  color: #ff00ff;
+  background-color: #ff00ff;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, color 0.3s;
 }
 
 .registration-button:hover {
-  background-color: #ff00ff;
+  background-color: #ff0099;
   color: #ffffff;
 }
