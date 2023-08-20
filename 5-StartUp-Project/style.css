@@ -43,3 +43,7 @@ hr {
 .btn-xl{
   padding: 1rem 2rem;
 }
+
+.buffer {
+  height: 10rem;
+}
