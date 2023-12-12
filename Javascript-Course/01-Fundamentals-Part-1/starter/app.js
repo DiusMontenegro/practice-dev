@@ -1,5 +1,7 @@
-let javaScript = "Amazing";
+let country = "Philippines";
+let continent = "Asia";
+let population = 117337368;
 
-console.log(javaScript);
-console.log(javaScript);
-console.log(javaScript);
+console.log(country);
+console.log(continent);
+console.log(population);
