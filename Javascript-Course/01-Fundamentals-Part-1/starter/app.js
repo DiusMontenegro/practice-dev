@@ -38,17 +38,13 @@ population++;
 console.log(population);
 
 // <----TESTS---->
-let yearToday = 2023;
-const ageDius = yearToday - 2000;
-const ageRea = yearToday - 1999;
-console.log(ageDius, ageRea);
 
-const firstName = "Dius";
-const lastName = "Montenegro";
-console.log(`${firstName} ${lastName}`);
+// <----CODING CHALLENGE---->
 
-let x = 10 + 5;
-x += 10;
-console.log(x);
+// Calculate their BMI's for Mark and John. Let's see if Mark has a higher BMI than John.
 
-console.log(ageRea <= 24);
+const bmiMark = 78 / 1.69 ** 2;
+const bmiJohn = 95 / 1.88 ** 2;
+const markHigherBMI = bmiMark > bmiJohn;
+
+console.log(bmiMark, bmiJohn, markHigherBMI);
