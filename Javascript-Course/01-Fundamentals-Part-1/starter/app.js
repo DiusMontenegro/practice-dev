@@ -62,6 +62,15 @@ let isIsland = true;
 //   alert("No Border.");
 // }
 
+// Assignment 9: Logical Operators.
+const idealLanguage = "English";
+
+if (idealLanguage === language && population < 50000000 && !isIsland) {
+  console.log(`You should live in the ${country}! :)`);
+} else {
+  console.log(`${country} does not meet your criteria. :(`);
+}
+
 // <----CODING CHALLENGE---->
 
 // CHALLENGE 2 - Use the BMI example from Challenge #1, and the code you already wrote, and improve it. Hint: Use an if/else statement.
