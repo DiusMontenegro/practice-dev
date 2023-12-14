@@ -1,13 +1,13 @@
 // <----ASSIGNMENTS---->
 
-const country = "Philippines";
-const continent = "Asia";
-const populationAverage = 33000000;
-const language = "Filipino";
+// const country = "Philippines";
+// const continent = "Asia";
+// const populationAverage = 33000000;
+// const language = "Filipino";
 
-let population = 155600000;
-let populationFinland = 6000000;
-let isIsland = true;
+// let population = 155600000;
+// let populationFinland = 6000000;
+// let isIsland = true;
 
 // // Assignment 1: Values and Variables.
 // console.log(country);
@@ -71,48 +71,110 @@ let isIsland = true;
 //   console.log(`${country} does not meet your criteria. :(`);
 // }
 
+// Assignment 10: The switch Statement.
+const givenLanguage = "Filipino";
+
+switch (givenLanguage) {
+  case "Mandarin":
+    console.log("MOST number of native speakers!");
+    break;
+  case "Spanish":
+    console.log("2nd place in number of native speakers");
+    break;
+  case "English":
+    console.log("3rd place in number of native speakers");
+    break;
+  case "Hindi":
+    console.log("4rth place in number of native speakers");
+    break;
+  case "Arabic":
+    console.log("5th place in number of native speakers");
+    break;
+  default:
+    console.log("Great language too :D");
+}
+
 // <----CODING CHALLENGE---->
 
 // CHALLENGE 3 - There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy.
 
-const minimumScore = 100;
-let teamDolphins = (96 + 108 + 89) / 2;
-let teamKoalas = (88 + 91 + 110) / 2;
-let dataSet = 1;
+// const minimumScore = 100;
+// let teamDolphins = (96 + 108 + 89) / 3;
+// let teamKoalas = (88 + 91 + 110) / 3;
+// let dataSet = 1;
 
-function Result() {
-  if (teamDolphins > teamKoalas && teamDolphins >= minimumScore) {
-    console.log(`Data Set ${dataSet} result: Team Dolphins Wins!`);
-  } else if (teamDolphins < teamKoalas && teamKoalas >= minimumScore) {
-    console.log(`Data Set ${dataSet} result: Team Koalas Wins!`);
-  } else if (
-    teamDolphins === teamKoalas &&
-    teamDolphins >= minimumScore &&
-    teamKoalas >= minimumScore
-  ) {
-    console.log(`Data Set ${dataSet} result: Draw!`);
-  } else {
-    console.log(`Data Set ${dataSet} result: No one wins the competition. :(`);
-  }
+// function Result() {
+//   if (teamDolphins > teamKoalas && teamDolphins >= minimumScore) {
+//     console.log(`Data Set ${dataSet} result: Team Dolphins Wins!`);
+//   } else if (teamDolphins < teamKoalas && teamKoalas >= minimumScore) {
+//     console.log(`Data Set ${dataSet} result: Team Koalas Wins!`);
+//   } else if (
+//     teamDolphins === teamKoalas &&
+//     teamDolphins >= minimumScore &&
+//     teamKoalas >= minimumScore
+//   ) {
+//     console.log(`Data Set ${dataSet} result: Draw!`);
+//   } else {
+//     console.log(`Data Set ${dataSet} result: No one wins the competition. :(`);
+//   }
+// }
+
+// Result();
+
+// dataSet = 2;
+// teamDolphins = (97 + 112 + 101) / 3;
+// teamKoalas = (109 + 95 + 123) / 3;
+
+// Result();
+
+// dataSet = 3;
+// teamDolphins = (97 + 112 + 101) / 3;
+// teamKoalas = (109 + 95 + 106) / 3;
+
+// Result();
+
+// dataSet = 4;
+// teamDolphins = (8 + 9 + 9) / 3;
+// teamKoalas = (93 + 9 + 9) / 3;
+
+// Result();
+// <----TESTS---->
+let day = "thursday";
+
+switch (day) {
+  case "monday":
+    console.log("Plan");
+    console.log("code");
+    break;
+  case "tuesday":
+    console.log("Prepare code");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Implement code");
+    break;
+  case "friday":
+    console.log("reflect code");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("code and enjoy the weekend");
+    break;
+  default:
+    console.log("Enter a valid day.");
 }
 
-Result();
-
-dataSet = 2;
-teamDolphins = (97 + 112 + 101) / 2;
-teamKoalas = (109 + 95 + 123) / 2;
-
-Result();
-
-dataSet = 3;
-teamDolphins = (97 + 112 + 101) / 2;
-teamKoalas = (109 + 95 + 106) / 2;
-
-Result();
-
-dataSet = 4;
-teamDolphins = (8 + 9 + 9) / 2;
-teamKoalas = (93 + 9 + 9) / 2;
-
-Result();
-// <----TESTS---->
+if (day === "monday") {
+  console.log("Plan");
+  console.log("code");
+} else if (day === "tuesday") {
+  console.log("Prepare code");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Implement code");
+} else if (day === "friday") {
+  console.log("reflect code");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("code and enjoy the weekend");
+} else {
+  console.log("Enter a valid day.");
+}
