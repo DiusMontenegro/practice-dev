@@ -1,16 +1,18 @@
-// Assignment 7: Type Conversion and Coercion:
-console.log("9" - "5"); // 4
-console.log("19" - "13" + "17"); // "617"
-console.log("19" - "13" + 17); // 23
-console.log("123" < 57); // False
-console.log(5 + 6 + "4" + 9 - 4 - 2); // 1143
+// Assignment 8: Equality Operators == vs. ===.
+const numNeighbors = Number(
+  prompt("How many neighbor countires does your country have?")
+);
+
+if (numNeighbors === 1) {
+  alert("Only 1 border!");
+} else if (numNeighbors > 1) {
+  alert("More than one border.");
+} else {
+  alert("No Border.");
+}
 
 // <----CODING CHALLENGE---->
 
 // CHALLENGE 2 - Use the BMI example from Challenge #1, and the code you already wrote, and improve it. Hint: Use an if/else statement.
 
 // <----TESTS---->
-const birthYear = "2000";
-const age = 23;
-
-console.log(Number(birthYear) + 23, typeof NaN);
