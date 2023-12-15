@@ -96,7 +96,116 @@ population =
   population > populationAverage
     ? console.log(`${country}' population in above average.`)
     : console.log(`${country}' population is below average.`);
-// <----CODING CHALLENGE---->
+// <----CODING CHALLENGES---->
+
+// CHALLENGE 1 - Calculate their BMI's for Mark and John. Let's see if Mark has a higher BMI than John.
+
+const bmiMark = 78 / 1.69 ** 2;
+const bmiJohn = 95 / 1.88 ** 2;
+const markHigherBMI = bmiMark > bmiJohn;
+let massMark = 78;
+let heightMark = 1.69;
+let massJohn = 92;
+let heightJohn = 1.95;
+let dataSet = 1;
+
+console.log(bmiMark, bmiJohn, markHigherBMI);
+function BMI() {
+  const bmiMark = massMark / heightMark ** 2;
+  const bmiJohn = massJohn / heightJohn ** 2;
+
+  if (bmiMark > bmiJohn) {
+    console.log(bmiMark, bmiJohn, `The dataset ${dataSet} is ${true}`);
+  } else {
+    console.log(bmiMark, bmiJohn, `The dataset ${dataSet} is ${false}`);
+  }
+}
+
+BMI();
+
+dataSet = 2;
+
+massMark = 95;
+heightMark = 1.88;
+massJohn = 85;
+heightJohn = 1.76;
+
+BMI();
+
+// CHALLENGE 2 - Use the BMI example from Challenge #1, and the code you already wrote, and improve it. Hint: Use an if/else statement.
+
+massMark = 78;
+heightMark = 1.69;
+massJohn = 92;
+heightJohn = 1.95;
+dataSet = 1;
+
+function BMI() {
+  const bmiMark = massMark / heightMark ** 2;
+  const bmiJohn = massJohn / heightJohn ** 2;
+
+  if (bmiMark > bmiJohn) {
+    console.log(
+      `Mark's BMI(${bmiMark}) is higher than John's BMI(${bmiJohn}).`
+    );
+  } else {
+    console.log(
+      `John's BMI(${bmiJohn}) is higher than Mark's BMI(${bmiMark}).`
+    );
+  }
+}
+
+BMI();
+
+massMark = 95;
+heightMark = 1.88;
+massJohn = 85;
+heightJohn = 1.76;
+
+BMI();
+
+// CHALLENGE 3 - There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy.
+
+const minimumScore = 100;
+let teamDolphins = (96 + 108 + 89) / 2;
+let teamKoalas = (88 + 91 + 110) / 2;
+dataSet = 1;
+
+function Result() {
+  if (teamDolphins > teamKoalas && teamDolphins >= minimumScore) {
+    console.log(`Data Set ${dataSet} result: Team Dolphins Wins!`);
+  } else if (teamDolphins < teamKoalas && teamKoalas >= minimumScore) {
+    console.log(`Data Set ${dataSet} result: Team Koalas Wins!`);
+  } else if (
+    teamDolphins === teamKoalas &&
+    teamDolphins >= minimumScore &&
+    teamKoalas >= minimumScore
+  ) {
+    console.log(`Data Set ${dataSet} result: Draw!`);
+  } else {
+    console.log(`Data Set ${dataSet} result: No one wins the competition. :(`);
+  }
+}
+
+Result();
+
+dataSet = 2;
+teamDolphins = (97 + 112 + 101) / 2;
+teamKoalas = (109 + 95 + 123) / 2;
+
+Result();
+
+dataSet = 3;
+teamDolphins = (97 + 112 + 101) / 2;
+teamKoalas = (109 + 95 + 106) / 2;
+
+Result();
+
+dataSet = 4;
+teamDolphins = (8 + 9 + 9) / 2;
+teamKoalas = (93 + 9 + 9) / 2;
+
+Result();
 
 // CHALLENGE 4 - Steven wants to build a very simple tip calculator for whenever he goes eating in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
 
