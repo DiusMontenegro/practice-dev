@@ -2,30 +2,56 @@
 
 // // <----CODING CHALLENGES---->
 
-// Coding Challenge 1 - Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently. Each team competes 3 times, and then the average of the 3 scores is calculated (so one average score per team).A team only wins if it has at least double the average score of the other team. Otherwise, no team wins!
+// // Coding Challenge 1 - Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently. Each team competes 3 times, and then the average of the 3 scores is calculated (so one average score per team).A team only wins if it has at least double the average score of the other team. Otherwise, no team wins!
 
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+// const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-const checkWinner = (avgDolphins, avgKoalas) => {
-  if (avgDolphins >= avgKoalas * 2) {
-    console.log(`Team Dolphins win (${avgDolphins} vs ${avgKoalas})`);
-  } else if (avgKoalas >= avgDolphins * 2) {
-    console.log(`Team Koalas wins (${avgKoalas} vs ${avgDolphins})`);
+// const checkWinner = (avgDolphins, avgKoalas) => {
+//   if (avgDolphins >= avgKoalas * 2) {
+//     console.log(`Team Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+//   } else if (avgKoalas >= avgDolphins * 2) {
+//     console.log(`Team Koalas wins (${avgKoalas} vs ${avgDolphins})`);
+//   } else {
+//     console.log("No team wins");
+//   }
+// };
+
+// let avgDolphins, avgKoalas;
+
+// avgDolphins = calcAverage(44, 23, 71);
+// avgKoalas = calcAverage(65, 54, 49);
+// checkWinner(avgDolphins, avgKoalas);
+
+// avgDolphins = calcAverage(85, 54, 41);
+// avgKoalas = calcAverage(23, 34, 27);
+// checkWinner(avgDolphins, avgKoalas);
+
+// Coding Challenge 2 - Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
+
+const calcTip = function (bill) {
+  if (bill > 0 && bill >= 50 && bill <= 300) {
+    return bill * 0.15;
+  } else if ((bill > 0 && bill < 50) || bill > 300) {
+    return bill * 0.2;
   } else {
-    console.log("No team wins");
+    console.log("Enter a valid amount");
   }
 };
 
-let avgDolphins, avgKoalas;
+const bills = [125, 555, 44];
+const tips = [
+  calcTip(bills[0]),
+  calcTip(bills[1]),
+  calcTip(bills[bills.length - 1]),
+];
 
-avgDolphins = calcAverage(44, 23, 71);
-avgKoalas = calcAverage(65, 54, 49);
-checkWinner(avgDolphins, avgKoalas);
+const totalAmount = [
+  bills[0] + tips[0],
+  bills[1] + tips[1],
+  bills[2] + tips[2],
+];
 
-avgDolphins = calcAverage(85, 54, 41);
-avgKoalas = calcAverage(23, 34, 27);
-checkWinner(avgDolphins, avgKoalas);
-
+console.log(totalAmount);
 // // <----TESTS---->
 
 // let hasDriversLicense = false;
@@ -74,3 +100,11 @@ checkWinner(avgDolphins, avgKoalas);
 
 // const licenseInformation = licenseApplication("Dre", 17);
 // console.log(licenseInformation);
+
+// const calcYears = (age) => 2023 - age;
+
+// const years = [1971, 1973, 1997, 2000, 2001, 2005];
+// const calculatedYears1 = calcYears(years[0]);
+// const calculatedYears2 = calcYears(years[1]);
+// const calculatedYears3 = calcYears(years[years.length - 1]);
+// console.log(calculatedYears1, calculatedYears2, calculatedYears3);
