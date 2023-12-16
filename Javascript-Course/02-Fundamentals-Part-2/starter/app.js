@@ -26,32 +26,32 @@
 // avgKoalas = calcAverage(23, 34, 27);
 // checkWinner(avgDolphins, avgKoalas);
 
-// Coding Challenge 2 - Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
+// // Coding Challenge 2 - Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
 
-const calcTip = function (bill) {
-  if (bill > 0 && bill >= 50 && bill <= 300) {
-    return bill * 0.15;
-  } else if ((bill > 0 && bill < 50) || bill > 300) {
-    return bill * 0.2;
-  } else {
-    console.log("Enter a valid amount");
-  }
-};
+// const calcTip = function (bill) {
+//   if (bill > 0 && bill >= 50 && bill <= 300) {
+//     return bill * 0.15;
+//   } else if ((bill > 0 && bill < 50) || bill > 300) {
+//     return bill * 0.2;
+//   } else {
+//     console.log("Enter a valid amount");
+//   }
+// };
 
-const bills = [125, 555, 44];
-const tips = [
-  calcTip(bills[0]),
-  calcTip(bills[1]),
-  calcTip(bills[bills.length - 1]),
-];
+// const bills = [125, 555, 44];
+// const tips = [
+//   calcTip(bills[0]),
+//   calcTip(bills[1]),
+//   calcTip(bills[bills.length - 1]),
+// ];
 
-const totalAmount = [
-  bills[0] + tips[0],
-  bills[1] + tips[1],
-  bills[2] + tips[2],
-];
+// const totalAmount = [
+//   bills[0] + tips[0],
+//   bills[1] + tips[1],
+//   bills[2] + tips[2],
+// ];
 
-console.log(totalAmount);
+// console.log(totalAmount);
 // // <----TESTS---->
 
 // let hasDriversLicense = false;
@@ -101,10 +101,10 @@ console.log(totalAmount);
 // const licenseInformation = licenseApplication("Dre", 17);
 // console.log(licenseInformation);
 
-// const calcYears = (age) => 2023 - age;
+const calcYears = (age) => 2023 - age;
 
-// const years = [1971, 1973, 1997, 2000, 2001, 2005];
-// const calculatedYears1 = calcYears(years[0]);
-// const calculatedYears2 = calcYears(years[1]);
-// const calculatedYears3 = calcYears(years[years.length - 1]);
-// console.log(calculatedYears1, calculatedYears2, calculatedYears3);
+const years = [1971, 1973, 1997, 2000, 2001, 2005];
+const calculatedYears1 = calcYears(years[0]);
+const calculatedYears2 = calcYears(years[1]);
+const calculatedYears3 = calcYears(years[years.length - 1]);
+console.log(calculatedYears1, calculatedYears2, calculatedYears3);
