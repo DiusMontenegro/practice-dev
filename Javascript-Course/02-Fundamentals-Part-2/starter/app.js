@@ -52,6 +52,41 @@
 // ];
 
 // console.log(totalAmount);
+
+// Coding Challenge 3 - Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter).
+
+const mark = {
+  firstName: "Mark",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+const john = {
+  firstName: "John",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+mark.calcBMI();
+john.calcBMI();
+
+const getSummary = function () {
+  if (mark.bmi > john.bmi) {
+    return `${mark.firstName}'s BMI (${mark.bmi}) is higher than ${john.firstName}'s BMI (${john.bmi})!`;
+  } else {
+    return `${john.firstName}'s BMI (${john.bmi}) is higher than ${mark.firstName}'s BMI (${mark.bmi})!`;
+  }
+};
+
+console.log(getSummary());
+
 // // <----TESTS---->
 
 // let hasDriversLicense = false;
@@ -101,36 +136,36 @@
 // const licenseInformation = licenseApplication("Dre", 17);
 // console.log(licenseInformation);
 
-const calcYears = (age) => 2023 - age;
+// const calcYears = (age) => 2023 - age;
 
-const years = [1971, 1973, 1997, 2000, 2001, 2005];
-const calculatedYears1 = calcYears(years[0]);
-const calculatedYears2 = calcYears(years[1]);
-const calculatedYears3 = calcYears(years[years.length - 1]);
-console.log(calculatedYears1, calculatedYears2, calculatedYears3);
+// const years = [1971, 1973, 1997, 2000, 2001, 2005];
+// const calculatedYears1 = calcYears(years[0]);
+// const calculatedYears2 = calcYears(years[1]);
+// const calculatedYears3 = calcYears(years[years.length - 1]);
+// console.log(calculatedYears1, calculatedYears2, calculatedYears3);
 
-const dius = {
-  firstName: "dius",
-  lastName: "Montenegro",
-  age: 23,
-  friends: ["Jiffy", "Live", "Rea"],
-  partner: true,
-  job: "Front-end Developer",
-  calcAge: function () {
-    this.age = 2023 - this.age;
-    return this.age;
-  },
-  getSummary: function () {
-    return `${this.firstName} is a ${this.age}-year old ${
-      this.job
-    }, and he has ${this.partner ? "a" : "no"} partner.`;
-  },
-};
+// const dius = {
+//   firstName: "dius",
+//   lastName: "Montenegro",
+//   age: 23,
+//   friends: ["Jiffy", "Live", "Rea"],
+//   partner: true,
+//   job: "Front-end Developer",
+//   calcAge: function () {
+//     this.age = 2023 - this.age;
+//     return this.age;
+//   },
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.age}-year old ${
+//       this.job
+//     }, and he has ${this.partner ? "a" : "no"} partner.`;
+//   },
+// };
 
-// log this: dius has 3 friends but his best friend is called Rea.
-console.log(
-  `${dius.firstName} has ${dius.friends.length} friends but his best friend is ${dius.friends[2]}.`
-);
+// // log this: dius has 3 friends but his best friend is called Rea.
+// console.log(
+//   `${dius.firstName} has ${dius.friends.length} friends but his best friend is ${dius.friends[2]}.`
+// );
 
-// log this: "dius is a 23-year old Front-end Developer, and he has a partner."
-console.log(dius.getSummary());
+// // log this: "dius is a 23-year old Front-end Developer, and he has a partner."
+// console.log(dius.getSummary());
