@@ -108,3 +108,29 @@ const calculatedYears1 = calcYears(years[0]);
 const calculatedYears2 = calcYears(years[1]);
 const calculatedYears3 = calcYears(years[years.length - 1]);
 console.log(calculatedYears1, calculatedYears2, calculatedYears3);
+
+const dius = {
+  firstName: "dius",
+  lastName: "Montenegro",
+  age: 23,
+  friends: ["Jiffy", "Live", "Rea"],
+  partner: true,
+  job: "Front-end Developer",
+  calcAge: function () {
+    this.age = 2023 - this.age;
+    return this.age;
+  },
+  getSummary: function () {
+    return `${this.firstName} is a ${this.age}-year old ${
+      this.job
+    }, and he has ${this.partner ? "a" : "no"} partner.`;
+  },
+};
+
+// log this: dius has 3 friends but his best friend is called Rea.
+console.log(
+  `${dius.firstName} has ${dius.friends.length} friends but his best friend is ${dius.friends[2]}.`
+);
+
+// log this: "dius is a 23-year old Front-end Developer, and he has a partner."
+console.log(dius.getSummary());
