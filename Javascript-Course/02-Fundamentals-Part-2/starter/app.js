@@ -87,6 +87,28 @@
 
 // console.log(getSummary());
 
+//Coding Challenge 4 - Let's improve Steven's tip calculator even more, this time using loop.
+
+const newBills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const totals = [];
+let tip;
+let sum;
+
+const calcTips = function (bill) {
+  if (bill > 0 && bill >= 50 && bill <= 300) {
+    return bill * 0.15;
+  } else {
+    return bill * 0.2;
+  }
+};
+
+for (let i = 0; i < newBills.length; i++) {
+  tip = calcTips(newBills[i]);
+  totals.push(newBills[i] + tip);
+}
+
+console.log(totals);
+
 // // <----TESTS---->
 
 // let hasDriversLicense = false;
@@ -170,63 +192,63 @@
 // // log this: "dius is a 23-year old Front-end Developer, and he has a partner."
 // console.log(dius.getSummary());
 
-for (let i = 0; i <= 100; i++) {
-  if (i % 3 == 0 && i % 5 == 0) {
-    console.log("FizzBuzz");
-  } else if (i % 3 == 0) {
-    console.log("Fizz");
-  } else if (i % 5 == 0) {
-    console.log("Buzz");
-  } else {
-    console.log(`${i}`);
-  }
-}
+// for (let i = 0; i <= 100; i++) {
+//   if (i % 3 == 0 && i % 5 == 0) {
+//     console.log("FizzBuzz");
+//   } else if (i % 3 == 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 == 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(`${i}`);
+//   }
+// }
 
-const rea = [
-  "Rea",
-  "Revilleza",
-  2023 - 1999,
-  ["Dius", "Dre", "Drea"],
-  "Stay at home",
-];
+// const rea = [
+//   "Rea",
+//   "Revilleza",
+//   2023 - 1999,
+//   ["Dius", "Dre", "Drea"],
+//   "Stay at home",
+// ];
 
-const types = [];
+// const types = [];
 
-for (let i = 0; i < rea.length; i++) {
-  console.log(rea[i]);
-  types[i] = typeof rea[i];
-}
+// for (let i = 0; i < rea.length; i++) {
+//   console.log(rea[i]);
+//   types[i] = typeof rea[i];
+// }
 
-console.log(types);
+// console.log(types);
 
-const ageCalculator = [1971, 1973, 1997, 2000, 2001, 2005];
-const year = 2023;
-const ages = [];
+// const ageCalculator = [1971, 1973, 1997, 2000, 2001, 2005];
+// const year = 2023;
+// const ages = [];
 
-for (let i = 0; i < ageCalculator.length; i++) {
-  ages.push(year - ageCalculator[i]);
-  console.log(ages[i]);
-}
+// for (let i = 0; i < ageCalculator.length; i++) {
+//   ages.push(year - ageCalculator[i]);
+//   console.log(ages[i]);
+// }
 
-for (let i = rea.length - 1; i >= 0; i--) {
-  console.log(rea[i]);
-}
+// for (let i = rea.length - 1; i >= 0; i--) {
+//   console.log(rea[i]);
+// }
 
-const typeofWorkOut = ["Pushup", "Side to side Push ups", "Decline Pushups"];
+// const typeofWorkOut = ["Pushup", "Side to side Push ups", "Decline Pushups"];
 
-for (let workOut = 0; workOut < typeofWorkOut.length; workOut++) {
-  console.log(`Exercise: ${typeofWorkOut[workOut]}`);
-  for (let i = 1; i < 11; i++) {
-    console.log(`rep ${i}`);
-  }
-}
+// for (let workOut = 0; workOut < typeofWorkOut.length; workOut++) {
+//   console.log(`Exercise: ${typeofWorkOut[workOut]}`);
+//   for (let i = 1; i < 11; i++) {
+//     console.log(`rep ${i}`);
+//   }
+// }
 
-let dice = Math.trunc(Math.random() * 6 + 1);
+// let dice = Math.trunc(Math.random() * 6 + 1);
 
-while (dice < 6) {
-  console.log(`You rolled a ${dice}`);
-  dice = Math.trunc(Math.random() * 6 + 1);
-  if (dice === 6) {
-    console.log(`Congratulations! You rolled the dice ${dice}!`);
-  }
-}
+// while (dice < 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6 + 1);
+//   if (dice === 6) {
+//     console.log(`Congratulations! You rolled the dice ${dice}!`);
+//   }
+// }
