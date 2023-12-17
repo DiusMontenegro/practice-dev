@@ -55,37 +55,37 @@
 
 // Coding Challenge 3 - Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter).
 
-const mark = {
-  firstName: "Mark",
-  mass: 78,
-  height: 1.69,
-  calcBMI: function () {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi;
-  },
-};
-const john = {
-  firstName: "John",
-  mass: 92,
-  height: 1.95,
-  calcBMI: function () {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi;
-  },
-};
+// const mark = {
+//   firstName: "Mark",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
+// const john = {
+//   firstName: "John",
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
 
-mark.calcBMI();
-john.calcBMI();
+// mark.calcBMI();
+// john.calcBMI();
 
-const getSummary = function () {
-  if (mark.bmi > john.bmi) {
-    return `${mark.firstName}'s BMI (${mark.bmi}) is higher than ${john.firstName}'s BMI (${john.bmi})!`;
-  } else {
-    return `${john.firstName}'s BMI (${john.bmi}) is higher than ${mark.firstName}'s BMI (${mark.bmi})!`;
-  }
-};
+// const getSummary = function () {
+//   if (mark.bmi > john.bmi) {
+//     return `${mark.firstName}'s BMI (${mark.bmi}) is higher than ${john.firstName}'s BMI (${john.bmi})!`;
+//   } else {
+//     return `${john.firstName}'s BMI (${john.bmi}) is higher than ${mark.firstName}'s BMI (${mark.bmi})!`;
+//   }
+// };
 
-console.log(getSummary());
+// console.log(getSummary());
 
 // // <----TESTS---->
 
@@ -169,3 +169,64 @@ console.log(getSummary());
 
 // // log this: "dius is a 23-year old Front-end Developer, and he has a partner."
 // console.log(dius.getSummary());
+
+for (let i = 0; i <= 100; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 == 0) {
+    console.log("Fizz");
+  } else if (i % 5 == 0) {
+    console.log("Buzz");
+  } else {
+    console.log(`${i}`);
+  }
+}
+
+const rea = [
+  "Rea",
+  "Revilleza",
+  2023 - 1999,
+  ["Dius", "Dre", "Drea"],
+  "Stay at home",
+];
+
+const types = [];
+
+for (let i = 0; i < rea.length; i++) {
+  console.log(rea[i]);
+  types[i] = typeof rea[i];
+}
+
+console.log(types);
+
+const ageCalculator = [1971, 1973, 1997, 2000, 2001, 2005];
+const year = 2023;
+const ages = [];
+
+for (let i = 0; i < ageCalculator.length; i++) {
+  ages.push(year - ageCalculator[i]);
+  console.log(ages[i]);
+}
+
+for (let i = rea.length - 1; i >= 0; i--) {
+  console.log(rea[i]);
+}
+
+const typeofWorkOut = ["Pushup", "Side to side Push ups", "Decline Pushups"];
+
+for (let workOut = 0; workOut < typeofWorkOut.length; workOut++) {
+  console.log(`Exercise: ${typeofWorkOut[workOut]}`);
+  for (let i = 1; i < 11; i++) {
+    console.log(`rep ${i}`);
+  }
+}
+
+let dice = Math.trunc(Math.random() * 6 + 1);
+
+while (dice < 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6 + 1);
+  if (dice === 6) {
+    console.log(`Congratulations! You rolled the dice ${dice}!`);
+  }
+}
