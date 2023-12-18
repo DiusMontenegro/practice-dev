@@ -90,8 +90,8 @@
 //Coding Challenge 4 - Let's improve Steven's tip calculator even more, this time using loop.
 
 const newBills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tipss = [];
 const totals = [];
-let tip;
 let sum;
 
 const calcTips = function (bill) {
@@ -103,12 +103,20 @@ const calcTips = function (bill) {
 };
 
 for (let i = 0; i < newBills.length; i++) {
-  tip = calcTips(newBills[i]);
-  totals.push(newBills[i] + tip);
+  const tip = calcTips(newBills[i]);
+  tipss.push(tip);
+  totals.push(tip + newBills[i]);
 }
 
-console.log(totals);
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
 
+console.log(calcAverage(totals));
 // // <----TESTS---->
 
 // let hasDriversLicense = false;
