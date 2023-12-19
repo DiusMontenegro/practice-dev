@@ -197,7 +197,7 @@ console.log(
   `${dius.firstName} has ${dius.friends.length} friends but his best friend is ${dius.friends[2]}.`
 );
 
-// log this: "dius is a 23-year old Front-end Developer, and he has a partner."
+// log this: "Dius is a 23-year old Front-end Developer, and he has a partner."
 console.log(dius.getSummary());
 
 for (let i = 0; i <= 100; i++) {
@@ -242,7 +242,7 @@ for (let i = rea.length - 1; i >= 0; i--) {
   console.log(rea[i]);
 }
 
-const typeofWorkOut = ["Pushup", "Side to side Push ups", "Decline Pushups"];
+const typeofWorkOut = ["Pushup", "Side to side Push-ups", "Decline Pushups"];
 
 for (let workOut = 0; workOut < typeofWorkOut.length; workOut++) {
   console.log(`Exercise: ${typeofWorkOut[workOut]}`);
@@ -251,6 +251,7 @@ for (let workOut = 0; workOut < typeofWorkOut.length; workOut++) {
   }
 }
 
+// while loop.
 let dice = Math.trunc(Math.random() * 6 + 1);
 
 while (dice < 6) {
@@ -260,3 +261,14 @@ while (dice < 6) {
     console.log(`Congratulations! You rolled the dice ${dice}!`);
   }
 }
+
+// # do-while loop.
+
+// let dice;
+
+// do {
+//   dice = Math.trunc(Math.random() * 6 + 1);
+//   console.log(`You rolled a ${dice}`);
+// } while (dice !== 6);
+
+// console.log(`Congratulations! You rolled the dice ${dice}!`);
