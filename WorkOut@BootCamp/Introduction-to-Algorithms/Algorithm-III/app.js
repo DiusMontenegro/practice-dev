@@ -32,12 +32,28 @@
 
 // Q3 : "PrintSumArray" . Please complete the code below to have the function return the sum of all the values in a given array.
 
-function PrintSumArray(x) {
-  let sum = 0;
+// function PrintSumArray(x) {
+//   let sum = 0;
+//   for (let i = 0; i < x.length; i++) {
+//     sum += x[i];
+//   }
+//   return sum;
+// }
+
+// console.log(PrintSumArray([1, 2, 3]));
+
+// Q4 : (BONUS) "LargestElement" . Create a function that returns the largest element in a given array.  For example largestElement( [1,30,5,7] ) should return 30.
+
+function largestElement(x) {
+  let max = x[0];
+
   for (let i = 0; i < x.length; i++) {
-    sum += x[i];
+    const currentNum = x[i];
+    if (max < currentNum) {
+      max = currentNum;
+    }
   }
-  return sum;
+  return max;
 }
 
-console.log(PrintSumArray([1, 2, 3]));
+console.log(largestElement([1, 30, 5, 7]));
