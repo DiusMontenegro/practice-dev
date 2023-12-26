@@ -23,3 +23,16 @@ function a2(x, y) {
 let b = a2(2, 2);
 console.log(b);
 console.log(a2(6, 8));
+
+// 3. Output: [ 2, 2, 5]
+function a(x) {
+  let z = [];
+  z.push(x);
+  z.pop();
+  z.push(x);
+  z.push(x);
+  return z;
+}
+let y = a(2);
+y.push(5);
+console.log(y);
