@@ -19,13 +19,25 @@
 
 // Q2 : "PrintSum" . Please complete the code below to have the function print integers from 0 to x and with each integer print the sum so far.  Have the function return the final sum
 
-function PrintSum(x) {
+// function PrintSum(x) {
+//   let sum = 0;
+//   for (let i = 0; i <= x; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// }
+
+// y = PrintSum(255);
+// console.log(y);
+
+// Q3 : "PrintSumArray" . Please complete the code below to have the function return the sum of all the values in a given array.
+
+function PrintSumArray(x) {
   let sum = 0;
-  for (let i = 0; i <= x; i++) {
-    sum += i;
+  for (let i = 0; i < x.length; i++) {
+    sum += x[i];
   }
   return sum;
 }
 
-y = PrintSum(255);
-console.log(y);
+console.log(PrintSumArray([1, 2, 3]));
