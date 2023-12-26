@@ -48,3 +48,15 @@ for (let i = 0; i < 3; i++) {
     console.log(i * j);
   }
 }
+
+// 7. Output: 0, 0, 0, 0, 1, 2, 0, 2, 4, undefined
+function looping(x, y) {
+  for (let i = 0; i < x; i++) {
+    for (let j = 0; j < x; j++) {
+      console.log(i * j);
+    }
+  }
+}
+
+z = looping(3, 3);
+console.log(z);
