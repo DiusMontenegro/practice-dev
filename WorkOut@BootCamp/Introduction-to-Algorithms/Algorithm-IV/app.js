@@ -16,33 +16,3 @@ console.log(y);
 
 y = printAverage([2, 5, 8]);
 console.log(y);
-
-// 2. Create an array with all the odd integers between 1 and 255 (inclusive)
-
-function returnOddArray() {
-  let oddArrays = [];
-  for (let i = 1; i <= 255; i++) {
-    if (i % 2 !== 0) {
-      oddArrays.push(i);
-    }
-  }
-  return oddArrays;
-}
-
-y = returnOddArray();
-console.log(y);
-
-// 3. Square each value in a given array, returning that same array with changed values.
-
-function squareValue(x) {
-  for (let i = 0; i < x.length; i++) {
-    x[i] = x[i] ** 2;
-  }
-  return x;
-}
-
-y = squareValue([1, 2, 3]);
-console.log(y);
-
-y = squareValue([2, 5, 8]);
-console.log(y);
