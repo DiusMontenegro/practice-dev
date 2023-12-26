@@ -36,3 +36,14 @@ function a(x) {
 let y = a(2);
 y.push(5);
 console.log(y);
+
+// 4. Output: true
+function a3(x) {
+  if (x[0] < x[1]) {
+    return true;
+  } else {
+    return false;
+  }
+}
+b = a3([2, 3, 4, 5]);
+console.log(b);
