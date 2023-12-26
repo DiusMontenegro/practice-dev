@@ -31,3 +31,18 @@ function returnOddArray() {
 
 y = returnOddArray();
 console.log(y);
+
+// 3. Square each value in a given array, returning that same array with changed values.
+
+function squareValue(x) {
+  for (let i = 0; i < x.length; i++) {
+    x[i] = x[i] ** 2;
+  }
+  return x;
+}
+
+y = squareValue([1, 2, 3]);
+console.log(y);
+
+y = squareValue([2, 5, 8]);
+console.log(y);
