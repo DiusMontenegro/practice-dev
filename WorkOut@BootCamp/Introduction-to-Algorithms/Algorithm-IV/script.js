@@ -58,3 +58,16 @@ function a4(x) {
   return x;
 }
 console.log(a4([1, 2, 3, 4]));
+
+// 6. Output: [ 5, 'Coding', 'Dojo', 4]
+function a5(x) {
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] > 5) {
+      x[i] = "Coding";
+    } else if (x[i] < 0) {
+      x[i] = "Dojo";
+    }
+  }
+  return x;
+}
+console.log(a5([5, 7, -1, 4]));
