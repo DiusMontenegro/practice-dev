@@ -25,3 +25,14 @@ for (let i = 0; i < 5; i++) {
   i += 3;
   console.log(i);
 }
+
+// 4. Output: 15, 15, 10, 15
+x = 15;
+console.log(x);
+function awesome() {
+  let x = 10;
+  console.log(x);
+}
+console.log(x);
+awesome();
+console.log(x);
