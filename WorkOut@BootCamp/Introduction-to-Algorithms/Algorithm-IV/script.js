@@ -81,3 +81,15 @@ function a6(x) {
 }
 b = a6([5, 10]);
 console.log(b);
+
+// 8. Output: No Function Call, No output.
+function sum(x) {
+  sum = 0;
+  for (var i = 0; i < x.length; i++) {
+    sum = sum + x[i];
+    console.log(sum);
+  }
+  return sum;
+}
+
+console.log("----- Part 2 - Problem Solving -----");
