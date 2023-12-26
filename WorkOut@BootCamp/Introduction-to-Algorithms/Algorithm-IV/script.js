@@ -47,3 +47,14 @@ function a3(x) {
 }
 b = a3([2, 3, 4, 5]);
 console.log(b);
+
+// 5. Output: [ "Coding", "Coding", "Coding", "Coding" ]
+function a4(x) {
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] > 0) {
+      x[i] = "Coding";
+    }
+  }
+  return x;
+}
+console.log(a4([1, 2, 3, 4]));
