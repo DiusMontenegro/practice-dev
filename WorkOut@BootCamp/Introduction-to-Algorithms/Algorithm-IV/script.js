@@ -71,3 +71,13 @@ function a5(x) {
   return x;
 }
 console.log(a5([5, 7, -1, 4]));
+
+// 7. Output: 10
+function a6(x) {
+  if (x[0] > x[1]) {
+    return x[1];
+  }
+  return 10;
+}
+b = a6([5, 10]);
+console.log(b);
