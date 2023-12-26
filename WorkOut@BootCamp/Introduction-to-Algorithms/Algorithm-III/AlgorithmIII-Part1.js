@@ -37,7 +37,7 @@ console.log(x);
 awesome();
 console.log(x);
 
-// 5. Output: 0, 2, 4, 6, 8, 10, 12, 14
+// 5. Output: 0, 2, 4, 6, 8, 10, 12, 14.
 for (let i = 0; i < 15; i += 2) {
   console.log(i);
 }
