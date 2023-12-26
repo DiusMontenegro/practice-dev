@@ -60,3 +60,17 @@ function looping(x, y) {
 
 z = looping(3, 3);
 console.log(z);
+
+// 8. Output: 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 0, 2, 4, 6, 8, undefined
+function looping1(x, y) {
+  for (let i = 0; i < x; i++) {
+    for (let j = 0; j < y; j++) {
+      console.log(i * j);
+    }
+  }
+}
+
+z = looping1(3, 5);
+console.log(z);
+
+console.log("----- PART 1 -----");
