@@ -16,3 +16,18 @@ console.log(y);
 
 y = printAverage([2, 5, 8]);
 console.log(y);
+
+// 2. Create an array with all the odd integers between 1 and 255 (inclusive)
+
+function returnOddArray() {
+  let oddArrays = [];
+  for (let i = 1; i <= 255; i++) {
+    if (i % 2 !== 0) {
+      oddArrays.push(i);
+    }
+  }
+  return oddArrays;
+}
+
+y = returnOddArray();
+console.log(y);
