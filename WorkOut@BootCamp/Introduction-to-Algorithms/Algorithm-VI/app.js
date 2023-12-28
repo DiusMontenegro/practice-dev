@@ -38,3 +38,15 @@ function shiftPush(x) {
 }
 
 console.log(shiftPush([1, 5, 6]));
+
+// 3. Given an array, return an array with values in a reversed order.  For example, returnReversed([1,2,3]) should return [3,2,1].
+
+function returnReversed(x) {
+  const reverse = [];
+  for (let i = x.length - 1; i >= 0; i--) {
+    reverse.push(x[i]);
+  }
+  return reverse;
+}
+
+console.log(returnReversed([1, 2, 3]));
