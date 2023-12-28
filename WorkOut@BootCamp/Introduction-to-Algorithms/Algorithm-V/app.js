@@ -60,3 +60,16 @@ const printMaxMinAverage = function (x) {
 //Example:
 y = [-1, 5, 3];
 printMaxMinAverage(y);
+
+// 3. Given an array of numbers, create a function that returns a new array where negative values were replaced with the string ‘Dojo’. For example, replaceNegatives( [1,2,-3,-5,5]) should return [1,2, "Dojo", "Dojo", 5].
+
+const replaceNegatives = function (x) {
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] < 0) {
+      x[i] = "Dojo";
+    }
+  }
+  return x;
+};
+
+console.log(replaceNegatives([1, 2, -3, -5, 5]));
