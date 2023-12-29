@@ -9,16 +9,13 @@ function update() {
 }
 
 document.onkeydown = function (e) {
-  if (e.key === "ArrowLeft") {
+  if (e.key === "ArrowLeft" && leftValue > 0) {
     leftValue -= 10;
-  }
-  if (e.key === "ArrowRight") {
+  } else if (e.key === "ArrowRight" && leftValue <= 500) {
     leftValue += 10;
-  }
-  if (e.key === "ArrowUp") {
+  } else if (e.key === "ArrowUp" && topValue > 0) {
     topValue -= 10;
-  }
-  if (e.key === "ArrowDown") {
+  } else if (e.key === "ArrowDown" && topValue <= 500) {
     topValue += 10;
   }
   update();
