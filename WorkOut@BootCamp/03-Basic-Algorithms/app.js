@@ -18,3 +18,20 @@ function celciusToFahrenheit(cDegrees) {
 console.log(celciusToFahrenheit(0));
 console.log(celciusToFahrenheit(10));
 console.log(celciusToFahrenheit(100));
+
+// 3. Given an array, write a function that changes all positive numbers in the array to “big”. Example: makeItBig([-1,3,5,-5]) returns that same array, changed to [-1,"big","big",-5].
+
+function makeItBig(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      arr[i] = "big";
+      newArr.push(arr[i]);
+    } else {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+
+console.log(makeItBig([-1, 3, 5, -5]));
