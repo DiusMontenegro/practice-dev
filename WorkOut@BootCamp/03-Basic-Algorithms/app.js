@@ -50,3 +50,20 @@ function double(arr) {
 console.log(double([1, 2, 3]));
 console.log(double([-2, 0, 2]));
 console.log(double([2, 10, 100]));
+
+// 5. Given an array and a value Y, count and return the number of array values greater than Y. For example, returnArrayCountGreaterThanY( [2,3,5], 4) should return 1 as there is only one element in the array whose value is greater than 4.
+
+function returnArrayCountGreaterThanY(arr, y) {
+  let greaterThanYCounter = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > y) {
+      greaterThanYCounter++;
+    }
+  }
+  return greaterThanYCounter;
+}
+
+console.log(returnArrayCountGreaterThanY([2, 3, 5], 4));
+console.log(returnArrayCountGreaterThanY([2, 3, 5], 1));
+console.log(returnArrayCountGreaterThanY([4, 10, 15], 10));
+console.log(returnArrayCountGreaterThanY([4, 10, 15], 20));
