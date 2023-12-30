@@ -35,3 +35,18 @@ function makeItBig(arr) {
 }
 
 console.log(makeItBig([-1, 3, 5, -5]));
+
+// 4. Given an array, create a function to return a new array where each value in the original has been doubled. Calling double([1,2,3]) should return [2,4,6].
+
+function double(arr) {
+  let doubled = [];
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] *= 2;
+    doubled.push(arr[i]);
+  }
+  return doubled;
+}
+
+console.log(double([1, 2, 3]));
+console.log(double([-2, 0, 2]));
+console.log(double([2, 10, 100]));
