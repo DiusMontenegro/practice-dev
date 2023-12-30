@@ -95,3 +95,17 @@ function factorial(num) {
 
 console.log(factorial(3));
 console.log(factorial(5));
+
+// 8. Given an array, swap first and last, second and second-to-last, third and third-to-last, etc. Have the function return this swapped array. For example, swapTowardCenter([true,42,"Ada",2,"pizza"]) should return ["pizza",2,"Ada",42,true]. Passing [1,2,3,4,5,6] should return [6,5,4,3,2,1].
+
+function swapTowardCenter(arr) {
+  let newArr = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    newArr.push(arr[i]);
+  }
+  return newArr;
+}
+
+console.log(swapTowardCenter([true, 42, "Ada", 2, "pizza"]));
+console.log(swapTowardCenter([1, 2, 3, 4, 5, 6]));
+console.log(swapTowardCenter(["hi", "coding", "dojo", "fans"]));
