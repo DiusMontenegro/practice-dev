@@ -163,3 +163,22 @@ function sumToOne(num) {
 }
 
 console.log(sumToOne(928));
+
+// 12. Regardless of how hard a Dojo student works (and they should work hard), they need time now and then to unwind – like hands on a clock. Traditional clocks are increasingly uncommon, but most can still read an analog clock’s hands of hours, minutes, and seconds. Create clockHandAngles(seconds) that, given a number of seconds since 12:00:00, return angles (in degrees) of the hour, minute, and second hands. As a review, 360 degrees form a full rotation. Have the degree round up as a whole number (e.g. 38 instead of 37.632...) For input of 3600 secs (equivalent to 1:00:00), have it return "[30, 0, 0]" which means the hour is 30 degrees, the minute and the second are 0 degrees from noon. Similarly, clockHandAngles(10800) should return [90, 0, 0] as 10,800 seconds is equivalent to 3:00:00.
+
+function clockHandAngles(seconds) {
+  const secPerCycle = 12 * 60 * 60;
+
+  seconds = seconds % secPerCycle;
+
+  const hourAngle = Math.round((seconds / secPerCycle) * 360);
+  const minuteAngle = Math.round(((seconds % 3600) / 3600) * 360);
+  const secondAngle = Math.round(((seconds % 60) / 60) * 360);
+
+  return [hourAngle, minuteAngle, secondAngle];
+}
+
+console.log(clockHandAngles(3600));
+console.log(clockHandAngles(10800));
+console.log(clockHandAngles(5000));
+console.log(clockHandAngles(8000));
