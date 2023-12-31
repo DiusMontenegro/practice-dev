@@ -147,3 +147,19 @@ function fibonacci(index) {
 }
 
 console.log(fibonacci(6));
+
+// 11. Kaitlin sees beauty in numbers but also believes that less is more. Implement sumToOne(num) that sums a given integer’s digits repeatedly until the sum is only one digit. Return that one-digit result. Example: sumToOne(928) returns 1, because 9+2+8 = 19, then 1+9 = 10, then 1+0 = 1. Solve the challenge WITHOUT using recursion although you are allowed to convert the integer to a string.
+
+function sumToOne(num) {
+  while (num >= 10) {
+    let sum = 0;
+    let numString = num.toString();
+    for (let i = 0; i < numString.length; i++) {
+      sum += parseInt(numString[i]);
+    }
+    num = sum;
+  }
+  return num;
+}
+
+console.log(sumToOne(928));
