@@ -313,3 +313,20 @@ console.log(secondToLast([42, true, 4, "Kate", 7]));
 console.log(secondToLast([42, true, 4, "Kate", 7, 9]));
 console.log(secondToLast([42, true, 4, "Kate", 7, 9, "dojo", "awesome"]));
 console.log(secondToLast([1]));
+
+// 20. Return the element that is N-from-array’s-end. Given ([5,2,3,6,4,9,7],3), return 4. If the array is too short, return null.
+
+function nToLast(arr, n) {
+  if (n <= 0 || n > arr.length) {
+    return null;
+  }
+
+  return arr[arr.length - n];
+}
+
+// Test Cases
+console.log(nToLast([5, 2, 3, 6, 4, 9, 7], 3));
+console.log(nToLast([1, 2], 3));
+console.log(nToLast([5, 2, 3, 6, 4, 9, 7], 4));
+console.log(nToLast([5, 2, 3, 6, 4, 9, 7], 5));
+console.log(nToLast([1, 2, 3, 5, 5, 7, 10], 1));
