@@ -330,3 +330,27 @@ console.log(nToLast([1, 2], 3));
 console.log(nToLast([5, 2, 3, 6, 4, 9, 7], 4));
 console.log(nToLast([5, 2, 3, 6, 4, 9, 7], 5));
 console.log(nToLast([1, 2, 3, 5, 5, 7, 10], 1));
+
+// 21. Given an array, and indices start and end, remove vals in that index range, working in place (hence shortening the array). Given ([20,30,40,50,60,70],2,4), change to [20,30,70] and return it.
+
+function removeRange(arr, start, end) {
+  if (start < 0 || end >= arr.length || start > end) {
+    return null;
+  }
+
+  const removedCount = end - start + 1;
+
+  for (let i = start; i <= end; i++) {
+    arr[i] = arr[i + removedCount];
+  }
+
+  arr.length -= removedCount;
+
+  return arr;
+}
+
+// Test Cases
+console.log(removeRange([20, 30, 40, 50, 60, 70], 2, 4));
+console.log(removeRange([20, 30, 40, 50, 60, 70], 1, 3));
+console.log(removeRange([20, 30, 40, 50, 60, 70], 1, 4));
+console.log(removeRange([1, 2, 3, 4, 5, 6], 2, 5));
