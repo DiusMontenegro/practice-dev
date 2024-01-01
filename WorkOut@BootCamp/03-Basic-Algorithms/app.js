@@ -297,3 +297,19 @@ console.log(heights([-1, 1, 1, 7, 3])); // Output: [1, 7]
 console.log(heights([0, 4])); // Output: [4]
 console.log(heights([-1, 1, 1, 7, 3, 5, 9])); // Output: [1, 7, 9]
 console.log(heights([-1, 1, 1, 7, 3, 5, 9, -3, 3, 15])); // Output: [1, 7, 9, 15]
+
+// 19. Return the second-to-last element of an array. Given [42,true,4,"Kate",7], return "Kate". If array is too short, return null.
+
+function secondToLast(arr) {
+  if (arr.length < 2) {
+    return null;
+  }
+
+  return arr[arr.length - 2];
+}
+
+// Test Cases
+console.log(secondToLast([42, true, 4, "Kate", 7]));
+console.log(secondToLast([42, true, 4, "Kate", 7, 9]));
+console.log(secondToLast([42, true, 4, "Kate", 7, 9, "dojo", "awesome"]));
+console.log(secondToLast([1]));
