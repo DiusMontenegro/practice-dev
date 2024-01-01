@@ -239,3 +239,26 @@ function reverse(arr) {
 }
 
 console.log(reverse([1, 3, 5]));
+
+// 16. Alan is good at breaking secret codes. One method is to eliminate values that lie within a specific known range. Given arr and values min and max, retain only the array values between min and max. Work in-place: return the array you are given, with values in the original order. No built-in array functions.
+
+function filterRange(arr, min, max) {
+  let result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    const currentElement = arr[i];
+
+    if (currentElement > min && currentElement < max) {
+      result.push(currentElement);
+    }
+  }
+
+  return result;
+}
+
+// Test Cases
+console.log(filterRange([1, 3, 5, 7, 10], 4, 8));
+console.log(filterRange([1, 3, 5, 7, 10], -1, 4));
+console.log(filterRange([2, 4, 3, 5], 2, 6));
+console.log(filterRange([2, 4, 3, 5], 0, 4));
+console.log(filterRange([6, 2, -3, 5, 7], 3, 8));
