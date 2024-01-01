@@ -226,3 +226,16 @@ console.log(extractDigit(1824.2, 2));
 console.log(extractDigit(199.35, 0));
 console.log(extractDigit(199.35, -1));
 console.log(extractDigit(199.35, -2));
+
+// 15. Given a numerical array, reverse the order of values, in-place. The reversed array should have the same length, with existing elements moved to other indices so that the order of elements is reversed. Working ‘in-place’ means that you cannot use a second array – move values within the array that you are given.
+
+function reverse(arr) {
+  let reversedArr = [];
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversedArr.push(arr[i]);
+  }
+  return reversedArr;
+}
+
+console.log(reverse([1, 3, 5]));
