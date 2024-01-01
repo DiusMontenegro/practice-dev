@@ -262,3 +262,12 @@ console.log(filterRange([1, 3, 5, 7, 10], -1, 4));
 console.log(filterRange([2, 4, 3, 5], 2, 6));
 console.log(filterRange([2, 4, 3, 5], 0, 4));
 console.log(filterRange([6, 2, -3, 5, 7], 3, 8));
+
+// 17. Replicate JavaScript’s concat(). Create a standalone function that accepts two arrays. Return a new array containing the first array’s elements, followed by the second array’s elements. Do not alter the original arrays. Ex.: arrConcat( ['a','b'], [1,2] ) should return a new array ['a','b',1,2].
+
+function arrConcat(arr1, arr2) {
+  const concat = arr1.concat(arr2);
+  return concat;
+}
+
+console.log(arrConcat(["a", "b"], [1, 2]));
