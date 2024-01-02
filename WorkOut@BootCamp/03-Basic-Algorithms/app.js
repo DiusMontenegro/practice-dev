@@ -528,3 +528,26 @@ console.log(multiTable(2, 2));
 console.log(multiTable(3, 3));
 console.log(multiTable(2, 4));
 console.log(multiTable(5, 8));
+
+// 27. Create a function that returns a two-dimensional array containing a bunch of zeros. For example, twoDimensional(2,5) should return the following array: [ [ 0, 0, 0, 0, 0], [ 0, 0, 0, 0, 0 ] ] . One way to visualize this two-dimensional array is to think of the above as a 2-row, 5-column matrix. You could also write the above array to be as follows: [ [0,0,0,0,0], [0,0,0,0,0] ]. Whenever you're dealing with two-dimensional arrays, be extra cautious on every single character. A simple typo or forgetting to add a comma or a square bracket can ruin the whole program.
+
+function twoDimensional(rows, columns) {
+  let result = [];
+
+  for (let i = 0; i < rows; i++) {
+    let rowArray = [];
+
+    for (let j = 0; j < columns; j++) {
+      rowArray.push(0);
+    }
+
+    result.push(rowArray);
+  }
+
+  return result;
+}
+
+// Test cases
+console.log(twoDimensional(2, 5));
+console.log(twoDimensional(3, 4));
+console.log(twoDimensional(1, 5));
