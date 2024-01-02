@@ -551,3 +551,30 @@ function twoDimensional(rows, columns) {
 console.log(twoDimensional(2, 5));
 console.log(twoDimensional(3, 4));
 console.log(twoDimensional(1, 5));
+
+// 28. Create a function twoDimensional(row, column) that returns a two dimensional array containing bunch of zeros but where the outer values are filled with ones. For example twoDimensional(5,5) should return the following array: [ [ 1, 1, 1, 1, 1 ], [ 1, 0, 0, 0, 1 ], [ 1, 0, 0, 0, 1 ], [ 1, 0, 0, 0, 1 ], [ 1, 1, 1, 1, 1 ] ] Assume that both row and column are greater than 2.
+
+function twoDimensional(rows, columns) {
+  let result = [];
+
+  for (let i = 0; i < rows; i++) {
+    let rowArray = [];
+
+    for (let j = 0; j < columns; j++) {
+      if (i === 0 || i === rows - 1 || j === 0 || j === columns - 1) {
+        rowArray.push(1);
+      } else {
+        rowArray.push(0);
+      }
+    }
+
+    result.push(rowArray);
+  }
+
+  return result;
+}
+
+// Test cases
+console.log(twoDimensional(2, 5));
+console.log(twoDimensional(5, 5));
+console.log(twoDimensional(8, 8));
