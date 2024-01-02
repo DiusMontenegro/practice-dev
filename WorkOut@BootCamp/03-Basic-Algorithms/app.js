@@ -422,3 +422,33 @@ function zipIt(arr1, arr2) {
 }
 
 console.log(zipIt([1, 2], [10, 20, 30, 40]));
+
+// 24. Create a function that, given an input string str, returns a boolean whether parentheses in str are valid. Valid sets of parentheses always open before they close, for example. For "Y(3(p)p(3)r)s", return true. Given "N(0(p)3", return false: not every parenthesis is closed. Given "N(0)t )0(k", return false, because the underlined ")" is premature: there is nothing open for it to close.
+
+function parensValid(str) {
+  const parentheses = [];
+
+  for (const character of str) {
+    if (character === "(") {
+      parentheses.push(character);
+    } else if (character === ")") {
+      if (parentheses.length === 0) {
+        return false;
+      } else {
+        parentheses.pop();
+      }
+    }
+  }
+
+  if (parentheses.length === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(parensValid("Y(3(p)p(3)r)s"));
+console.log(parensValid("N(0)t )0(k"));
+console.log(parensValid("N(0)t (0(k))"));
+console.log(parensValid("(N(0)t (0(k))"));
+console.log(parensValid("()(N(0)t (0(k)))"));
