@@ -452,3 +452,26 @@ console.log(parensValid("N(0)t )0(k"));
 console.log(parensValid("N(0)t (0(k))"));
 console.log(parensValid("(N(0)t (0(k))"));
 console.log(parensValid("()(N(0)t (0(k)))"));
+
+// 25. Understanding how to implement basic sorting algorithm is a good exercise. For this particular challenge, you are to implement bubble sort. You'll note that almost all sorting algorithms have two for loops. For bubble sort, you'll also note two for loops (one inside each other).
+
+function bubbleSort(arr) {
+  const n = arr.length;
+
+  for (let i = 0; i < n - 1; i++) {
+    for (let j = 0; j < n - 1 - i; j++) {
+      if (arr[j] > arr[j + 1]) {
+        const temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+
+  return arr;
+}
+
+console.log(bubbleSort([5, 3, 1, 2]));
+console.log(bubbleSort([5, 4, 3, 2, 1]));
+console.log(bubbleSort([5, 3, 1, -1, -3]));
+console.log(bubbleSort([5, 3, 1]));
