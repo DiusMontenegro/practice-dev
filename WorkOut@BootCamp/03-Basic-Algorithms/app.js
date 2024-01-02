@@ -403,3 +403,22 @@ console.log(isCreditCardValid([4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]));
 console.log(
   isCreditCardValid([4, 0, 1, 2, 8, 8, 8, 2, 5, 6, 8, 8, 1, 8, 9, 1])
 );
+
+// 23. Create a standalone function that accepts two arrays and combines their values sequentially into a new array, at alternating indices starting with the first array. Extra values from either array should be included afterward. Given [1,2] and [10,20,30,40], return new array containing [1,10,2,20,30,40].
+
+function zipIt(arr1, arr2) {
+  const newArr = [];
+  const maxLength = arr1.length + arr2.length;
+
+  for (let i = 0; i < maxLength; i++) {
+    if (i < arr1.length) {
+      newArr.push(arr1[i]);
+    }
+    if (i < arr2.length) {
+      newArr.push(arr2[i]);
+    }
+  }
+  return newArr;
+}
+
+console.log(zipIt([1, 2], [10, 20, 30, 40]));
