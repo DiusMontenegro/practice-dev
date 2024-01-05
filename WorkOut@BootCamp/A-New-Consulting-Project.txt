@@ -1,0 +1,22 @@
+Mark has been assigned a new project for a client named John. Mark is the only person working on the project from your company. Mark reports directly to a client who directly manages the project and who is also acting as the project manager. Mark is supposed to do both the front-end and the back-end work for the client.
+
+Mark is new to this project and although Mark has talked to the client a few times, it’s not clear what the client expects from Mark, what work Mark should be doing each day, or when they would be meeting, etc.
+
+As you’re new to this project, you want to establish a good working relationship with the client also and show that you’re talented and you’re proactive. Draft your email to the client where you can communicate your excitement about the project and where you can ask appropriate questions to the client. Also, specify when you would send this communication and why you've picked that timing.
+
+
+Answer: 
+
+I will send an Email to John.
+
+Dear John,
+
+I trust this message finds you well. I'm Mark, the dedicated Developer working on your project. I wanted to take a moment to express my excitement about contributing to this project.
+
+As I immerse myself in the project, I'm eager to ensure that I fully understand your expectations and priorities. Could we schedule a brief meeting at your earliest convenience? I'd like to discuss the specific tasks you'd like me to handle on both the front-end and back-end, clarify the daily workflow expectations, and establish an efficient communication rhythm. Your insights are invaluable, and I am keen on aligning my efforts with your vision.
+
+Thank you for your time, and I look forward to our collaboration.
+
+Best regards,
+
+Mark
