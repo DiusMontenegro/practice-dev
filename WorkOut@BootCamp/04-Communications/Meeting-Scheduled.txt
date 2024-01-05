@@ -1,0 +1,29 @@
+Meeting Scheduled
+Your supervisor wanted to meet with you at 3 pm (over Zoom) to go over a few items. It’s 3:05 pm now but your supervisor hasn’t shown up yet. It’s now 3:15 pm now and your supervisor still hasn’t shown up yet. You log off from Zoom and continue with your work.
+
+Please answer the following questions:
+
+ 1. What went wrong here?
+ 2. If you were super proactive in your communication, what would you have done? What message would you send your supervisor and when would you send this?
+
+Draft the communications you would send to your supervisor and when you would send each of these communications.
+
+Answers:
+
+1. The supervisor did not show up for the scheduled Zoom meeting, causing a disruption in communication and potentially impacting the flow of work.
+
+2. I would set a Pre-Meeting Reminder: 2-3 hours before the meeting.
+
+Hi Supervisor,
+
+I hope this message finds you well. Just a friendly reminder that we have our scheduled Zoom meeting at 3:00 pm today. I'm looking forward to discussing the topics that we'd like to duscuss on our upcoming meeting. If there are any changes or adjustments needed, please let me know. Otherwise, I'll be online and ready to join the meeting promptly.
+
+Thank you,
+
+// Since the supervisor did not attend the meeting on time, I will follow up between 03:10 - 03:15 PM. Sending a follow up email:
+
+Hi Supervisor,
+
+I hope everything is okay on your end. I was online at 3:00 pm for our scheduled meeting, but I haven't seen you join. If you're experiencing any technical difficulties or if there's a need to reschedule, please let me know. I'm here and ready whenever you're available.
+
+Thanks,
