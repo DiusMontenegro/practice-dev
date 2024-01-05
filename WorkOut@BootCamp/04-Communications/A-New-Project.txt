@@ -1,0 +1,34 @@
+Exercise 2:
+
+You are very new to the company and your supervisor has given you a new project. This communication was done over Slack and your supervisor gave you some general instruction for the project but you still had a lot of questions/confusions about the project. Your supervisor was expecting you to finish this project by Wednesday the following week but you haven’t really made that much progress on the project yet, due to other projects you were working on and because your supervisor is known to be extremely busy and you felt shy asking for some time to go over the project.
+
+Please answer the following questions:
+
+ 1. What went wrong with this scenario?
+ 2. What could you have done to improve this situation?
+ 3. What would you do to rectify this situation?
+
+If you could have gone back in time to a week before (when the supervisor first gave you that project and you had some uncertainties/questions back then), draft what that email communication would have looked like.
+
+Answers:
+
+
+1. There was a lack of clarification on the project details and expectations during the initial communication with my supervisor. Assuming my supervisor's busy schedule, I hesitated to seek clarification or additional time, resulting in delayed progress. Balancing multiple projects without clarifying priorities led to a delay in the new project.
+
+2. It's crucial to seek clarification on any uncertainties or questions regarding the new project immediately after receiving instructions. Clearly communicate the workload and request guidance on prioritizing tasks. Discuss deadlines realistically based on your current workload. Don't be hesitant to ask for a brief meeting or allocate some time for discussion, even in a busy environment. Effective communication is key.
+
+3. I would reach out to the supervisor as soon as possible to clarify any uncertainties regarding the project. I would also discuss the current workload and request a realistic deadline extension based on the updated understanding of the project and existing commitments. Additionally, I will present a detailed action plan outlining how I intend to catch up on the project and meet the revised deadline.
+
+
+// The Draft email Communication a Week Earlier would be:
+
+Hi Supervisor,
+
+I hope you're doing well. I trust you're managing a busy schedule. I'm currently working on the new project you assigned, and I have a few questions to ensure I'm aligned with your expectations. When you have a moment, could we schedule a brief discussion?
+
+Also, considering my existing workload, I'd appreciate your guidance on what are the projects/tasks that I need to prioritize and I would like to have your help in setting a realistic deadline for the project. I understand your time is precious, and I'm grateful for any support you can provide. 
+
+Thank you,
+
+Dius Montenegro
+Junior FullStack Dev.

@@ -2,26 +2,34 @@ Exercises:
 
 You had a sudden power outage for a whole day! You were working on an important project and you were not able to make the progress you needed for the day. You were also not able to put in the hours for the project. The power outage happens on your Friday and only by Saturday morning, you’re able to have power back. You had lots of things planned for Saturday and Sunday and you were looking forward to having this weekend off to spend time with your friends and family. Plus, you’re feeling a bit sick and were thinking of using your Monday as sick leave anyway.
 
-Please answer the following questions:
+ Please answer the following questions:
 
-1. What communication would you send out to your project manager/supervisor? Would you send this after the power comes back or would you send this communication before the power comes back? How many hours after the power outage would you send this email?
+ 1.   What communication would you send out to your project manager/supervisor? Would you send this after the power comes back or would you send this communication before the power comes back? How many hours after the power outage would you send this email?
 
-2. Say you were mentoring someone else in the Village and this person failed to send any type of communication back to the supervisor/team till Monday morning. What advice would you give this person?
+ 2.   Say you were mentoring someone else in the Village and this person failed to send any type of communication back to the supervisor/team till Monday morning. What advice would you give this person?
 
-3. How would you make up for the lack of progress and the lack of hours you’ve put into the project? How would you communicate this to the supervisor? Or would you just assume that it’s okay not to make up for these hours as it’s already Saturday your time?
+ 3.   How would you make up for the lack of progress and the lack of hours you’ve put into the project? How would you communicate this to the supervisor? Or would you just assume that it’s okay not to make up for these hours as it’s already Saturday your time?
 
-4. If you missed any important deadlines for the project due to this, how would you make up to your supervisor/team for this lack of progress? How would you communicate this?
+ 4.   If you missed any important deadlines for the project due to this, how would you make up to your supervisor/team for this lack of progress? How would you communicate this?
+
 
 
 Answers:
 
+
 1. I will send an update to my project manager/supervisor through email as soon as the blackout occurs (before the power is restored), assuming I have a backup internet connection or can borrow a device from someone with internet access. I will also provide an update to my supervisor once the power is restored.
 
+
+
 2. If, under the given scenario, the person is unable to send any form of communication, I would kindly guide them on the importance of effective communication, provide guidance on how to appropriately handle such situations, and explain the potential consequences if similar issues arise in the future. Additionally, I would communicate with the person, seeking their commitment to apply these insights moving forward.
+
+
 
 3. To make up for the lost time, I would be willing to extend my work hours during the evenings or work extra hours on subsequent days. This could involve working on Saturday, Sunday, or even allocating extra hours during the upcoming week. I will send an email like this: 
 
 " I hope this message finds you well. Due to an unforeseen power outage on Friday, I couldn't make the expected progress on our project. To compensate, I'm committed to working extended hours over the weekend and upcoming week. I appreciate your understanding and will keep you updated on my progress. If you have any specific guidance or adjustments, please let me know. "
+
+
 
 4. I will make a plan that could make up for the lack of progress like working extended hours over the weekend and into the upcoming week to catch up on the missed tasks if possible. I will also prioritize critical tasks to ensure that the most essential aspects of the project are addressed promptly. Additionally, I will send an email to my supervisor/team telling them:
 
