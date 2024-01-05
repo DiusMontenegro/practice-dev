@@ -1,0 +1,32 @@
+Sickness of a Family Member
+
+Your wife suddenly feels sick. She could not stand up due to a headache and dizziness. She needs to lie down and needs assistance when going to the bathroom or when eating. You have just finished a meeting and a task needs to be completed within the day.
+
+ 1. What would be your plan in this situation?
+ 2. What would you do if helping your wife means you won't be able to complete all the tasks for the day?
+ 3. How should you communicate this with your supervisor and with your teammates?
+
+
+Answer:
+
+ 1. I will prioritize my wife's Health, Attend to my wife's immediate needs, ensuring she is comfortable and safe. I will immediately communicate with your supervisor about the family emergency, explaining the situation and expressing the need to attend to my wife's health. I will transparent about the estimated duration of your absence. If possible, I will delegate urgent tasks to a teammate or request assistance to ensure that critical work is covered during your absence. I will also notify my team about the family emergency.
+
+ 2. If Helping Your Wife Means Not Completing All Tasks within the day, I will still prioritize my wife's well-being, and understand that unforeseen circumstances may impact work plans. I will communicate promptly with my supervisor and teammates about the situation, and reassure them that I am committed to catching up on any missed work as soon as possible.
+
+// Email to Supervisor:
+
+Dear Supervisor,
+
+I hope this message finds you well. Unfortunately, my wife is feeling unwell and requires my immediate attention and assistance. I will need to step away from work to attend to her needs. I anticipate being away for the time being. I have informed a specific teammate about the relevant project/task and provided them with necessary details. I want to assure you that I am committed to catching up on any missed work as soon as possible. I appreciate your understanding during this challenging time.
+
+Thank you for your support.
+
+Best regards,
+
+// Team Announcement email:
+
+Hi Team,
+
+I hope you're all doing well. Unfortunately, I have a family emergency, and I need to be away from work within the day. A Specific teammate is briefed on a relevant project/task, and I appreciate their assistance during my absence. I will remain accessible for any urgent matters but may not be able to respond immediately. Your understanding is greatly appreciated, and I will catch up on any missed work as soon as possible.
+
+Thank you,
