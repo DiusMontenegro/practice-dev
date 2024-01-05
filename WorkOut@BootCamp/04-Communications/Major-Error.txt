@@ -1,0 +1,30 @@
+Major Error
+
+You were responsible for a lot of important features for the project but something happened where you lost all the user data for the last four weeks. This had really put a big setback for the project and you have suspicions that your website may have been hacked, causing these errors. You have also forgotten to back up the database but you aren’t sure whether you want to communicate this to the client as it may make you look weaker. You admit that you could have done things better on your end to handle these types of scenarios but you were just busy, burned out, and frankly, you were already doing a lot of extra things for the clients anyway! The client is not that technical and doesn’t even know that a database could be backed up automatically so bringing this up may only make the situation worse.
+
+The client is furious and you’re afraid to speak to the client as you know the client will be upset.
+
+Would you wait a few days, until the client cools down, to talk to the client? Would you wait until the client comes and talks to you to arrange a meeting? If you were to draft an email to the client now, what would you say?
+
+
+Answer:
+
+In this situation, it's important to acknowledge the severity of the issue and take full responsibility for the mistake. Waiting for the client to cool down may not be the best approach, as the client deserves prompt communication about the incident. I will proactively address the issue demonstrates accountability and a commitment to finding a solution.
+
+I will also send an email to the client about the issue.
+
+Dear client,
+
+I hope this message finds you well. I am writing to address a critical issue that has recently come to my attention. As it turns out, we have encountered a major error that has resulted in the loss of user data for the last four weeks in our project.
+
+I take full responsibility for this situation. It appears that there might have been a security breach, and I am actively investigating the cause to prevent any further issues. I understand the gravity of the setback this has caused for the project, and I sincerely apologize for the impact it has on our progress.
+
+I also want to acknowledge that I could have done better in handling scenarios like this, and I am committed to implementing additional safeguards moving forward. I value our partnership and am ready to engage in a conversation to address your concerns. Please let me know a time that suits you for a meeting, and I will make sure to prioritize this matter.
+
+Thank you for your understanding.
+
+
+Best regards,
+
+Dius Montenegro
+Junior FullStack Developer
