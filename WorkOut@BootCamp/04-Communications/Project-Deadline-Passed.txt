@@ -1,0 +1,43 @@
+Project Deadline Passed
+
+A supervisor has given you a project and asked you when you think you can have the project completed. You answered next Wednesday. You’ve worked hard during your usual 40 hours/week and next Wednesday has come but you have not quite finished your project yet. Wednesday comes around and your supervisor has seemed to have forgotten about this project and has not followed up with you yet on this project. It’s now Friday, and your supervisor still hasn’t asked you anything about this project!
+
+// Please answer the following questions:
+
+ 1. What went wrong with these situations?
+ 2. How could you have handled this situation better?
+ 3. If you were to go back on time, when would you go back to, and what email communication would you send and why?
+ 4. Who was ultimately responsible for this project being completed? Who should have followed up first? The supervisor or you?
+
+If you could go back to Friday the previous week (before the project was due), what would you do differently? Draft an email communication to your project manager.
+
+If you could go back to Tuesday (the day before the deadline), and assuming you’ve done absolutely your best to finish the project but just weren’t able to, what email would you draft to the communication to your project manager? Draft that email now.
+
+
+Answers:
+
+1. There was a missed opportunity to be proactive in providing updates to the supervisor as the project progressed. Assuming the supervisor is aware of the project's progress without explicit updates could have been addressed through proactive communication.
+
+2. Regularly updating the supervisor on the project progress, especially as the deadline approached, aligns with a proactive approach. Also, being transparent about the potential delay and owning up to it, rather than waiting for the deadline to pass, would have been a more honest approach. Sending a reminder email a day or two before the deadline would have honored the commitment to the initial timeline and demonstrated proactive communication.
+
+3. If I were to go back in time, I will send this email as soon as I have digested the information after the project has been introduced telling the supervisor for the updates, clarifications, guidance and possible delays. This email will set a clear expectation and will enable me to better approach the tasks and priorities.
+
+4. Both parties share responsibility. While the supervisor should have followed up on the agreed deadline, as the person actively working on the project, I bear the ultimate responsibility for providing updates and flagging any potential delays.
+
+
+Draft 1: Friday the Previous Week
+
+Dear Supervisor,
+
+I hope this message finds you well. I wish to provide you with a brief update on the ongoing project. I am diligently working towards our established deadline on Wednesday and am optimistic about the project's overall trajectory. While progress is steady, there is a possibility of a minor delay. I am committed to ensuring the project's quality and success. If you have any insights or adjustments in mind, I would greatly appreciate your guidance. If it suits your schedule, a brief discussion would be beneficial. I appreciate your understanding and continued support.
+
+Best regards,
+
+
+Draft 2: Tuesday (Day Before the Deadline)
+
+Dear Supervisor,
+
+I trust this messsage finds you well considering your busy schedule. I wish to provide an update on the project scheduled for completion tomorrow. My efforts have been dedicated to delivering a high-quality outcome. As it turns out, there may be a slight delay. I take full ownership of this and am committed to fix any setbacks. Your valuable insights, suggestions or adjustments would be greatly appreciated at this moment. If you find it suitable, I am open to a brief discussion. I extend my gratitude for your understanding and continuous support. Looking forward to your response.
+
+Best regards,
