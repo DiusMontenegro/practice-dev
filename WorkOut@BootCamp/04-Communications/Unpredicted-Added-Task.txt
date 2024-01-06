@@ -1,0 +1,17 @@
+Unpredicted Added Task
+Story points are already estimated and you have already talked with your team regarding the tasks you should work on. Deadline is approaching and you think that you will make it in time with the pace you're going(working at least 50hrs/week). But a day before the deadline, you encounter a task that requires RnD and you have no idea how long this RnD will take you.
+
+ 1. How will you communicate this with your team?
+ 2. After the RnD, you found out it will take at least another day to finish the task. How will you say it to your team and your supervisor?
+ 3. If you are a team leader, what would be your response to this kind of situation?
+ 4. What do you think is the possible solution to make it to your deadline?
+
+ Answers:
+
+ 1. I will communicate immediately with the team about the newly discovered RnD task. I will be transparent about the uncertainty and potential impact on the original timeline. I'll also emphasize the importance of addressing this unforeseen challenge to deliver a high-quality product.
+
+ 2. I will inform the team and supervisor about the additional day required after completing the RnD. I will take ownership of any misjudgment in the initial estimation and clearly communicate the reasons behind the extension, ensuring transparency and trust within the team.
+
+ 3. As a team leader, I will recognize that unforeseen challenges can arise. Express understanding of the situation and acknowledge the team's efforts. I will also provide support and reassurance while discussing how to adjust the project plan to accommodate the new information.
+
+ 4. My best approach in mind would be to explore potential solutions collaboratively with the team. This might involve redistributing tasks, prioritizing features, or seeking additional resources. Assess whether there are any aspects of the project that can be streamlined without compromising quality. The goal is to find a balanced solution that maintains the commitment to the deadline while addressing the RnD requirements.
