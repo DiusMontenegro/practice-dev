@@ -8,143 +8,155 @@
     <body>
         <form action="actions.php" method="post" title="Pizza Order Form">
             <h1>Pizza Order Form</h1>
-            <br />
-
-            <label for="first_name"><strong>First Name:</strong></label>
-            <input
-                type="text"
-                name="first_name"
-                id="first_name"
-                placeholder="Enter your first name"
-                autofocus
-            />
-            <br /><br />
-
-            <label for="last_name"><strong>Last Name:</strong></label>
-            <input
-                type="text"
-                name="last_name"
-                id="last_name"
-                placeholder="Enter your last Name"
-            />
-            <br /><br />
-
-            <label for="email"><strong>Email:</strong></label>
-            <input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Enter your email"
-            />
-            <br /><br />
-
-            <label for="contact_number"><strong>Contact Number:</strong></label>
-            <input
-                type="text"
-                name="contact_number"
-                id="contact_number"
-                placeholder="Enter your phone number"
-            />
-            <br /><br />
-
-            <label for="delivery_date"
-                ><strong>Preferred Delivery Date</strong></label
-            >
-            <input
-                type="text"
-                name="delivery_date"
-                id="delivery_date"
-                placeholder="mm/dd/yyyy"
-            />
-            <br /><br />
-
-            <strong>Size:</strong>
-            <br /><br />
-            <label>
+            <br>
+            <p>
+                <label for="first_name"><strong>First Name:</strong></label>
                 <input
-                    type="radio"
-                    name="size"
-                    id="small"
-                    value="small"
-                />&nbsp; Small
-            </label>
-            <label>
+                    type="text"
+                    name="first_name"
+                    id="first_name"
+                    placeholder="Enter your first name"
+                    autofocus
+                />
+            </p>
+
+            <p>
+                <label for="last_name"><strong>Last Name:</strong></label>
                 <input
-                    type="radio"
-                    name="size"
-                    id="medium"
-                    value="medium"
-                />&nbsp; Medium
-            </label>
-            <label>
+                    type="text"
+                    name="last_name"
+                    id="last_name"
+                    placeholder="Enter your last Name"
+                />
+            </p>
+
+            <p>
+                <label for="email"><strong>Email:</strong></label>
                 <input
-                    type="radio"
-                    name="size"
-                    id="large"
-                    value="large"
-                />&nbsp; Large
-            </label>
-            <br /><br />
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                />
+            </p>
 
-            <h4>Flavors</h4>
-            <label for="hawaiian">
-                <input type="checkbox" id="hawaiian" />
-                &nbsp; Hawaiian
-            </label>
-            <select title="Quantity" name="hawaiian">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <br /><br />
+            <p>
+                <label for="contact_number"><strong>Contact Number:</strong></label>
+                <input
+                    type="text"
+                    name="contact_number"
+                    id="contact_number"
+                    placeholder="Enter your phone number"
+                />
+            </p>
 
-            <label for="pepperoni">
-                <input type="checkbox" id="pepperoni" />
-                &nbsp; Pepperoni
-            </label>
-            <select title="Quantity" name="pepperoni">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <br /><br />
+            <p>
+                <label for="delivery_date"
+                    ><strong>Preferred Delivery Date</strong></label
+                >
+                <input
+                    type="text"
+                    name="delivery_date"
+                    id="delivery_date"
+                    placeholder="mm/dd/yyyy"
+                />
+            </p>
 
-            <label for="vegetable">
-                <input type="checkbox" id="vegetable" />
-                &nbsp; Vegetable
-            </label>
-            <select title="Quantity" name="vegetable">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <br /><br /><br />
+            <p>
+                <h4>Size:</h4>
+                <label>
+                    <input
+                        type="radio"
+                        name="size"
+                        id="small"
+                        value="small"
+                    />&nbsp; Small
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="size"
+                        id="medium"
+                        value="medium"
+                    />&nbsp; Medium
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="size"
+                        id="large"
+                        value="large"
+                    />&nbsp; Large
+                </label>
+            </p>
 
-            <label for="credit_card"
-                ><strong>Credit Card Number:</strong></label
-            >
-            <input type="text" id="credit_card" required />
-            <br /><br />
+            <p>
+                <h4>Flavors</h4>
+                <label for="hawaiian">
+                    <input type="checkbox" id="hawaiian" />
+                    &nbsp; Hawaiian
+                </label>
+                <select title="quantity" name="hawaiian">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </p>
 
-            <label for="pin"><strong>PIN:</strong></label>
-            <input type="text" id="pin" required />
-            <br /><br />
+            <p>
+                <label for="pepperoni">
+                    <input type="checkbox" id="pepperoni" />
+                    &nbsp; Pepperoni
+                </label>
+                <select title="quantity" name="pepperoni">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </p>
 
-            <label for="additional_note"
-                ><strong>Additional Note:</strong></label
-            >
-            <br /><br />
-            <textarea
-                name="additional_note"
-                id="additional_note"
-                cols="50"
-                rows="9"
-            ></textarea>
-            <br /><br />
+            <p>
+                <label for="vegetable">
+                    <input type="checkbox" id="vegetable" />
+                    &nbsp; Vegetable
+                </label>
+                <select title="quantity" name="vegetable">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </p>
 
+            <p>
+                <label for="credit_card"
+                    ><strong>Credit Card Number:</strong></label
+                >
+                <input type="text" id="credit_card" required />
+            </p>
+
+            <p>
+                <label for="pin"><strong>PIN:</strong></label>
+                <input type="text" id="pin" required />
+            </p>
+
+            <p>
+                <label for="additional_note"
+                    ><strong>Additional Note:</strong></label
+                >
+            </p>
+
+            <p>
+                <textarea
+                    name="additional_note"
+                    id="additional_note"
+                    cols="50"
+                    rows="9"
+                ></textarea>
+            </p>
+            
             <button type="submit">Submit Order</button>
         </form>
     </body>
