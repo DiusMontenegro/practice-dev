@@ -6,9 +6,5 @@ body {
 }
 
 .background-img {
-    background-image: url('./img/bg1.jpg');
-    background-repeat: no-repeat;
-    background: fixed;
-    background-position: center;
-    background-size: contain;
+    background: url('./img/bg1.jpg') no-repeat fixed cover;
 }
