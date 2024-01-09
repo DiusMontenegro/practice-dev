@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.calendar {
+    margin: 50px auto;
+    max-width: 940px;
+    color: black;
+}
+
+#month {
+    margin: 20px;
+    margin-bottom: 40px;
+}
+.months {
+    display: inline-block;
+}
+
+.months.mini {
+    width: 19.99%;
+    text-align: center;
+}
+
+.months.present {
+    color: black;
+    font: bold;
+    font-size: 50px;
+    font-weight: 600;
+    width: 58%;
+    vertical-align: bottom;
+}
+
+table {
+    width: 100%;
+    font-size: 40px;
+    table-layout: fixed;
+}
+
+.mini_table {
+    width: 100%;
+    font-size: 10px;
+    table-layout: fixed;
+}
+
+td,
+th {
+    border: 1px solid black;
+}
+
+.sun {
+    background-color: rgb(7, 161, 222);
+}
+
+.sat {
+    background-color: rgb(22, 224, 144);
+}
+
+.empty {
+    background-color: rgb(109, 117, 113);
+    border: none;
+}
+
+.doubled {
+    font-size: 8px;
+}
