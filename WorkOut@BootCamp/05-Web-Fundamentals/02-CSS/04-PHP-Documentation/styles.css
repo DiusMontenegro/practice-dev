@@ -162,13 +162,14 @@ section.main {
 
     .content .note {
         width: 100%;
-        border-bottom: 1px dotted black;
+        border-bottom: 1px dotted #793862;
         margin-bottom: 20px;
     }
 
     h3 {
         display: inline-block;
         margin-right: 363px;
+        color: #793862;
     }
 
         .note a {
