@@ -153,7 +153,6 @@ main.container {
 }
 
     #content .container {
-        border: 1px solid black;
         height: 100%;
         padding: 14px 18px;
     }
@@ -230,6 +229,46 @@ main.container {
                             padding: 1px;
                             color: #4d4d4d;
                         }
+
+/* Footer */
+
+footer.container {
+    text-align: center;
+    padding: 16px;
+}
+
+    .footer .menu {
+        vertical-align: top;
+        display: inline-block;
+    }
+
+        .footer .menu .items {
+            font-size: 18px;
+            display: inline-block;
+            list-style-type: none;
+            text-align: center;
+            padding: 6px 14px;
+            margin: 10px 0px
+            
+        }
+            .menu .items a {
+                font-weight: bold;
+                color: #89b4d9;
+            }
+        
+        .footer p a {
+            border-bottom: 1px dotted #89b4d9;
+            color: #89b4d9  ;
+            margin: 0px 2px;
+        }
+
+        .footer p a.copyright {
+            border: none;
+        }
+
+
+
+
 
 
                     
