@@ -1,3 +1,46 @@
-ul li {
-    color: yellow;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.container {
+    padding: 10px 0px;
+    height: 80vh;
+    margin: 40px auto;
+    width: 960px;
+    border: 1px solid black;
+}
+
+.nav {
+    color: black;
+    vertical-align: top;
+    display: inline-block;
+    width: 49.79%;
+    height: 44px;
+    border: 1px solid black;
+}
+
+    .nav.menu, .nav.search {
+        display: inline-block;
+    }
+
+        .nav.search {
+            text-align: right;
+        }
+
+        ul li {
+            margin-left: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            width: 60px;
+            text-align: center;
+            height: 100%;
+            display: inline-block;
+            list-style-type: none;
+        }
+        
+        .nav.search input {
+            margin: 10px 10px 10px 0px;
+        }
+
