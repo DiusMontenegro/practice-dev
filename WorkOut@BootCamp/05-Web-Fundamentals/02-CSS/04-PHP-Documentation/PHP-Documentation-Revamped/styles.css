@@ -132,15 +132,6 @@ nav {
         border-right: 4px solid #808080;
     }
 
-    .main #menu {
-        display: inline-block;
-        vertical-align: top;
-        height: 200px;
-        width: 29%;
-        padding: 20px 10px;
-        color:#ffffff;
-    }
-
         .content .set {
             text-align: right;
             margin-bottom: 10px;
@@ -201,28 +192,36 @@ nav {
             border-bottom: 1px dotted #793862;
         }
 
-            .note h3 {
-                color: #793862;
-                padding: 4px 0px;
-                display: inline-block;
+        
+        .note h3 {
+            color: #793862;
+            padding: 4px 0px;
+            display: inline-block;
+        }
+        
+        .note .add {
+            text-align: right;
+            width: 72%;
+            height: 26px;
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 4px;
+        }
+        
+            .note .add a {
+                margin-bottom: 0;
+                font-size: 11px;
+                text-decoration: underline;
             }
-
-            .note .add {
-                text-align: right;
-                width: 73.22%;
-                height: 26px;
-                display: inline-block;
-                vertical-align: top;
-                padding-top: 4px;
-            }
-
-                .note .add a {
-                    margin-bottom: 0;
-                    font-size: 11px;
-                    text-decoration: underline;
-                }
     
-
+.main #menu {
+    display: inline-block;
+    vertical-align: top;
+    height: 200px;
+    width: 29%;
+    padding: 20px 10px;
+    color:#ffffff;
+}
 
         #menu h3 {
             border-bottom: 1px dotted #AE508D;
