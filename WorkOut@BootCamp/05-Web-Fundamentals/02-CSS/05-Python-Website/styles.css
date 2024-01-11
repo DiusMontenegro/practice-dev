@@ -113,6 +113,11 @@ nav.container {
         border-right: 1px solid rgb(130,130,130);
     } 
 
+    nav a.selected {
+        background-color: #2b5b84;
+        border: 1px solid #3776ab;
+    }
+
 /* Main section */
 main.container {
     padding: 30px 70px;
