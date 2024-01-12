@@ -158,7 +158,7 @@ main {
                 margin-bottom: 4px;
             }
             .widget a.more {
-                margin-left: 56.3%;
+                margin-left: 54.82%;
                 display: inline-block;
             }
                 .uses{
@@ -232,6 +232,7 @@ main {
         .footer p a {
             color: #89b4d9  ;
             margin: 0px 2px;
+            border-bottom: 1px dotted #89b4d9;
         }
         .footer p a.copyright {
             border: none;

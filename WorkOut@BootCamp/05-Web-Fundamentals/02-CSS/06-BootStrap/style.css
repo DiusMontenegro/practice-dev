@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    position: relative;
+    background-image: url(./img/bumper.png);
+    background-size: cover;
+    height: auto;
+    padding: 100px;
+    color: orange;
+    text-shadow: 2px -2px 6px rgba(0,0,0,0.54);
+}
+
+.card {
+    -webkit-box-shadow: 4px 3px 23px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 3px 23px -7px rgba(0,0,0,0.75);
+    box-shadow: 4px 3px 23px -7px rgba(0,0,0,0.75);
+}
+
+.newsletter {
+    background-image: url(./img/bgOrange.svg);
+}
+
