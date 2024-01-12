@@ -25,17 +25,19 @@ header img {
     height: 85px;
     width: 288px;
 }
-header .input {
-    color: #bbbbbb;
-    text-align: right;
-    vertical-align: top;
-    margin-left: 24.33%;
-    width: 45%;
-    height: 100%;
-    display: inline-block;
-    padding: 12px 0px;
-    
-}
+
+    .input {
+        color: #bbbbbb;
+        text-align: right;
+        vertical-align: top;
+        margin-left: 24.33%;
+        width: 45%;
+        height: 100%;
+        display: inline-block;
+        padding: 12px 0px;
+        
+    }
+
     .input a.donate {
         font-weight: 100;
         text-decoration: none;
@@ -50,6 +52,7 @@ header .input {
         border-left: 1px solid #dca900;
         margin: 18px 2px 0px 0px;
     }
+
     .input .field-set {
         border-radius: 4px;
         vertical-align: top;
@@ -60,16 +63,19 @@ header .input {
         border: 1px solid #2d3e4d;
         border-bottom: 1px solid #070a0c;
     }
-        .field-set .search {
+
+        .field-set input {
             height: 30px;
             margin: 12px 0px;
             width: 180px;
             margin-right: 10px;
         }
+
         .field-set a {
             text-decoration: none;
             color: #bbbbbb;
         }
+
         .field-set .go {
             background-color: #3776ab;
             padding: 8px;
@@ -80,6 +86,7 @@ header .input {
             border-left: 1px solid #3d83be;
             border-radius: 4px;
         }
+        
         .field-set .socialize {
             padding: 18px 10px;
             vertical-align: top;
@@ -91,7 +98,7 @@ header .input {
         }
 
 /* Nav section */
-nav.container {
+nav {
     text-align: center;
     height: 40px;
     background-color: #3776ab;
@@ -102,7 +109,7 @@ nav.container {
     box-shadow: 1px 0px 17px -6px rgba(0,0,0,0.89);
 }
 
-    nav.container a {
+    nav a {
         font-size: 14px;
         background-color: transparent;
         color: white;
@@ -119,19 +126,16 @@ nav.container {
     }
 
 /* Main section */
-main.container {
+main {
     padding: 30px 70px;
     position: relative;
 }
 
-    main h1 {
+    main h2 {
         color: #ffd343;
         font-size: 24px;
         width: 350px;
         vertical-align: top;
-        display: inline-block;
-        line-height: 1.2;
-        margin-bottom: 10px;
     }
 
     main p {
@@ -185,7 +189,7 @@ main.container {
                     margin-left: 50%;
                 }
 
-                .widget .event li {
+                .event li {
                     border-top: 1px solid #caccce;
                     height: auto;
                     padding: 4px 0px;
@@ -196,33 +200,36 @@ main.container {
                     text-align: justify;
                 }
 
-                    .event li a.name {
+                    .event li a {
                         
                         margin-left: 10px;
                         color:#3776ab
                     }
                 
-                .widget .tech {
+                .widget ul {
                     width: 100%;
                     font-size: 12px;
                     font-weight: bold;
-                    border-top: 1px solid #caccce;
                     padding: 4px 0px;
                 }
 
-                    .tech .job {
+                .widget .tech {
+                    border-top: 1px solid #caccce;
+                }
+
+                    ul .job {
                         margin-right: 2px;
                         vertical-align: top;
                         display: inline-block;
                     }
 
-                    .tech .tools {
+                    ul .tools {
                         vertical-align: top;
                         display: inline-block;
                     }
 
                         .tools li {
-                            vertical-align: middle;
+                            vertical-align: top;
                             display: inline-block;
                             font-size: 10px;
                             margin-right: 2px;
@@ -237,7 +244,7 @@ main.container {
 
 /* Footer */
 
-footer.container {
+.footer {
     text-align: center;
     padding: 16px;
 }
@@ -247,7 +254,7 @@ footer.container {
         display: inline-block;
     }
 
-        .footer .menu .items {
+        .footer li {
             font-size: 18px;
             display: inline-block;
             list-style-type: none;
@@ -256,13 +263,12 @@ footer.container {
             margin: 10px 0px
             
         }
-            .menu .items a {
+            .menu a {
                 font-weight: bold;
                 color: #89b4d9;
             }
         
         .footer p a {
-            border-bottom: 1px dotted #89b4d9;
             color: #89b4d9  ;
             margin: 0px 2px;
         }
