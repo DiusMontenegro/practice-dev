@@ -1,120 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BootStrap</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="./img/cs2icon.png">
-</head>
-<body>
-  <!-- nav -->
-  <nav>
-    <div class="navbar navbar-expand-lg container border-bottom border-dark-subtle bg-body-tertiary">
-      <a class="navbar-brand" href="#"><img src="./img/cs2icon.png" alt="cs2" width="30px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active fw-semibold " aria-current="page" href="#">CS2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active fw-semibold " aria-current="page" href="#">V88</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active fw-semibold " aria-current="page" href="#">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active fw-semibold " aria-current="page" href="#">DIUS(dre)</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Jumbotron -->
-  <section>
-    <div class="container text-center jumbotron "> 
-      <h1 class="fw-semibold  fs-1 ">Explore the New Era of CS:GO with CS2!</h1>
-      <p class="lead fs-3 text-light ">Upgrade your gaming experience with the latest version - Counter-Strike 2 (CS2).</p>
-      <a href="#" class="btn btn-warning btn-lg mt-3">Get Started</a>
-    </div>
-  </section>
-  <!-- Cards -->
-  <section class="container my-5 bg-body-tertiary">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card my-2">
-          <img src="./img/CS-card1.jpg" class="card-img-top opacity-100" alt="Card Image 1">
-          <div class="card-body">
-            <h5 class="card-title text-center">CS2 vs CS:GO</h5>
-            <p class="card-text text-center">Explore the future of gaming with CS2, the next evolution of Counter-Strike. Immerse yourself in a world of optimized skins, delivering stunning visuals and enhanced effects. Elevate your gameplay experience to new heights with the latest advancements in the legendary CS series.</p>
-            <a href="#" class="btn btn-outline-warning btn-block">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card my-2">
-          <img src="./img/CS-card2.jpg" class="card-img-top" alt="Card Image 2">
-          <div class="card-body">
-            <h5 class="card-title text-center">(CS2) 2023 Tournament</h5>
-            <p class="card-text text-center">Witness history unfold as FaZe Clan emerges victorious in the highly competitive CS2 2023 tournament. Experience the thrill of their strategic mastery and unparalleled skill, solidifying their position as champions. Join us in celebrating the incredible moments that define esports greatness. </p>
-            <a href="#" class="btn btn-outline-warning btn-block">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card my-2 ">
-          <img src="./img/CS-card3.jpg" class="card-img-top" alt="Card Image 3">
-          <div class="card-body">
-            <h5 class="card-title text-center">CS2 vs CS:GO Rifle Guide</h5>
-            <p class="card-text text-center">Sharpen your shooting skills with our comprehensive guide on rifles in CS2 versus CS:GO. Improved mechanics, and enhanced features that define the latest arsenal. , unlock the knowledge to dominate every firefight and elevate your gameplay to the next level. Get ready to the battlefield!</p>
-            <a href="#" class="btn btn-outline-warning  btn-block">Read More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Form -->
-  <section class="container mt-5 mb-0  newsletter py-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-center mb-4 text-warning fw-semibold ">Subscribe to Our Newsletter</h5>
-            <form>
-              <div class="form-group mb-1">
-                <label for="firstName">First Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
-              </div>
-              <div class="form-group mb-1">
-                <label for="lastName">Last Name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
-              </div>
-              <div class="form-group mb-1">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-              </div>
-              <button type="submit" class="btn btn-warning text-dark  btn-block mt-3 ">Subscribe</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer class="bg-dark text-light py-3 container">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <p class="mb-0">&copy; 2023-2024 Dius M. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BootStrap</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" href="./img/cs2icon.png" />
+    </head>
+    <body>
+        <!-- nav -->
+        <nav>
+            <div class="navbar navbar-expand-lg container border-bottomborder-dark-subtle bg-body-tertiary">
+                <a class="navbar-brand" href="#"><img src="./img/cs2icon.png" alt="cs2" width="30px"/></a>
+                <button class="navbar-toggler" type="button"data-bs-toggle="collapse"  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="#" >CS2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active fw-semibold" aria-current="page"    href="#">V88</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="#" >ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="#" >DIUS(dre)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Jumbotron -->
+        <section>
+            <div class="container text-center jumbotron">
+                <h1 class="fw-semibold fs-1">Explore the New Era of CS:GO with CS2!</h1>
+                <p class="lead fs-3 text-light">Upgrade your gaming experience with the latest version - Counter-Strike 2 (CS2).</p>
+                <a href="#" class="btn btn-warning btn-lg mt-3">Get Started</a>
+            </div>
+        </section>
+        <!-- Cards -->
+        <section class="container my-5 bg-body-tertiary">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img src="./img/CS-card1.jpg" class="card-img-top opacity-100" alt="Card Image 1"/>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">CS2 vs CS:GO</h5>
+                            <p class="card-text text-center"> Explore the future of gaming with CS2, the next evolution of Counter-Strike. Immerse yourself in a world of optimized skins, delivering stunning visuals and enhanced effects. Elevate your gameplay experience to new heights with the latest advancements in the legendary CS series.</p>
+                            <a href="#" class="btn btn-outline-warning btn-block" >Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img src="./img/CS-card2.jpg" class="card-img-top" alt="Card Image 2"/>
+                        <div class="card-body">
+                            <h5 class="card-title text-center"> (CS2) 2023 Tournament</h5>
+                            <p class="card-text text-center"> Witness history unfold as FaZe Clan emerges victorious in the highly competitive CS2 2023 tournament. Experience the thrill of their strategic mastery and unparalleled skill, solidifying their position as champions. Join us in the incredible moments that define esports greatness.</p>
+                            <a href="#" class="btn btn-outline-warning btn-block" >Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img src="./img/CS-card3.jpg" class="card-img-top" alt="Card Image 3"/>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">CS2 vs CS:GO Rifle Guide</h5>
+                            <p class="card-text text-center"> Sharpen your shooting skills with our comprehensive guide on rifles in CS2 versus CS:GO. Improved mechanics, and enhanced features that define the latest arsenal. , unlock the knowledge to dominate every firefight and elevate your gameplay to the next level. Get ready to the battlefield!</p>
+                            <a href="#" class="btn btn-outline-warning btn-block" >Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Form -->
+        <section class="container mt-5 mb-0 newsletter py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center mb-4 text-warning fw-semibold">Subscribe to Our Newsletter</h5>
+                            <form>
+                                <div class="form-group mb-1">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required/>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required/>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required/>
+                                </div>
+                                <button type="submit" class="btn btn-warning text-dark btn-block mt-3">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-dark text-light py-3 container">
+            <p class="container row col-md-6 mb-0">&copy; 2023-2024 Dius M. All rights reserved.</p>
+        </footer>
+        <!-- script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
 </html>
