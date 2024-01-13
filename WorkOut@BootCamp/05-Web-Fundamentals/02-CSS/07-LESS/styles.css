@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 700px;
+  height: auto;
+  color: #555555;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: linear-gradient(#fff, #ccc);
+  box-shadow: -1px 2px 118px 26px rgba(82, 82, 82, 0.2);
+}
+header {
+  width: 100%;
+  height: 165px;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+}
+header img {
+  width: 25%;
+}
+header .information {
+  width: 74.2%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0;
+  padding: 10px 0px 10px 20px;
+}
+header .information h1 {
+  letter-spacing: 7px;
+  font-weight: 800;
+  font-size: 40px;
+  color: #1f497d;
+}
+header .information .job-title {
+  font-size: 15px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #1f497d;
+}
+header .information .contact {
+  padding: 15px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+section {
+  height: auto;
+  width: 100%;
+  padding: 0px 15px;
+  margin-bottom: 20px;
+}
+.main {
+  height: auto;
+  background-color: #dddddd;
+  box-shadow: 1px -2px 216px -130px rgba(54, 49, 49, 0.2) inset;
+}
+.main h2 {
+  padding-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  word-spacing: 2px;
+  font-size: 20px;
+  margin: 10px auto;
+}
+.main .description {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: justify;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+.main p {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.tech_container {
+  padding: 0px;
+  padding-left: 15px;
+}
+.tech {
+  width: 49.5%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+.tech h2 {
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.tech img {
+  display: inline-block;
+  width: 18.75%;
+  padding: 2px;
+}
+.tech .projects {
+  padding: 0px 10px 10px 10px;
+  box-shadow: 1px 8px 23px 10px rgba(82, 82, 82, 0.2);
+}
+.tech h3 {
+  padding-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.tech .description.tools {
+  margin-bottom: 20px;
+}
+footer {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+footer li {
+  margin: 0px auto;
+  display: inline-block;
+}
+footer img {
+  width: 20px;
+  margin-right: 4px;
+}
