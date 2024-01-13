@@ -27,8 +27,8 @@ header {
         width: 25%;
     }
 
-    header .information {
-        width: 74.391%;
+    .information {
+        width: 74.2%;
         height: 100%;
         display: inline-block;
         vertical-align: top;
@@ -36,14 +36,14 @@ header {
         padding: 10px 0px 10px 20px;
     }
 
-        .information h1 {
-            letter-spacing: 8px;
+        h1 {
+            letter-spacing: 7px;
             font-weight: 800;
             font-size: 40px;
             color: #1f497d;
         }
 
-        .information .job-title {
+        .job-title {
             font-size: 15px;
             letter-spacing: 6px;
             font-weight: bold;
@@ -51,12 +51,11 @@ header {
             border-bottom: 3px solid #1f497d;
         }
 
-        .information .contact {
+        .contact {
             padding: 15px 0px;
             font-size: 14px;
             font-weight: 600;
-            letter-spacing: 0.6px;
-            word-spacing: 1px;
+            letter-spacing: 0.5px;
         }
 
 section {
@@ -66,7 +65,7 @@ section {
     margin-bottom: 20px;
 }
 
-section.main {
+.main {
     height: auto;
     background-color: #dddddd;
     -webkit-box-shadow: 1px -2px 216px -130px rgba(54,49,49,0.2) inset;
@@ -92,18 +91,18 @@ section.main {
         letter-spacing: 1px;
     }
 
-    .description.about_me {
+    .main p {
         margin-bottom: 10px;
         padding-bottom: 10px;
     }
 
-section.tech_container {
+.tech_container {
     padding: 0px;
     padding-left: 15px;
 }
 
-section .tech {
-    width: 49.68%;
+.tech {
+    width: 49.5%;
     height: 100%;
     display: inline-block;
     vertical-align: top;
@@ -117,11 +116,11 @@ section .tech {
 
     .tech img {
         display: inline-block;
-        width: 18.96%;
+        width: 18.75%;
         padding: 2px;
     }
 
-    .tech.projects {
+    .projects {
         padding: 0px 10px 10px 10px;
         -webkit-box-shadow: 1px 8px 23px 10px rgba(82,82,82,0.2) inset;
         -moz-box-shadow: 1px 8px 23px 10px rgba(82,82,82,0.2) inset;
