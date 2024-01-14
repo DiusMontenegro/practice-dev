@@ -6,11 +6,10 @@
 .container {
     height: auto;
     width: 100%;
-    border: 1px solid black;
 }
 #logo{
     min-height: 130px;
-    width: 260px;
+    width: 30.10%;
     background-color: #B97A57;
     display: inline-block;
     margin-right: 20px;
@@ -23,7 +22,7 @@
 }
 #navigation{
     min-height: 130px;
-    width: 591px;
+    width: 67.1%;
     background-color: #FF7F27;
     display: inline-block;
     vertical-align: top;
@@ -59,7 +58,7 @@
 }
 /* media */
 @media only screen and (max-width: 480px) {
-    
+
 }
 @media only screen and (min-width: 481px) {
 
