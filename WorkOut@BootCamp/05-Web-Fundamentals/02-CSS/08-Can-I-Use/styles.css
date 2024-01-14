@@ -89,7 +89,8 @@ section {
         margin-top: 40px;
         width: 100%;
         border-collapse: separate;
-        border-spacing: 5px; /* Add margin to the entire table */
+        border-spacing: 5px;
+        margin-bottom: 40px;
     }
         th {
             padding: 4px 22px;
