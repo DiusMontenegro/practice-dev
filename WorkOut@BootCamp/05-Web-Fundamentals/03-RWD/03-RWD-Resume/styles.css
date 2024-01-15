@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 700px;
+    height: auto;
+    color: #555555;
+    margin: 10px auto;
+    padding: 10px 20px;
+    -webkit-box-shadow: -1px 2px 118px 26px rgba(0,0,0,0.13) inset;
+    -moz-box-shadow: -1px 2px 118px 26px rgba(0,0,0,0.13) inset;
+    box-shadow: -1px 2px 118px 26px rgba(0,0,0,0.13) inset;
+}
+header {
+    width: 100%;
+    height: 165px;
+    margin: 10px 0px;
+    margin-bottom: 20px;
+}
+    img {
+        width: 25%;
+    }
+    .information {
+        width: 74.2%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0;
+        padding: 10px 0px 10px 20px;
+    }
+        h1 {
+            letter-spacing: 7px;
+            font-weight: 800;
+            font-size: 40px;
+            color: #1f497d;
+        }
+        .job-title {
+            font-size: 15px;
+            letter-spacing: 6px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #1f497d;
+        }
+        .contact {
+            padding: 15px 0px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+section {
+    height: auto;
+    width: 100%;
+    padding: 0px 15px;
+    margin-bottom: 20px;
+}
+.main {
+    height: auto;
+    background-color: #dddddd;
+    -webkit-box-shadow: 1px -2px 216px -130px rgba(54,49,49,0.2) inset;
+    -moz-box-shadow: 1px -2px 216px -130px rgba(54,49,49,0.2) inset;
+    box-shadow: 1px -2px 216px -130px rgba(54,49,49,0.2) inset;
+}
+    h2 {
+        padding-top: 10px;
+        width: 100%;
+        text-align: center;
+        font-weight: bolder;
+        word-spacing: 2px;
+        font-size: 20px;
+        margin: 10px auto;
+    }
+    .description {
+        font-size: 13px;
+        font-weight:600;    
+        text-align: justify;
+        line-height: 1.6;
+        letter-spacing: 1px;
+    }
+    .main p {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+.tech_container {
+    padding: 0px;
+    padding-left: 15px;
+}
+.tech {
+    width: 49.5%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+    .tech h2 {
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .tech img {
+        display: inline-block;
+        width: 18.75%;
+        padding: 2px;
+    }
+    .projects {
+        padding: 0px 10px 10px 10px;
+        -webkit-box-shadow: 1px 8px 23px 10px rgba(82,82,82,0.2) inset;
+        -moz-box-shadow: 1px 8px 23px 10px rgba(82,82,82,0.2) inset;
+        box-shadow: 1px 8px 23px 10px rgba(82,82,82,0.2) inset;
+    }
+        .projects h3 {
+            padding-bottom: 10px;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+        .description.tools {
+            margin-bottom: 20px;
+        }
+footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+    footer li {
+        margin: 0px auto;
+        display: inline-block;
+    }
+    footer img {
+        width: 20px;
+        margin-right: 4px;
+    }
+/* media query */
+@media only screen and (max-width:480px) {
+    .container {
+        margin-top: 0;
+        padding:0px;
+        width: 100%;
+    }
+    header {
+        margin-top: 0px;
+        text-align: center;
+        height: auto;
+        position: relative;
+    }
+        header img {
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+            height: auto;
+            vertical-align: middle;
+            width: 120px;
+            position: absolute;
+            bottom: 4%;
+            left:34%;
+        }
+        .information {
+            text-align: center;
+            width: 100%;
+            padding: 0px;
+        }
+        h1{
+            padding-top: 12px;
+            font-size: 1.5rem;
+        }
+        .job-title {
+            padding: 0px 20px;
+            display: block;
+            font-size: 1rem;
+            letter-spacing: 4px;
+            font-weight: bold;
+            border-bottom: none;
+            margin-bottom: 50px;
+        }
+        .contact {
+            background-color: #1f497d;
+            color: white;
+            text-align: left;
+            height: 80px;
+            font-size: 10px;
+            padding: 10px 10px 10px 2px;
+            line-height: 2;
+        }
+            .contact span {
+                display: block;
+                width: 150px;
+            }
+    .main p {
+        padding: 10px;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+    }
+    .tech_container {
+        padding: 0;
+    }
+    .tech {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .projects p {
+        padding: 0px 20px;
+        letter-spacing: 0;
+    }
+    footer li {
+        display: block;
+        text-align: start;
+        padding: 0px 20px;
+    }
+}
+@media only screen and (min-width:481px) {
+    .container {
+        margin-top: 0;
+        padding: 0px;
+        width: 100%;
+    }
+    header {
+        height: auto;
+        position: relative;
+        margin: 0px;
+    }
+        header img {
+            border-radius: 50%;
+            position: absolute;
+            top: 70%;
+            left: 5%;
+            width: 118px;
+            height: 118px;
+            border: 4px solid white 
+        }
+        .information {
+            padding: 20px 10px;
+            width: 100%;
+            height: auto;
+        }
+        h1 {
+            display: inline-block;
+            font-weight: 600;
+            text-align: center;
+            width: 100%;
+            font-size: 46.2px;
+        }
+        .job-title {
+            padding: 0px;
+            display: block;
+            font-size: 1rem;
+            text-align: center;
+            letter-spacing: 4px;
+            font-weight: bold;
+            border-bottom: none;
+            margin-bottom: 20px;
+        }
+        p.contact {
+            display: block;
+            width: 100%;
+            background-color: #1f497d;
+            color: white;
+            text-align: center;
+            height: 100%;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 6px 10px 40px 2px;
+            line-height: 2;
+        }
+        .contact span {
+            width: auto;
+            padding: 0px;
+            display: inline-block;
+        }
+        .main {
+            width: auto;
+            margin: 55px 30px 20px 30px;
+            padding: 20px;
+            word-spacing: 0px;
+            letter-spacing: 0px;
+        }
+            .main p {
+                font-weight: 500;
+                font-size: 16px;
+            } 
+        .tech_container {
+            font-size: 25px;
+            padding: 40px 80px;
+        }
+        .tech {
+            text-align: center;
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 40px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        .projects p {
+            padding: 0px 20px;
+            letter-spacing: 0;
+        }    
+}
+@media only screen and (min-width:1024px) {
+    .container {
+        width: 960px;
+        margin: 0px auto;
+        height: auto;
+    }
+    header {
+        height: auto;
+        padding: 20px 20px;
+    }
+    header img {
+        vertical-align: top;
+        display: inline-block;
+        width: 249px;
+        height: auto;
+        border-radius: 0;
+        position: unset;
+        margin-right: 18px;
+    }
+    .information {
+        padding: 0px;
+        width: 70%;
+        height: 100%;
+        text-align: start;
+    }
+    h1 {
+        display: inline-block;
+        font-weight: 600;
+        text-align: start;
+        width: 100%;
+        font-size: 70px;
+        letter-spacing: 0.23rem;
+    }
+    .job-title {
+        text-align: start;
+        font-size: 25px;
+        margin: 0;
+        padding-bottom: 40px;
+        border-bottom: 4px solid #1f497d;
+    }
+    p.contact {
+        display: block;
+        width: 100%;
+        background-color: white;
+        color: #555555;
+        text-align: center;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 25px 0px;
+        line-height: 2;
+    }
+        .contact span {
+            letter-spacing: 2;
+            width: 33.3%;
+        }
+    .main {
+        width: auto;
+        margin: 20px;
+        padding: 22px 28px;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+    }
+        .main p {
+            font-weight: 500;
+            font-size: 16px;
+        } 
+    .tech_container {
+        font-size: 25px;
+        padding: 20px;
+    }
+    .tech {
+        display: inline-block;
+        width: 49%;
+        padding: 0;
+    }
+        .tech img {
+            width: 77.5px;
+        }
+    h2 {
+        font-size: 20px;
+    }
+    .projects p {
+        font-size: 16px;
+        font-weight: 500;
+    }    
+    footer li {
+        margin: 0px auto;
+        vertical-align: top;
+        display: inline-block;
+    }
+    footer img {
+        width: 20px;
+        margin-right: 4px;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+
+
+}
