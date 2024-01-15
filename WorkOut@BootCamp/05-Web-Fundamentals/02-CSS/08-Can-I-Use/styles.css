@@ -100,7 +100,6 @@ section {
             vertical-align: bottom;
             font-weight: 100;
             border-bottom: 3px solid black;
-            text-align: center;
             margin: 5px 0px;
         }
         .data span{
@@ -109,7 +108,6 @@ section {
             vertical-align: top;
             display: inline-block;
             position: relative;
-            text-align: center;
             border: none;
             color: white;
             height: 35px;
