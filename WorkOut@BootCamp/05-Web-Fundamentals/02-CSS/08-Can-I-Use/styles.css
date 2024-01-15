@@ -84,31 +84,43 @@ section {
         font-size: 20px;
         font-weight: 100;
     }
-    table{
-        table-layout: fixed;
+    .table{
         margin-top: 40px;
         width: 100%;
-        border-collapse: separate;
-        border-spacing: 5px;
         margin-bottom: 40px;
+        height: auto;
+        font-size: 18px;
+        text-align: center;
+        color: black;
     }
-        th {
-            padding: 4px 22px;
-            font-size: 18px;
+        .browsers span{
+            width: 95.266px;
+            padding: 8px 22px;
+            display: inline-block;
+            vertical-align: bottom;
             font-weight: 100;
             border-bottom: 3px solid black;
+            text-align: center;
+            margin: 5px 0px;
         }
-        td {
+        .data span{
+            width: 95.266px;
+            padding: 8px 2px;
+            vertical-align: top;
+            display: inline-block;
             position: relative;
             text-align: center;
             border: none;
             color: white;
-            background-color: #e0ddd5;
             height: 35px;
             font-size: 17px;
             font-weight:700;
             letter-spacing: 2px;
-        }
+            margin: 2.5px 0px;
+        }   
+            .cell-empty {
+                background-color: #e0ddd5;
+            }
             .cell-green {
                 background-color: #177521;
             }
