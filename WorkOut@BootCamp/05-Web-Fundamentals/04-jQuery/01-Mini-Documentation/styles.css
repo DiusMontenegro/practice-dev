@@ -32,6 +32,12 @@ a {
 .text-white {
     color:white
 }
+.tex-black {
+    color: #1c1c1c;
+}
+li {
+    list-style-type: none;
+}
 /* Backgrounds */
 .bg-cover {
     background-size: cover;
@@ -49,10 +55,6 @@ a {
 .bg-white {
     background-color: white;
 }
-li {
-    list-style-type: none;
-}
-
 header {
     height: auto;
 }
