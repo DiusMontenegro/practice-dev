@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 99%;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+a {
+    text-decoration: none;
+}
+.inline-block {
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+}
+.block {
+    display: block;
+}
+/* Typography & colors */
+.text-start {
+    text-align: start;
+}
+.text-center {
+    text-align: center;
+}
+.text-end {
+    text-align: end;
+}
+.text-white {
+    color:white
+}
+/* Backgrounds */
+.bg-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-gray {
+    background-color: gray;
+}
+.bg-white {
+    background-color: white;
+}
+li {
+    list-style-type: none;
+}
+
+header {
+    height: auto;
+}
+    nav a {
+        font-size: 20px;
+        color: white;
+        margin: 0px 20px;
+    }
+    .navbar {
+        margin: 10px 0px;
+    }
+        nav input {
+            border: none;
+            font-size: 20px;
+            width: 30%;
+        }
+main {
+    height: 633px;
+}
+aside {
+    height: 100%;
+    width: 20%;
+    padding: 30px 20px;
+    border: 1px solid black;
+}
+    aside a {
+        display: block;
+        font-size: 18px;
+        margin: 10px 0px;
+        color:  rgb(64, 64, 252);
+        text-decoration: underline;
+    }
+section {
+    height: 100%;
+    width: 79%;
+    overflow-y: scroll;
+    border: 1px solid black;
+}
+    h2 {
+
+        font-size: 50px;
+        margin-bottom: 10px 0px 40px 0px;
+        border: 1px solid black;
+    }
+    section .container {
+        width: 90%;
+    }
+    .example {
+        text-align: center;
+        padding: 20px;
+        border-bottom: 2px solid black;
+    }
+        .example button {
+            margin: 20px 0px;
+            font-size: 18px;
+            padding: 10px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+        .example .show {
+            display: none;
+        }
+        .example p {
+            display: block;
+            text-align: start;
+        }
+footer {
+    padding: 20px 0px;
+    font-size: 18px;
+    color: white;
+    height: 60px;
+}

@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container {
     margin: 0px auto;
+    width: 99%;
 }
 a {
     text-decoration: none;
+    color: #1c1c1c;
 }
 .inline-block {
     vertical-align: top;
@@ -27,6 +30,12 @@ a {
 .text-white {
     color:white
 }
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
 /* Backgrounds */
 .bg-cover {
     background-size: cover;
@@ -39,41 +48,140 @@ a {
     background-position: center;
 }
 .bg-dark-blue {
-    background-color: #0d0e1c;
+    background-color: #0077b5;
 }
-
-/* Tablets */
-@media only screen and (min-width: 481px) {
-    header {
-        width: 100%;
-        height: 50px;
-    }
-    .container {
-        height: 100%;
-        width: 99%;
-        border: 1px solid white;
-    }
-    .nav {
-        width: 70%;
-        height: 100%;
-        border: 1px solid white;
-    }
-    .nav-tools {
-        width: 29.16%;
-        height: 100%;
-        border: 1px solid white;
-    }
+nav {
+    height: 60px;
 }
-
-
-
-
-/* Desktops */
-@media only screen and (min-width: 1024px) {
-    /* indicator */
-    body {
-        width: 100%;
-        background-color: gray;
+    .links {
+        width: 86%;
         height: 100%;
     }
-}   
+    .links a {
+        height: 100%;
+        vertical-align: top;
+        display: inline-block;
+        margin: 0px 20px;
+        padding: 18px 0px;
+    }
+    .links h3 {
+        padding: 16px 10px;
+    }
+    #app {
+        border {
+            left: 1px solid gray;
+            right: 1px solid gray;
+        }
+    }
+    #sign-in {
+        height: 40px;
+        color: #0077b5;
+        background-color: transparent;
+        border: 1px solid #0077b5;
+        font-size: 20px;
+        padding: 0px 30px;
+        border-radius: 20px;
+        margin: 10px 0px;
+    }
+main, section {
+    height: 650px;
+    color: #1c1c1c;
+    margin-bottom: 20px;
+}
+    main .container, section .container {
+        padding: 30px 10px;
+        height: 100%;
+    }
+    main h2, section h2 {
+        color: #cc062e;
+        font-size: 45px;
+        font-weight: 400;
+    }
+    .community {
+        padding-top: 0px;
+        margin-bottom: 30px;
+    }
+    main label {
+        margin: 10px 0px;
+    }
+    main input {
+        width: 30%;
+        height: 40px;
+    }
+    form a {
+        margin: 10px 0px;
+        color: #0077b5;
+    }
+    #submit, #google, #join {
+        border-radius: 20px;
+        font-size: 16px;
+        background-color: #0077b5;
+        border: none;
+        color: white;
+        font-weight: bold;
+    }
+    form p {
+        margin: 20px 0px;
+        width: 30%;
+    }
+    .terms {
+        font-size: 10x;
+    }
+    #google, #join {
+        background-color: white;
+        color: #1c1c1c;
+        border: 1px solid #1c1c1c;
+        margin-bottom: 20px;
+        font-size: 14px;
+        padding: 10px 0px;
+        font-weight: 200;
+    }
+    #join {
+        font-weight: bold;
+        font-size: 16px;
+    }
+    main img, section img{
+        width: 500px;
+        right:0px;
+        top:0px
+    }
+section .container {
+    background-color: #f7e9ec;
+}
+    section h2 {
+        font-size: 60px;
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+    section h3 {
+        color: #1c1c1c;
+        font-size: 30px;
+        font-weight: 200;
+    }
+    section img {
+        top: 40px;
+        right: 20px;
+    }
+section .colleagues {
+    width: 100%;
+    height: 570px;
+}
+    .friends {
+        height: auto;
+    }
+footer {
+    height: 60px;
+}
+    footer a {
+        font-size: 14px;
+        margin: 2px 6px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    footer p {
+        margin: 20px 0px;
+    }
+    footer img {
+        margin: 0px 10px;
+        width: 70px;
+    }

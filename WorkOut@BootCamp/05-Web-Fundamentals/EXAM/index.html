@@ -8,25 +8,73 @@
 </head>
 <body>
     <!-- header -->
-    <header class="bg-dark-blue">
+    <header>
         <nav class="container">
-            <div class="nav inline-block">
-                <p class="nav-links inline-block">
-                    <a href="#" class="text-white"><img src="" alt="logo"></a>
-                    <a href="#">link</a>
-                </p>
+            <div class="brand inline-block">
+                <img src="./img/Logo.png" alt="logo" class="inline-block" id="brand">
             </div>
-            <div class="nav-tools inline-block">
+            <div class="links inline-block text-end">
+                <a href="">Articles</a>
+                <a href="">People</a>
+                <a href="">Learning</a>
+                <a href="">Jobs</a>
+                <a href="" id="app">Get the App</a>
+                <h3 class="inline-block">Join Now</h3>
+                <button type="button" class="inline-block" id="sign-in">Sign In</button>
             </div>
         </nav>
     </header>
     <!-- main -->
     <main>
-
+        <div class="container relative">
+            <h2>Welcome to your</h2>
+            <h2 class="community">professional community</h2>
+            <img src="./img/mainpic-1.png" alt="sitting" class="absolute">
+            <form action="#">
+                <label for="email" class="block">Email or phone</label>
+                <input type="email" id="email">
+                <label for="password" class="block">Password</label>
+                <input type="password" id="password">
+                <a href="" class="block">Forgot Password?</a>
+                <input type="submit" value="Sign-in" id="submit">
+                <p class="text-center">or</p>
+                <p class="terms text-start">By clicking Continue, you agree to LinkedIn's <a href="">User, Agreement, Privacy Policy</a> and <a href="">Cookie Policy.</a></p>
+                <input type="button" value="Continue with Google" id="google">
+                <input type="button" value="New to LinkedIn? Join Now" id="join" class="block">
+            </form>
+        </div>
     </main>
+    <!-- section -->
+    <section>
+        <div class="container relative">
+            <h2>Let the right people know</h2>
+            <img src="./img/mainpic-2.png" alt=""class="absolute" >
+            <h2 class="community">you're open to work</h2>
+            <h3>With the Open to Work feature, you can 
+            <h3>privately tell recruiters or publicly share</h3>
+            <h3>with the LinkedIn community that you are</h3>
+            <h3>looking for new job opportunities.</h3>
+        </div>
+    </section>
+    <section class="friends container">
+        <img src="./img/mainpic-3.png" alt="" class="colleagues">
+    </section >
     <!-- Footer -->
-    <footer>
-
+    <footer class="container">
+        <p class="text-center">
+            <img src="./img/Linked-Black.png" alt="" class="inline-block">
+            <span>&copy;2024</span>
+            <a href="">About</a>
+            <a href="">Accessibility</a>
+            <a href="">User Agreement</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Cookie Policy</a>
+            <a href="">Copyright Policy</a>
+            <a href="">Brand Policy</a>
+            <a href="">Guest Controls</a>
+            <a href="">Community Guidelines</a>
+            <a href="">Language</a>
+        </p>
     </footer>
 </body>
 </html>
