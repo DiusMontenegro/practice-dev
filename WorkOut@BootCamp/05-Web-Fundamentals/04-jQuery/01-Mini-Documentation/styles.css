@@ -7,7 +7,6 @@
 .container {
     width: 99%;
     margin: 0px auto;
-    border: 1px solid black;
 }
 a {
     text-decoration: none;
@@ -77,7 +76,7 @@ aside {
     height: 100%;
     width: 20%;
     padding: 30px 20px;
-    border: 1px solid black;
+    border-right: 1px solid gray;
 }
     aside a {
         display: block;
@@ -86,17 +85,17 @@ aside {
         color:  rgb(64, 64, 252);
         text-decoration: underline;
     }
+.bg-blue {
+    background-color: cadetblue;
+}
 section {
     height: 100%;
     width: 79%;
     overflow-y: scroll;
-    border: 1px solid black;
 }
     h2 {
-
         font-size: 50px;
         margin-bottom: 10px 0px 40px 0px;
-        border: 1px solid black;
     }
     section .container {
         width: 90%;
@@ -114,12 +113,40 @@ section {
         h3 {
             font-size: 30px;
         }
-        .example .show {
-            display: none;
-        }
         .example p {
             display: block;
             text-align: start;
+        }
+        .example .show {
+            display: none;
+        }
+        .example .slideDown {
+            display: none;
+        }
+        .example .fadeIn {
+            display: none;
+        }
+        .example img {
+            padding: 20px 0px;
+            width: 80px;
+        }
+        .example .shuriken {
+            margin: 10px 0px 30px 0px;
+            width: 20px;
+        }
+        .example .bullet {
+            margin-bottom: 60px;
+            width: 20px;
+        }
+        h1 span {
+            color: cadetblue;
+        }
+        .example li {
+            padding: 10px;
+        }
+        .example .val {
+            height: 30px;
+            margin: 40px 0px;
         }
 footer {
     padding: 20px 0px;
