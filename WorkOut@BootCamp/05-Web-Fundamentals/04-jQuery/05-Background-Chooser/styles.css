@@ -1,0 +1,23 @@
+#main_box {
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+#main_box img {
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: 10px 0 15px 10px;
+}
+h1 {
+    text-align: center;
+    margin: 30px;
+    font-family: Verdana;
+}
+p {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
