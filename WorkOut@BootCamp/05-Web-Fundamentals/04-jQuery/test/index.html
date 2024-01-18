@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Toggle</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Click event for each img element with data-alt-src attribute
+            $('img[data-alt-src]').on('click', function () {
+                // Toggle between src and data-alt-src attributes
+                var currentSrc = $(this).attr('src');
+                var altSrc = $(this).data('alt-src');
+                
+                // Swap the src attributes
+                $(this).attr('src', altSrc);
+                $(this).data('alt-src', currentSrc);
+            });
+        });
+    </script>
+</head>
+<body>
+    <main class="container">
+        <!-- Your images go here -->
+        <img src="./img/img1.png" alt="" data-alt-src="./img/question-mark.jpg">
+        <img src="./img/img2.jpg" alt="" data-alt-src="./img/question-mark.jpg">
+        <!-- ... more images ... -->
+    </main>
+</body>
+</html>
