@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Form Validation</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Scheduling Form for Vaccination</h1>
+        <form action="action.php" method="post">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName">
+            <label for="date">Preferred Date:</label>
+            <input type="text" id="date" placeholder="mm/dd/yyyy">
+            <input id="submit" type="submit" value="Reserve">
+        </form>
+    </main>
+    <footer><p>&copy;2024 Dius Montenegro</p></footer>
+</body>
+</html>
