@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Kanban Board</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Kanban Board (Jungle)</h1>
+        <div class="table">
+            <h2>To Do</h2>
+            <ul id="sortable1" class="sortable">
+                <li class="card"><img src="./img/tina-tokneneng.jpg" alt="tina">Tina Tokneneng</li>
+                <li class="card"><img src="./img/anak-ni-oscar.jpg" alt="oscar">Anak ni Oscar</li>
+                <li class="card"><img src="./img/baron-borja.png" alt="baron">Baron Borja</li>
+                <li class="card"><img src="./img/george-barkley.jpg" alt="George">George Barkley</li>
+                <li class="card"><img src="./img/infamous-bogart.jpg" alt="Bogart">Inf Bogart</li>
+                <li class="card"><img src="./img/pritong-kanduli.jpg" alt="Kandule">Pritong Kandule</li>
+            </ul>
+        </div>
+        <div class="table">
+            <h2>In-Progress</h2>
+            <ul id="sortable2" class="sortable"></ul>
+        </div>
+        <div class="table">
+            <h2>For Approval</h2>
+            <ul id="sortable3" class="sortable"></ul>
+        </div>
+        <div class="table">
+            <h2>Testing</h2>
+            <ul id="sortable4" class="sortable"></ul>
+        </div>
+        <div class="table">
+            <h2>Done</h2>
+            <ul id="sortable5" class="sortable"></ul>
+        </div>
+    </main>
+    <footer><p>&copy;2024 Dius Montenegro</p></footer>
+</body>
+</html>

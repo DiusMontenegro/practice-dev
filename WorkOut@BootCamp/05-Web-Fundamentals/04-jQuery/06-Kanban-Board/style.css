@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    background-image: url("./img/background.jpg");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    padding-top: 10px;
+    text-align: center;
+}
+.container {
+    margin: 0px auto;
+    width: 1200px;
+    height: 600px;
+}
+main {
+    padding: 20px;
+    border-radius: 20px;
+}
+h1, h2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-shadow: 4px -1px 9px rgba(124, 94, 94, 0.38);
+    margin-bottom: 20px;
+}
+.table {
+    background-color: rgba(255, 255, 255, 0.2);
+    vertical-align: top;
+    display: inline-block;
+    padding: 12px;
+    width: 18%;
+    height: 90%;
+}
+img {
+    vertical-align: top;
+    margin-right: 10px;
+    display: inline-block;
+    width: 50px;
+}
+.card {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: start;
+    height: auto;
+    width: 100%;
+    list-style-type: none;
+    cursor: grab;
+}
+ul {
+    height: 90%;
+}
+footer p {
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    color: #1c1c1c;
+}
