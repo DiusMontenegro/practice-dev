@@ -11,6 +11,54 @@
     <title>Cool Plugins</title>
 </head>
 <body>
-    <input type="file" placeholder="drag">
+    <!-- main -->
+    <main class="container">
+        <div class="game">
+            <img id="calendar" src="./img/calendar.png" alt="calendar">
+            <img id="chair" src="./img/chair.png" alt="chair">
+            <img id="clock" src="./img/clock.png" alt="clock">
+            <img id="hourglass" src="./img/hourglass.png" alt="hourglass">
+            <img id="pro-scene" src="./img/proscene.gif" alt="dota">
+            <img id="jewelry" src="./img/jewelry.png" alt="jewelry">
+            <img id="scale" src="./img/scale.png" alt="scale">
+            <img id="vase" src="./img/vase.png" alt="vase">
+        </div>
+        <aside>
+            <h1>Find the missing objects</h1>
+            <ol>
+                <li class="calendar">Calendar</li>
+                <li class="chair">Chair</li>
+                <li class="clock">Clock</li>
+                <li class="hourglass">Hourglass</li>
+                <li class="pro-scene">Game</li>
+                <li class="jewelry">Jewelry</li>
+                <li class="scale">Scale</li>
+                <li class="vase">Vase</li>
+            </ol>
+            <button id="reset" type="button">Reset</button>
+            <button id="menu" type="button">Menu</button>
+        </aside>
+        <div class="menu">
+            <button id="back" type="button">Back</button>
+            <button id="newGame" type="button">New Game</button>
+            <button id="rate" type="button">Rate</button>
+            <form action="#.php" id="rating">
+                <label for="star">Please rate Dius</label>
+                <select name="stars" id="star">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <textarea name="comment" id="text" placeholder="Please Let me know your thoughts"></textarea>
+                <input type="submit" value="submit">
+            </form>
+            <h3>Comments:</h3>
+            <div class="comment-tab"></div>
+        </div>
+    </main>
+    <footer><p>&copy;2024 Dius Montenegro</p></footer>
 </body>
 </html>
