@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Declared the document type -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="bug_fighter.css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="./script.js"></script>
+        <title>Bug Fighter - Fixed (Dius)</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1><span id="user1_name">Chun Li</span> VS <span id="user2_name">Blanka</span></h1>
+            <section id="user1">
+                <img class="picked" src="img/chunli_move.gif" alt="hero"/>
+                <nav>
+                    <img name="Chun Li" src="img/chunli.png" data-animated-img="./img/chunli_move.gif" class="chosen" alt="chunli"/>
+                    <img name="Guile" src="img/guile.png" data-animated-img="img/guile_move.gif" alt="Guile"/>
+                    <img name="Vega" src="img/vega.png" data-animated-img="img/vega_move.gif" alt="Vega"/>
+                    <img name="Fei Long" src="img/feilong.png" data-animated-img="img/feilong_move.gif" alt="Fei Long"/>
+                    <img name="Blanka" src="img/blanka.png" data-animated-img="img/blanka_move.gif" alt="Blanka"/>
+                </nav>
+                <h2>Player 1</h2>
+            </section>
+            <section id="user2">
+                <img class="picked" src="img/blanka_move.gif" alt="hero"/>
+                <nav>
+                    <img name="Blanka" src="img/blanka.png" data-animated-img="img/blanka_move.gif" class="chosen" alt="blanka"/>
+                    <img name="Fei Long" src="img/feilong.png" data-animated-img="img/feilong_move.gif" alt="feilong"/>
+                    <img name="Vega" src="img/vega.png" data-animated-img="img/vega_move.gif" alt="vega"/>
+                    <img name="Guile" src="img/guile.png" data-animated-img="img/guile_move.gif" alt="guile"/>
+                    <img name="Chun Li" src="img/chunli.png" data-animated-img="img/chunli_move.gif" alt="chunli"/>
+                </nav>
+                <h2>Player 2</h2>
+            </section>
+            <button type="button">START GAME</button>
+            <input type="hidden" id="user1_default" value="img/chunli_move.gif"/>
+            <input type="hidden" id="user2_default" value="img/blanka_move.gif"/>
+        </div>
+    </body>
+</html>
