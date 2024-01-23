@@ -1,0 +1,86 @@
+Simulating "foreach":
+
+// Result 1:
+0 - 2
+1 - 4
+2 - 6
+3 - 8
+// If no keys shown in the array & just a value, the key will be the index.
+
+// Result 2:
+2
+4
+6
+8
+
+// Result 3:
+A - Apple
+B - Banana
+
+// Result 4:
+Apple
+Banana
+
+// Result 5:
+A
+B
+
+// Result 6:
+Key is 0
+logging the value
+array (size=3)
+  0 => string 'a1' (length=2)
+  1 => string 'a2' (length=2)
+  2 => string 'a3' (length=2)
+Key is 1
+logging the value
+
+array (size=3)
+  0 => string 'b1' (length=2)
+  1 => string 'b2' (length=2)
+  2 => string 'b3' (length=2)
+
+Key is 2
+logging the value
+array (size=3)
+  0 => string 'c1' (length=2)
+  1 => string 'c2' (length=2)
+  2 => string 'c3' (length=2)
+
+// Result 7:
+logging the value
+array (size=3)
+  0 => string 'a1' (length=2)
+  1 => string 'a2' (length=2)
+  2 => string 'a3' (length=2)
+
+logging the value
+array (size=3)
+  0 => string 'b1' (length=2)
+  1 => string 'b2' (length=2)
+  2 => string 'b3' (length=2)
+
+logging the value
+array (size=3)
+  0 => string 'c1' (length=2)
+  1 => string 'c2' (length=2)
+  2 => string 'c3' (length=2)
+
+// Result 8:
+key is 0
+PH - Philippines
+KR - South Korea
+key is 1
+PHP - Philippine peso
+KRW - South Korean won
+key is 2
+Manila - Maynilad
+Seoul - Seorabeol
+
+// Result 9:
+PH - Philippines
+KR - South Korea
+PHP - Philippine peso
+KRW - South Korean won
+Manila - Maynilad
+Seoul - Seorabeol
