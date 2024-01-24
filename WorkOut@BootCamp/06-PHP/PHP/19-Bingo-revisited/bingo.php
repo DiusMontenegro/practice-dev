@@ -1,47 +1,32 @@
+<?php 
+    $rows = 5;
+    $items = 5;
+    $bingo = "BINGO";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bingo</title>
+    <title>Bingo Revamped</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <?php table(); ?>
+    <main >
+<?php   for ($i = 0; $i < strlen($bingo); $i++) { ?>
+        <h1><?= $bingo[$i] ?></h1>
+<?php }?>
+<?php   for ($i = 0; $i < $rows; $i++) {
+        $num = $i + 2;
+?>
+    <p>
+<?php   for($j = 0; $j < $items; $j++) { 
+        $bg = (($i + $j) % 2 === 0) ? 'bg-red' : 'bg-blue';
+?>
+        <a href="#" class="<?= $bg ?>"><?= $num * ($j + 1) ?></a>
+<?php   } ?>   
+    </p>    
+<?php   } ?>
+    </main>
 </body>
 </html>
-<?php
-    function table_head($row, $data) {
-        $bingo = "BINGO";
-        for ($i = 0; $i < $row; $i++) {
-            echo "<tr class='bg-green'>";
-                for ($j = 0; $j < $data; $j++) {
-                    echo "<th>{$bingo[$j]}</th>";
-                }
-            echo "</tr>";
-        }
-    }
-    function table_body($row, $data) {
-        for ($i = 0; $i < $row; $i++) {
-            $num = $i + 2; // 2
-            $rowbg = ($num % 2 === 0 ? 'bg-red' : 'bg-blue');
-            echo "<tr class='$rowbg'>";
-                for ($j = 0; $j < $data; $j++) { //j = 0>1>2 , data = 5
-                    echo "<td>";
-                        echo $num * ($j + 1); // cycle=1,2,3
-                    echo "</td>";
-                }
-            echo "</tr>";
-        }
-    }
-    function table() {
-        echo "<table>";
-            echo "<thead>";
-                table_head(1, 5);
-            echo "</thead>";
-            echo "<tbody>";
-                table_body(5, 5);
-            echo "</tbody>";
-        echo "</table>";
-    }
-?>
