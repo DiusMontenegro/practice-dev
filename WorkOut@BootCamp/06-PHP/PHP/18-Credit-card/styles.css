@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 40px;
+    text-align: center;
+}
+table {
+    display: inline-block;
+    border: 1px solid black;
+    table-layout: fixed;
+    text-align: start;
+    border-collapse: separate;
+}
+th, td {
+    padding: 8px;
+    border-right: 1px solid black;
+}
+.bg-gray {
+    background-color: gray;
+    color: white;
+}
