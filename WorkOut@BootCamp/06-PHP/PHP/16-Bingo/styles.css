@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    padding: 40px;
+    font-size: 35px;
+    color: white;
+    background-image: url(https://i.pinimg.com/564x/c8/b7/b2/c8b7b2ec8f28cfca10df63eb2994f691.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+table {
+    padding: 15px;
+    display: inline-block;
+    border: 1px solid black;
+    background-color: gray;
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+th {
+    border: 1px solid black;
+}   
+th, td {
+    padding: 12px;
+}
+.bg-green {
+    background-color: green;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-blue {
+    background-color: blue;
+}
