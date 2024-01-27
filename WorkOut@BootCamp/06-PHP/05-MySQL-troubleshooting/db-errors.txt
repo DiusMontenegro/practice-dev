@@ -1,0 +1,33 @@
+// MySQL Troubleshooting
+
+1.  Problem: Mispelled constant name Ex. (DB_HOSTS)
+    Fixed: Double check if the constants are spelled correctly.
+
+2.  Problem: Incorrect or Mispelled database password.
+    Fixed: Enter the correct database password.
+
+3.  Problem: Connect to non-existing host name. Example: ('localhose') // non-existent
+    Fixed: Correct the host name to an existing MySQL host.
+
+4.  Problem: Invalid database name.
+    Fixed: Set the "DB_DATABASE" to the correct and existing database.
+
+5.  Problem: Inapproriate error message
+    Fixed: Use accurate message and enhanced error handling if possible.
+
+6.  Problem: Accessing non-existent table.
+    Fixed: Make sure that the table exists. try to double/triple check.
+
+7.  Problem: Sharing codes to others. It's a common sense that someone might attack
+    your database if you share your passwords.
+    Fixed: Don't share codes that contains sensitive information.
+
+8.  Problem: No error handling for connections.
+    Fixed: An error handling is necessary when connecting to a database so that you will know if the connection is successful or not.
+
+9.  Problem: Incorrect Database Username Ex: ('roots') // not my username.
+    Fixed: Make sure if the username is correct.
+
+10. Problem: Accessing table that only authorized user can access.
+    Fixed: make sure you're authorized to access any information from the table.
+    
