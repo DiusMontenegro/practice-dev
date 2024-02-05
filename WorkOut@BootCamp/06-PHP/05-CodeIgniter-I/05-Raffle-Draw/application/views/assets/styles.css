@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+span {
+    color: blue;
+}
+p {
+    width: 500px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 40px 0px;
+    font-size: 80px;
+    text-align: center;
+}
+input {
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 20px;
+}
