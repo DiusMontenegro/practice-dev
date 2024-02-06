@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+}
+body {
+    margin: 40px auto;
+}
+.container {
+    width: 960px;
+    margin: 0px auto;
+}
+form {
+    width: 280px;
+    text-align: right;
+}
+    label {
+        margin: 10px 0px;
+        text-align: start;
+        display: block;
+    }
+    input {
+        height: 25px;
+        margin-left: 10px;
+        width: 180px;
+    }
+    #add  {
+        width: 50px;
+        height: 30px;
+        font-size: 18px;
+        padding: 2px 6px;
+        cursor: pointer;
+    }
+h2 {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+    table, th, td {
+        padding: 2px;
+        height: 40px;
+        border: 1px solid black;
+    }
+    table {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+    }
+    th {
+        background-color: rgba(84, 84, 84, 0.5);
+        text-align: start;
+    }
+#delete-form {
+    text-align: center;
+}
+    h3, p {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    #delete-form input {
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        margin: 20px 50px;
+        padding: 2px 8px;
+        cursor: pointer;
+    }
+    #delete-form #no {
+        font-size: 18px;
+        color: black;
+        border: 1px solid black;
+        padding: 4px 8px;
+        text-decoration: none;
+    }
+    #delete {
+        background-color: #dc3545;
+        border: 1px solid black;
+        color: white;
+    }
+h6 {
+    width: 250px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+    .errors {
+        height: 50px;
+    }
+    .error {
+        background-color: #dc3545;
+        color: white;
+    }
+    .action {
+        width: auto;
+        text-align: start;
+    }
+    .delete {
+        border: none;
+        background: none;
+        text-align: start;
+        cursor: pointer;
+        font-size: 14px;
+        text-decoration: underline;
+        color: blue;
+    }
+    #no {
+        text-decoration: none;
+    }
