@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+}
+body {
+    padding-top: 80px;
+}
+.container {
+    width: 960px;
+    margin: 0px auto;
+}
+    h1 {
+        margin-bottom: 40px;
+    }
+    table {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+    }
+    th {
+        text-align: start;
+        font-size: 18px;
+        background-color: #818382;
+    }
+    td {
+        font-size: 16px;
+        padding: 10px 0px 10px 2px;
+    }
+    tr:nth-child(odd){
+        background-color: #e4e2e2;
+    }
+    tr:hover {
+        background-color: #ddd;
+    }
+    .remove {
+       text-decoration: none;
+       padding: 2px 6px;
+       color: black;
+       border: 1px solid black;
+    }
+#h1-new {
+    margin: 20px 0px;
+}
+    label, input {
+        display: block;
+    }
+    label {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    input {
+        margin-top: 5px;
+        height: 30px;
+        font-size: 18px;
+        width: 250px;
+    }
+    .submit {
+        width: auto;
+        font-size: 16px;
+        padding: 4px 6px;
+    }
+h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+h4, h5, #remove-form {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+h5 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 30px;
+}
+#remove-form input {
+    margin-left: 40px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #dc3545;
+    border: 1px solid black;
+    color: white;
+}
+#remove-form a {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 4px 8px;
+    color: black;
+}
+.messages {
+    width: 960px;
+    margin: 0px auto;
+    height: 45px;
+}
+    h6 {
+        background-color: #dc3545;
+        margin-bottom: 2px;
+        color: white;
+        width: 300px;
+        text-align: center;
+    }
+    .success {
+        background-color: #28a745;
+        color: white;
+    }
+
+
