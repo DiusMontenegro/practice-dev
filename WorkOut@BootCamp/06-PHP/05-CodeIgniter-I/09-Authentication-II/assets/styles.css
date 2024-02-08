@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+}
+.container {
+    width: 980px;
+    margin: 0px auto;
+}
+body {
+    background-color: #eec170;
+}
+.messages {
+    height: 90px;
+}
+.forms {
+    padding: 10px;
+}
+form {
+    text-align: end;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px -1px 56px -31px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 56px -31px rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 56px -31px rgba(0,0,0,0.75);
+}
+#sign-up, #login {
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    background-color: #772f1a;
+    color: #f4f1de;
+}
+#sign-up {
+    width: 50%;
+    margin-right: 10%;
+}
+#login {
+    width: 39.48%;
+    background-color: #585123;
+}
+    h1 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: start;
+    }
+    .labels, .inputs {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .labels {
+        width: 40%;
+        font-weight: 500;
+        text-align: start;
+    }
+    .inputs {
+        width: 58.5%;
+        text-align: end;
+    }
+    label, input {
+        display: block;
+        font-size: 18px;
+        height: 30px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    input {
+        font-size: 16px;
+        padding-left: 4px;
+        border-radius: 4px;
+        border: none;
+    }
+    #register-btn, #login-btn {
+        font-size: 18px;
+        width: 20%;
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 40px;
+        border: none;
+        color: white;
+        border-radius: 4px;
+    }
+    #login-btn {
+        background-color: #007bff;
+    }
+    #register-btn {
+        background-color: #28a745;
+    }
+    .error, .success {
+        background-color: #dc3545;
+        color: white;
+        margin-top: 2px;
+        margin-left: 20px;
+        width: 280px;
+        text-align: center;
+    }
+    .success {
+        display: inline-block;
+        vertical-align: bottom;
+        background-color: #28a745;
+    }
+.profile {
+    text-align: end;
+    padding: 20px;
+    background-color: #772f1a;
+    margin-top: 60px;
+    border-radius: 20px;
+    color: white;
+}
+    a {
+        color: white;
+        font-size: 25px;
+        display: block;
+    }
+    #user-profile {
+        text-align: start;
+        margin-top: 20px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .info, .details {
+        display: inline-block;
+        vertical-align: top;
+        height: 90%;
+        padding: 20px;
+    }
+    .info {
+        width: 30%;
+    }
+    .details {
+        width: 69.2%;
+    }
+    h4 {
+        font-size: 24px;
+        margin: 10px 0px;
+    }
