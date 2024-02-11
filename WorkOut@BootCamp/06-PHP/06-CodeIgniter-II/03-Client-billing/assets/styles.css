@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+}
+.container {
+    width: 980px;
+    margin: 0px auto;
+}
+body {
+    background-color: #caf0f8;
+}
+.dates {
+    text-align: end;
+}
+form {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 0px;
+}
+    input {
+        font-size: 16px;
+        width: 110px;
+    }
+    #submit {
+        width: 70px;
+        cursor: pointer;
+    }
+h1 {
+    font-size: 25px;
+    text-decoration: underline;
+    margin: 10px 0px 20px 0px;
+}
+table {
+    border: 1px solid black;
+    width: 400px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+    th, td {
+        text-align: start;
+        border: 1px solid black;
+        padding-left: 2px;
+        font-size: 20px;
+    }
+    td {
+        font-size: 18px;
+        padding: 2px 0px;
+    }
+.chart {
+    height: 370px;
+    border:1px solid gray;
+}
+    #chartContainer1 {
+        height: 100%;
+        width: 100%;
+    }
