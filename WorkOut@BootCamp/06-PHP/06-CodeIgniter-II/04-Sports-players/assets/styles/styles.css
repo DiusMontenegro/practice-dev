@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+}
+body {
+    padding-top: 3px;
+}
+.container {
+    width: 1200px;
+    margin: 0px auto;
+    height: 600px;
+}
+
+h1 {
+    color: red;
+}
+
+#filters, #players {
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+    #filters {
+        width: 25%;
+        padding: 20px;
+        text-align: end;
+    }
+    input, label {
+        font-size: 20px;
+        text-align: start;
+    }
+    input {
+        width: 20px;
+        cursor: pointer;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    #search_label {
+        font-weight: bold;
+        font-size: 25px;
+    }
+    #search {
+        width: 100%;
+        height: 30px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        text-align: start;
+        font-weight: 500;
+        margin: 50px 0px 15px 0px;
+    }
+    #submit {
+        margin-top: 30px;
+        text-align: center;
+        width: 80px;
+    }
+    #players {
+        width: 74.5%;
+        padding: 10px;
+        overflow-y: scroll;
+    }
+    .card {
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid black;
+        border-radius: 8px;
+        margin: 0px 14px 20px 14px;
+        width: 180px;
+        padding: 8px;
+    }
+    .card img {
+        width: 100%;
+        height: 118px;
+    }
+    h3, h4 {
+        margin: 6px 0px;
+        font-weight: 600;
+    }
+    h3 {
+        height: 46px;
+    }
+    h4 {
+        margin-top: 10px;
+    }
+    p {
+        font-size: 14px;
+    }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
