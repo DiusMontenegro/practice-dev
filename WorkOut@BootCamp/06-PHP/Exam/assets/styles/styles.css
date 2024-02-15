@@ -1,0 +1,84 @@
+/* utility classes */
+
+/* container */
+.container {
+    width: 980px;
+    margin: 0px auto;
+}
+
+/* display */
+.d-inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.d-block {
+    display: block;
+}
+
+/* texts */
+.text-start {
+    text-align: start;
+}
+.text-center {
+    text-align: center;
+}
+.text-end {
+    text-align: end;
+}
+.decoration-none {
+    text-decoration: none;
+}
+.underline {
+    text-decoration: underline;
+}
+.text-dark {
+    color: #343a40;
+}
+.text-light {
+    color: #f8f9fa;
+}
+.text-danger {
+    color: #dc3545;
+}
+.text-primary {
+    color: #17a2b8;
+}
+.text-success {
+    color: #28a745;
+}
+
+/* background */
+.bg-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-danger {
+    background-color: #dc3545;
+}
+.bg-success {
+    background-color: #28a745;
+}
+.bg-primary {
+    background-color: #17a2b8;
+}
+.bg-gray {
+    background-color: #6c757d;
+}
+.bg-light-gray {
+    background-color: #c5c8ca;
+}
+
+/* borders */
+.outline {
+    border: 1px solid black;
+}
+.border-none {
+    border: none;
+}
+.radius-4 {
+    border-radius: 4px;
+}
+.radius-20 {
+    border-radius: 20px;
+}
