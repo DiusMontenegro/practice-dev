@@ -1,3 +1,5 @@
+// Assignment 1
+
 <?php
     for ($counter = 1; $counter <= 1000; $counter++) {
         if ($counter % 2 === 0) {
