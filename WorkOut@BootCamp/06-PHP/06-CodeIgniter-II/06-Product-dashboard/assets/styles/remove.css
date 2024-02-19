@@ -1,0 +1,84 @@
+.utilities {
+    font-size: 20px;
+    margin: 15px 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.action.container {
+    margin-top: 20px;
+    height: 80px;
+    padding: 20px 0px;
+}
+    .actions {
+        vertical-align: top;
+        display: inline-block;
+        width: 49.74%;
+        height: 30px;
+        text-align: end;
+    }
+    h1 {
+        font-size: 25px;
+        text-align: start;
+    }
+    .actions a {
+        font-size: 20px;
+        color: white;
+        background-color: #007bff;
+        padding: 2px 6px;
+        -webkit-box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+        box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+    }
+main {
+    padding-top: 30px;
+}
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .product, form{
+        width: 600px;
+        margin: 0px auto;
+        padding: 20px;
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    span {
+        text-decoration: underline;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #description {
+        margin-top: 20px;
+    }
+    #description span {
+        text-decoration: none;
+        margin-top: 6px;
+        text-align: justify;
+        display: block;
+    }
+form {
+    text-align: center;
+}
+    #no, input {
+        margin: 0px 30px;
+        padding: 4px 8px;
+        font-size: 16px;
+        border-radius: 4px;
+        font-weight: bold;
+        border: none;
+        -webkit-box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+        box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+        color: white;
+    }
+    #no {
+        background-color: #007bff;
+    }
+    input {
+        cursor: pointer;
+        background-color: #dc3545;
+    }

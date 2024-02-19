@@ -1,0 +1,62 @@
+.utilities {
+    font-size: 20px;
+    margin: 15px 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.action.container {
+    margin-top: 20px;
+    height: 80px;
+    padding: 20px 0px;
+}
+    .actions {
+        vertical-align: top;
+        display: inline-block;
+        width: 49.74%;
+        height: 30px;
+        text-align: end;
+    }
+    h1 {
+        font-size: 25px;
+        text-align: start;
+    }
+    .actions a {
+        font-size: 20px;
+        color: white;
+        background-color: #007bff;
+        padding: 2px 6px;
+        -webkit-box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+        box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+    }
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+    th, td {
+        border: 1px solid black;
+        padding: 10px 0px 10px 4px;
+        font-size: 18px;
+    }
+    th {
+        text-align: start;
+        background-color: #b3b6b9;
+        font-weight: 500;
+    }
+    table a {
+        text-decoration: underline;
+        color: #007bff;
+        margin-right: 15px;
+    }
+    tr:nth-child(odd){
+        background-color: #e0dddd;
+    }
+    tr:hover {
+        background-color: #ddd;
+    }
+.message {
+    width: 350px;
+    margin: 0px auto 10px auto;
+    text-align: center;
+    padding: 4px 6px;
+}

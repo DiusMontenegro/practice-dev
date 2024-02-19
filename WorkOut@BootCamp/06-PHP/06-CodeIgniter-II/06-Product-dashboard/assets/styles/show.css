@@ -1,0 +1,90 @@
+.utilities {
+    font-size: 20px;
+    margin: 15px 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+main {
+    padding: 40px 20px;
+}
+    h1 {
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    h4 {
+        margin-bottom: 6px;
+    }
+    form {
+        margin-top: 50px;
+        font-weight: 400;
+        font-style: italic;
+        text-align: end;
+    }
+    #review {
+        margin-bottom: 25px;
+    }
+    h2 {
+        margin-bottom: 15px;
+        text-align: start;
+    }
+    textarea, .post_message, .reply {
+        width: 100%;
+        border: 1px solid black;
+        min-height: 80px;
+        resize: none;
+        font-size: 16px;
+        padding-left: 4px;
+    }
+    .submit {
+        cursor: pointer;
+        padding: 4px 6px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #28a745;
+        border: none;
+        color: white;
+        -webkit-box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+        box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+        margin-bottom: 30px;
+        margin-top: 8px;
+    }
+    .author, .timeframe {
+        width: 49.7%;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 10px;
+    }
+    .timeframe {
+        font-style: italic;
+        text-align: end;
+    }
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    .post_message {
+        margin-bottom: 20px;
+    }
+    .replies {
+        margin-left: 9.9%;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .replies form {
+        margin-top: 10px;
+    }
+    .reply {
+        margin-bottom: 10px;
+    }
+    .message p {
+        text-align: center;
+        text-align: center;
+        font-style: normal;
+        margin: 4px 0px;
+    }
+
+

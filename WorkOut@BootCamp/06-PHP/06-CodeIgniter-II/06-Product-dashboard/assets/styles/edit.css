@@ -1,0 +1,72 @@
+.utilities {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    margin: 15px 10px;
+}
+main {
+    display: block;
+    padding: 4px 20px;
+}
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.form-container {
+    height: 450px;
+}
+form {
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 44.69%;
+    border: 1px solid black;
+    text-align: end;
+    border-radius: 4px;
+}
+#information {
+    margin-right: 10%;
+}
+h2 {
+    text-align: start;
+    margin-bottom: 25px;
+}
+label, input {
+    display: block;
+}
+label {
+    text-align: start;
+    margin: 0px 20px;
+    font-size: 20px;
+}
+input {
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    height: 32px;
+    width: 100%;
+    padding-left: 4px;
+}
+.submit {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 25px;
+    font-weight: bold;
+    width: 60px;
+    padding: 4px 6px;
+    cursor: pointer;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    -webkit-box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+}
+.message {
+    padding: 4px;
+    font-size: 14px;
+    width: 450px;
+    margin: 0pc auto;
+}
+

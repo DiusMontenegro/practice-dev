@@ -1,0 +1,57 @@
+.utilities {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    margin: 15px 10px;
+}
+main {
+    display: block;
+    padding: 20px;
+}
+.information {
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 45%;
+    padding: 25px 20px;
+
+}
+img, h5 {
+    display: inline-block;
+    vertical-align: top;
+}
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+h5 {
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 75%;
+    font-size: 25px;
+}
+span {
+    font-size: 18px;
+    font-weight: 500;
+}
+h4 {
+    margin-top: 20px;
+}
+blockquote {
+    font-style: italic;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+a.edit {
+    display: inline-block;
+    margin: 35px 0px 0px 75%;
+    padding: 2px 6px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    -webkit-box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.75);
+}
