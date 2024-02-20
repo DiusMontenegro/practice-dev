@@ -14,7 +14,7 @@ class Dashboard extends CI_Controller {
     public $session, $user, $product;
 
     /**
-     * Index method for user dashboard.
+     * Index method for user's dashboard.
      */
     public function index()
     {
