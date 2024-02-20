@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
     $.get('https://fakerapi.it/api/v1/images?_quantity=100&_type=kittens', function (data) {
-        console.log(data.data.length);
         let kittens = document.getElementById('kittens');
 
         if (kittens) {
@@ -15,7 +14,5 @@ $(document).ready(function(){
                 `;
             }
         }
-
-
     }, "json")
 });
