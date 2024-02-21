@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    padding: 10px;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/192/788/7/video-games-retro-games-anime-cartoon-wallpaper-preview.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pokemon_modal {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: 100px auto;
+}
+
+.pokemon_modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
