@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    padding: 2px;
+    background-image: url("https://images.pexels.com/photos/750073/pexels-photo-750073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.container {
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    width: 980px;
+}
+
+    .message {
+        border: 1px solid orangered;
+        height: 40px;
+        text-align: center;
+    }
+
+    p {
+        padding: 8px 0px;
+    }
+
+    main.container {
+        text-align: center;
+        padding: 20px;
+        height: 470px;
+        margin: 10px auto;
+        border: 1px solid orangered;
+    }
+
+    form.container {
+        border: 1px solid orangered;
+        height: 60px;
+        padding: 12px 10px;
+    }
+
+    #orders {
+        overflow-y: auto;
+        height: 350px;
+    }
+
+    h1 {
+        text-align: start;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 25px 10px 10px 10px;
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid orangered;
+        width: 200px;
+        height: 200px;
+        margin: 10px 8px;
+        border-radius: 6px;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .order {
+        overflow-y: auto;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    input {
+        height: 100%;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid orangered;
+        outline: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #order {
+        width: 90%;
+        padding-left: 8px;
+    }
+
+    #submit-btn {
+        font-size: 18px;
+        font-weight: bold;
+        width: 9%;
+        cursor: pointer;
+    }
+
+    #submit-btn:hover {
+        background-color: orangered;
+        border: none;
+    }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: orangered;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: orangered;
+}
+
