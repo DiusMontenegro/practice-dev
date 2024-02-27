@@ -3,3 +3,5 @@ function print1To20() {
         console.log(i);
     }
 }
+
+print1To20();
