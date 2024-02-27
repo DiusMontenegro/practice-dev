@@ -1,0 +1,27 @@
+
+ CORE BUILDING BLOCKS
+
+ - What is the benefit of learning Javascript?
+ Answer: Javascript is the most popular language nowadays since you can build a Full desktop, mobile and Web application without using another language. Majority of the web apps are built using javscript so it is a good choice to learn this language.
+
+
+ - What type of application can be built using Javascript?
+ Answer: You can build a Full web app, Mobile and even Desktop app using javascript.
+
+
+ - Which programming language is good for beginners to learn (according to Michael's perspectives)?
+ Answer: As for Michael Choi, the best programming language for beginners is PHP which is very easy to understand and you can easily absord the ideas on how MVC framework works or you can also learn javascript but not the advanced concepts.
+
+
+ - Which programming language is not good for beginners to learn, as their first language (according to Michael's perspectives)?
+ Answer: Javascript or any language with (Advanced) concepts without a knowing the fundamentals.
+
+
+ - Study how the 5 core building blocks are implemented from one language to another.  What are your observations?  Are they similar?  Different?  Which of these programming languages are you already familiar with?
+ Answer: In my observation, The 5 core building blocks is very similar with the other languages but it is written in a different syntax. I have been exposed with these core building blocks while building the assignments using PHP language.
+
+
+ - Anything else you've learned as you've read these articles and pondered about your situation?
+  Answer: I have learned that it is better to be great in one programming language and also try different languages so you can reflect what tools/frameworks and languages fits with your style. It also widens your perspective on when to use a specific tool/framework/language for the specific project and it gives you an edge over a developer who knows and comfortable with only one programming language.
+
+
