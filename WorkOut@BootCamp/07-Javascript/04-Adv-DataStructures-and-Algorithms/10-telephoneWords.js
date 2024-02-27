@@ -1,5 +1,5 @@
 function Words(nums) {
-    // Create a mapping of digits to corresponding letters
+    // Mapping of digits to corresponding letters
     const digitToLetters = {
         '2': 'ABC',
         '3': 'DEF',
@@ -13,7 +13,6 @@ function Words(nums) {
         '1': 'I'
     };
 
-    // Helper function to generate all possible combinations
     function generateCombinations(current, remaining) {
         if (remaining.length === 0) {
             result.push(current);
@@ -28,10 +27,8 @@ function Words(nums) {
         }
     }
 
-    // Initialize the result array
     const result = [];
 
-    // Start generating combinations
     generateCombinations('', nums);
 
     return result;

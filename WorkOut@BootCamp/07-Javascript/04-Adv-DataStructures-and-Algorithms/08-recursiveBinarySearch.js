@@ -6,22 +6,17 @@ function rBinarySearch(arr, num, start, end) {
         end = arr.length - 1;
     }
 
-    // Base case: if start is greater than end, the element is not in the array
     if (start > end) {
         return false;
     }
 
-    // Find the middle index of the array without using Math.floor
     const mid = start + ((end - start) / 2) | 0;
 
-    // If the middle element is equal to the target, return true
     if (arr[mid] === num) {
         return true;
     } else if (arr[mid] < num) {
-        // If the target is greater than the middle element, search the right half
         return rBinarySearch(arr, num, mid + 1, end);
     } else {
-        // If the target is smaller than the middle element, search the left half
         return rBinarySearch(arr, num, start, mid - 1);
     }
 }

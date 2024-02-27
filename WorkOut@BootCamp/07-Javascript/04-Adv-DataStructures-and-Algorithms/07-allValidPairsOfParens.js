@@ -5,18 +5,16 @@ function printParenthesis(n) {
   }
 
   function generateParenthesis(n, openCount, closeCount, current, result) {
-    // Base case: if the current string has reached the desired length
+
     if (current.length === 2 * n) {
       result.push(current);
       return;
     }
 
-    // Add an open parenthesis if it's valid
     if (openCount < n) {
       generateParenthesis(n, openCount + 1, closeCount, current + '(', result);
     }
 
-    // Add a close parenthesis if it's valid
     if (closeCount < openCount) {
       generateParenthesis(n, openCount, closeCount + 1, current + ')', result);
     }

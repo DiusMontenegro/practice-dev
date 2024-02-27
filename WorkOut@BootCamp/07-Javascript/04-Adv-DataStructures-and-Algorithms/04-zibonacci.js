@@ -8,7 +8,7 @@ function zibonacci(n) {
     } else if (n % 2 === 0 && n > 1) {  // even values
         return zibonacci(n / 2) + zibonacci(n / 2 + 1) + 1;
     } else {
-        return undefined; // handle invalid input or edge cases
+        return undefined; // handle invalid  cases
     }
 }
 
