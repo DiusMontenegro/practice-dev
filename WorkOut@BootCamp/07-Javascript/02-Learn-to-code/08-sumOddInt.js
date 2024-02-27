@@ -10,3 +10,5 @@ function sumOddInt() {
 
     return sum;
 }
+
+sumOddInt();
