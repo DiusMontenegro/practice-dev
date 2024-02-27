@@ -1,16 +1,17 @@
 function zibonacci(n) {
-    if (n === 0 || n === 1) {
+    if (n <= 1) {
         return 1;
     } else if (n === 2) {
         return 2;
-    } else if (n % 2 === 1 && n > 0) {  // odd values
+    } else if (n % 2 !== 0) {  // odd values
         return zibonacci((n - 1) / 2) + zibonacci((n - 1) / 2 - 1) + 1;
-    } else if (n % 2 === 0 && n > 1) {  // even values
+    } else if (n % 2 === 0) {  // even values
         return zibonacci(n / 2) + zibonacci(n / 2 + 1) + 1;
-    } else {
-        return undefined; // handle invalid  cases
     }
 }
+
+// if n <= 3 && odd,  zibonacci (2n + 1) = Zibonacci(n) + Zibonacci(n - 1) + 1;
+// if n <= 4 && even,  zibonacci (2n) = Zibonacci(n) + Zibonacci(n + 1) + 1;
 
 // Testing the Zibonacci series
 console.log(zibonacci(0));  // Output: 1
