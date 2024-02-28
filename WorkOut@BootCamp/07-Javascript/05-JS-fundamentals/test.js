@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
             size: obj.size,
             interval: setInterval(function () {
                 obj.shrinkCircle(circle);
-            }, 80),
+            }, 150),
         };
         obj.circles.push(circle);
     });
