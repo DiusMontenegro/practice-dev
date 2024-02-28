@@ -1,3 +1,5 @@
+'use strict';
+
 var ninja1 = {
     hp: 100,
     strength: 15,
@@ -23,8 +25,7 @@ for (let i = 1; i <= 10; i++) {
     console.log(`Ninja2 attacks Ninja1 and does a damage of ${ninja2.attack()}! Ninja2 health: ${ninja2.hp}. Ninja1 health: ${ninja1.hp}.`);
 }
 if (ninja1.hp > ninja2.hp) {
-    console.log("Ninja 1 WINS!!!")
+    console.log("Ninja 1 WINS!!!");
 } else {
-    console.log("Ninja 2 WINS!!!")
+    console.log("Ninja 2 WINS!!!");
 }
-
