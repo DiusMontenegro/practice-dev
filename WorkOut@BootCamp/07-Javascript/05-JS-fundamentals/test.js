@@ -62,7 +62,7 @@ $documentReady(function () {
         $query('p').hide();
     });
 
-    $query('#toggle').click(function(event) {
+    $query('#toggle').click(function() {
         console.log('toggle is clicked');
         $query('p').toggle();
     });

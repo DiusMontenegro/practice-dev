@@ -1,8 +1,4 @@
-const $documentReady = function (callback) {
-    document.addEventListener('DOMContentLoaded', callback);
-};
-
-const $query = function (selector) {
+const $ = function (selector) {
     const elements = document.querySelectorAll(selector);
 
     const obj = {
@@ -24,7 +20,7 @@ const $query = function (selector) {
             }
             return obj;
         },
-        toggle: function () {
+        toggle: function (callback) {
             for (let i = 0; i < elements.length; i++) {
                 if (elements[i].style.display === 'none') {
                     elements[i].style.display = '';
@@ -38,32 +34,30 @@ const $query = function (selector) {
     return obj;
 };
 
-$documentReady(function () {
-
-    $query('h1').click(function () {
-        console.log('h1 is clicked');
-        $query('p').hide();
-    });
-
-    $query('p').click(function() {
-        console.log('p is clicked');
-        $query('p').hide();
-    });
-
-    $query('#show_all').click(function() {
-        console.log('#show_all is clicked');
-        $query('h1').show();
-        $query('p').show();
-    });
-
-    $query('#hide_all').click(function(event) {
-        console.log('event passed to the callback function is', event.type);
-        $query('h1').hide();
-        $query('p').hide();
-    });
-
-    $query('#toggle').click(function(event) {
-        console.log('toggle is clicked');
-        $query('p').toggle();
-    });
+$('h1').click(function () {
+    console.log('h1 is clicked');
+    $('p').hide();
 });
+
+$('p').click(function() {
+    console.log('p is clicked');
+    $('p').hide();
+});
+
+$('#show_all').click(function() {
+    console.log('#show_all is clicked');
+    $('h1').show();
+    $('p').show();
+});
+
+$('#hide_all').click(function(event) {
+    console.log('event passed to the callback function is', event.type);
+    $('h1').hide();
+    $('p').hide();
+});
+
+$('#toggle').click(function() {
+    console.log('toggle is clicked');
+    $('p').toggle();
+});
+
