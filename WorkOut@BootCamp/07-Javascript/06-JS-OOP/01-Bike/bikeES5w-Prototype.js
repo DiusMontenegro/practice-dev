@@ -1,3 +1,13 @@
+/**
+ * Programmer: Dius Montenegro
+ * Date: 02/29/2024
+ */
+
+/**
+ * Represents a Bike object with price, max_speed, and miles properties.
+ * @param {number} price - The price of the bike.
+ * @param {number} max_speed - The maximum speed of the bike.
+ */
 function Bike(price, max_speed) {
     this.main = document.querySelector('main');
     this.price = price;
@@ -5,8 +15,13 @@ function Bike(price, max_speed) {
     this.miles = 0;
 }
 
+/**
+ * Displays information about the bike, either action (Driving/Reversing) or detailed bike info.
+ * @param {string} action - The action to be displayed ('Driving', 'Reversing') or omitted for detailed info.
+ * @returns {Bike} - Returns the Bike object for method chaining.
+ */
 Bike.prototype.displayInfo = function(action) {
-    let paragraphEl = document.createElement('p');
+    var paragraphEl = document.createElement('p');
 
     if (action === 'Driving' || action === 'Reversing') {
         paragraphEl.textContent = action;
@@ -19,12 +34,20 @@ Bike.prototype.displayInfo = function(action) {
     return this;
 };
 
+/**
+ * Drives the bike, increments the miles by 10, and displays the driving action.
+ * @returns {Bike} - Returns the Bike object for method chaining.
+ */
 Bike.prototype.drive = function() {
     this.miles += 10;
     this.displayInfo("Driving");
     return this;
 };
 
+/**
+ * Reverses the bike, decrements the miles by 5 if miles are greater than 0, and displays the reversing action.
+ * @returns {Bike} - Returns the Bike object for method chaining.
+ */
 Bike.prototype.reverse = function () {
     if (this.miles > 0) {
         this.miles -= 5;
