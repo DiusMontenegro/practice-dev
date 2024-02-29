@@ -36,6 +36,7 @@ class CircleDrawer {
             } else {
                 clearInterval(circle.interval);
                 this.canvas.removeChild(circle.paragraphElement);
+                console.log(this.circles.length);
             }
         };
 
