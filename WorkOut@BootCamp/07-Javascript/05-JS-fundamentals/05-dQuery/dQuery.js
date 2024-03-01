@@ -6,21 +6,21 @@ const $ = function (selector) {
             for (let i = 0; i < elements.length; i++) {
                 elements[i].addEventListener('click', callback);
             }
-            return obj;
         },
-        hide: function (callback) {
+
+        hide: function () {
             for (let i = 0; i < elements.length; i++) {
                 elements[i].style.display = 'none';
             }
-            return obj;
         },
-        show: function (callback) {
+
+        show: function () {
             for (let i = 0; i < elements.length; i++) {
                 elements[i].style.display = '';
             }
-            return obj;
         },
-        toggle: function (callback) {
+
+        toggle: function () {
             for (let i = 0; i < elements.length; i++) {
                 if (elements[i].style.display === 'none') {
                     elements[i].style.display = '';
@@ -28,9 +28,9 @@ const $ = function (selector) {
                     elements[i].style.display = 'none';
                 }
             }
-            return obj;
         },
     };
+
     return obj;
 };
 

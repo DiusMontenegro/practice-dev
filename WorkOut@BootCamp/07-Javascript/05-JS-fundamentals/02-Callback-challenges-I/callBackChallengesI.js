@@ -18,9 +18,8 @@ console.log(result);
 result = foreach([1, 2, 3, 'v88', 'training'], function (val) {
     if (typeof val === 'number') {
         return 0;
-    } else {
-        return val;
     }
+    return val;
 });
 
 function foreach(arr, operation) {
@@ -73,7 +72,7 @@ result = reject([1, 2, 3, 4, 15], function (val) {
 function reject(arr, operation) {
     const newArr = [];
     for (let i = 0; i < arr.length; i++) {
-        if (operation(arr[i]) == false) {
+        if (operation(arr[i]) === false) {
             newArr[i] = arr[i];
         }
     }

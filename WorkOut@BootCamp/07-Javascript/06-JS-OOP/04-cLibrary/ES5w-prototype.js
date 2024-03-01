@@ -20,6 +20,7 @@ Circles.prototype.selectColor = function () {
 };
 
 Circles.prototype.expandCircle = function (circle, index) {
+    var self = this;
     circle.size += 1;
 
     if (circle.size < 180) {
@@ -34,7 +35,6 @@ Circles.prototype.expandCircle = function (circle, index) {
         this.randomSize();
         this.selectColor();
 
-        newParagraphElement.style.position = 'absolute';
         newParagraphElement.style.top = `${Math.floor(Math.random() * 451)}px`;
         newParagraphElement.style.left = `${Math.floor(Math.random() * 1101)}px`;
         newParagraphElement.style.width = `${this.size}px`;
@@ -46,8 +46,8 @@ Circles.prototype.expandCircle = function (circle, index) {
         var newCircle = {
             paragraphElement: newParagraphElement,
             size: this.size,
-            interval: setInterval(() => {
-                this.expandCircle(newCircle, index);
+            interval: setInterval(function() {
+                self.expandCircle(newCircle, index);
             }, 40),
         };
         this.circlesArr[index] = newCircle;
@@ -56,6 +56,7 @@ Circles.prototype.expandCircle = function (circle, index) {
 };
 
 Circles.prototype.draw_circles = function (canvas) {
+    var self = this;
     var selectedCanvas = document.querySelector(`#${canvas}`);
 
     for (var i = 0; i < this.count; i++) {
@@ -76,8 +77,8 @@ Circles.prototype.draw_circles = function (canvas) {
         const circle = {
             paragraphElement: paragraphElement,
             size: this.size,
-            interval: setInterval(() => {
-                this.expandCircle(circle, i);
+            interval: setInterval(function() {
+                self.expandCircle(circle, i);
             }, 40),
         };
         this.circlesArr[i] = circle;

@@ -91,6 +91,4 @@ class CircleDrawer {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const circleDrawer = new CircleDrawer();
-});
+const circleDrawer = new CircleDrawer();
