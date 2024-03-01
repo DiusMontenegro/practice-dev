@@ -90,13 +90,14 @@ let prosecutor = new Prosecutor("John", 30);
 let defendant1 = new Defendant("Girlie", 5);
 let defendant2 = new Defendant("Onel", 25);
 
+// First defendant
 defendant1.caseTitle = case1.title;
 defendant1._case = case1;
-
 prosecutor.prosecute(defendant1, case1);
 TrialCourt.initiateTrial(defendant1, prosecutor);
 TrialCourt.getVerdict();
 
+// Second defendant
 defendant2.caseTitle = case1.title;
 defendant2._case = case1;
 prosecutor.prosecute(defendant2, case1);
