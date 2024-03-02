@@ -4,14 +4,110 @@
     box-sizing: border-box;
 }
 
-main {
-    margin: 0px auto;
-    width: 1250px;
-    height: 100vh;
-    position: relative;
+.text-end {
+    text-align: end;
 }
 
-.circle {
-    border-radius: 50%;
-    border: 1px solid black;
+body {
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
 }
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+}
+
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        height: 40px;
+        width:100px;
+        margin: 8px;
+        cursor: pointer;
+    }
+
+    span.selected {
+        border: 2px solid black;
+    }
+
+    nav p {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #shapes, #colors {
+        text-align: center;
+        width: 40%
+    }
+
+    #shapes {
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 4px;
+    }
+
+    #shapes span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #reset {
+        text-align: center;
+        font-size: 18px;
+        padding: 8px 0px;
+        color: white;
+        border: 1px solid white;
+    }
+
+    #resetContainer {
+        width: 19.09%;
+    }
+
+    .circle {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: none;
+        background-color: #b6d6a7;
+    }
+
+    .square {
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        border: none;
+    }
+
+    .star {
+        height: 40px;
+        width: 40px;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        background-color: white;
+    }
+
+    .container {
+        width: 1000px;
+        margin: 0px auto;
+    }
+
+    .green {
+        background-color: #b6d6a7;
+    }
+
+    .blue {
+        background-color: #9fc4f6;
+    }
+
+    .purple {
+        background-color: #b3a7d5;
+    }
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+    main p {
+        position: absolute;
+    }

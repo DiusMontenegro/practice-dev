@@ -1,104 +1,134 @@
-"use strict";
+class Shapes {
+    constructor() {
+        this.canvas = document.getElementById('canvas');
+        this.green = document.getElementById('green');
+        this.blue = document.getElementById('blue');
+        this.purple = document.getElementById('purple');
+        this.circle = document.getElementById('circle');
+        this.square = document.getElementById('square');
+        this.star = document.getElementById('star');
+        this.reset = document.getElementById('reset');
+        this.selected = 'selected';
+        this.shapes = [];
+        this.borderRadius = '50%';
+        this.size = 10;
+        this.color = '#b6d6a7';
+        this.shape = 'circle';
 
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
+        this.randomSize = function () {
+            this.size = Math.floor(Math.random() * 191) + 10;
+        };
+
+        this.selectColor = function (colorElement, colorCode) {
+            const elements = [this.green, this.blue, this.purple];
+            const shapeElements = [this.circle, this.square, this.star];
+
+            for (let i = 0; i < elements.length; i++) {
+                const element = elements[i];
+                if (element && typeof element === 'object' && element.classList.contains(this.selected)) {
+                    element.classList.remove(this.selected);
+                }
+            }
+
+            colorElement.classList.add(this.selected);
+            this.color = colorCode;
+            for (let i = 0; i < shapeElements.length; i++) {
+                if (shapeElements[i].classList.contains(this.selected)) {
+                    shapeElements[i].style.backgroundColor = this.color;
+                }
+            }
+        };
+
+        this.selectShape = function (shapeElement, shape) {
+            const shapes = [this.circle, this.square, this.star];
+            for (let i = 0; i < shapes.length; i++) {
+                const shape = shapes[i];
+                shape.style.backgroundColor = 'white';
+                if (shape && typeof shape === 'object' && shape.classList.contains(this.selected)) {
+                    shape.classList.remove(this.selected);
+                }
+            }
+
+            shapeElement.classList.add(this.selected);
+            shapeElement.style.backgroundColor = this.color
+            this.shape = shape;
+        };
+
+        this.shrinkShape = function (shape) {
+            shape.size -= 1;
+
+            if (shape.size > 0) {
+                shape.paragraphElement.style.width = `${shape.size}px`;
+                shape.paragraphElement.style.height = `${shape.size}px`;
+            } else {
+                clearInterval(shape.interval);
+                this.canvas.removeChild(shape.paragraphElement);
+            }
+        };
+
+        const self = this; // To capture the 'this' reference for use inside the event listener
+
+        this.canvas.addEventListener('click', function (event) {
+            self.randomSize();
+
+            const paragraphElement = document.createElement('p');
+
+            paragraphElement.style.position = 'absolute';
+            paragraphElement.style.top = `${event.clientY - self.size / 4}px`;
+            paragraphElement.style.left = `${event.clientX - self.size / 2}px`;
+            paragraphElement.style.width = `${self.size}px`;
+            paragraphElement.style.height = `${self.size}px`;
+            paragraphElement.style.borderRadius = self.borderRadius;
+            paragraphElement.style.border = '1px solid black';
+            paragraphElement.style.backgroundColor = self.color;
+            paragraphElement.classList.add(self.shape);
+
+            self.canvas.appendChild(paragraphElement);
+
+            const shape = {
+                paragraphElement: paragraphElement,
+                size: self.size,
+                interval: setInterval(function () {
+                    self.shrinkShape(shape);
+                }, 100),
+            };
+            self.shapes[i] = shape;
+        });
+
+        this.green.addEventListener('click', function () {
+            self.selectColor(self.green, '#b6d6a7');
+        });
+
+        this.blue.addEventListener('click', function () {
+            self.selectColor(self.blue, '#9fc4f6');
+        });
+
+        this.purple.addEventListener('click', function () {
+            self.selectColor(self.purple, '#b3a7d5');
+        });
+
+        this.circle.addEventListener('click', function () {
+            self.selectShape(self.circle, 'circle')
+        })
+
+        this.square.addEventListener('click', function () {
+            self.selectShape(self.square, 'square')
+            self.borderRadius = 'none';
+        })
+
+        this.star.addEventListener('click', function () {
+            self.selectShape(self.star, 'star')
+        })
+
+        this.reset.addEventListener('click', function () {
+            for (let i = 0; i < self.shapes.length; i++) {
+                const circle = self.shapes[i];
+                clearInterval(circle.interval);
+            }
+            self.shapes = [];
+            self.canvas.innerHTML = '';
+        });
     }
 }
 
-class Prosecutor extends Person {
-    constructor(name, age) {
-        super(name, age);
-    }
-
-    prosecute(defendant, _case) {
-        this.defendant = defendant;
-        this._case = _case;
-
-        if (defendant.age >= _case.minAge && defendant.age <= _case.maxAge) {
-            _case.verdict = "GUILTY";
-        } else {
-            _case.verdict = "NOT GUILTY";
-        }
-    }
-}
-
-class Defendant extends Person {
-    constructor(name, age) {
-        super(name, age);
-        this.caseTitle = '';
-    }
-}
-
-class Case {
-    constructor(title, years, months, days, minAge, maxAge) {
-        this.title = title;
-        this.years = years;
-        this.months = months;
-        this.days = days;
-        this.minAge = minAge;
-        this.maxAge = maxAge;
-        this.imprisonmentTerm = `${years} years, ${months} months, ${days} days`;
-        this.ageLimit = `Between ${minAge} and ${maxAge} years old`;
-        this.verdict = '';
-    }
-
-    computeReleaseDate() {
-        const currentDate = new Date();
-
-        currentDate.setFullYear(currentDate.getFullYear() + this.years);
-        currentDate.setMonth(currentDate.getMonth() + this.months);
-        currentDate.setDate(currentDate.getDate() + this.days);
-
-        return currentDate.toDateString();
-    }
-}
-
-class TrialCourt {
-    static initiateTrial(defendant, prosecutor) {
-        this.defendant = defendant;
-        this.prosecutor = prosecutor;
-    }
-
-    static getVerdict() {
-        const releaseDate = this.defendant._case.computeReleaseDate();
-
-        if (this.defendant._case.verdict === "GUILTY") {
-            console.log(`
-                Name: ${this.defendant.name}
-                Age: ${this.defendant.age} years old
-                Case Title: ${this.defendant.caseTitle}
-                Filed by: ${this.prosecutor.name}
-                Verdict: ${this.defendant._case.verdict}
-                Release Date: ${releaseDate}
-            `);
-        } else {
-            console.log(`
-                Name: ${this.defendant.name}
-                Age: ${this.defendant.age} years old
-                Case Title: ${this.defendant.caseTitle}
-                Filed by: ${this.prosecutor.name}
-                Verdict: ${this.defendant._case.verdict}
-            `);
-        }
-    }
-}
-
-let case1 = new Case("Malicious Mischief", 3, 3, 3, 18, 75);
-let prosecutor = new Prosecutor("John", 30);
-let defendant1 = new Defendant("Girlie", 5);
-let defendant2 = new Defendant("Onel", 25);
-
-defendant1.caseTitle = case1.title;
-defendant1._case = case1;
-
-prosecutor.prosecute(defendant1, case1);
-TrialCourt.initiateTrial(defendant1, prosecutor);
-TrialCourt.getVerdict();
-
-defendant2.caseTitle = case1.title;
-defendant2._case = case1;
-prosecutor.prosecute(defendant2, case1);
-TrialCourt.initiateTrial(defendant2, prosecutor);
-TrialCourt.getVerdict();
+new Shapes();

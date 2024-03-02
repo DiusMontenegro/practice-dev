@@ -3,9 +3,24 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Objection your honor</title>
+        <title>JS circles with shapes</title>
         <link rel="stylesheet" href="./test.css" />
         <script src="./test.js" defer></script>
     </head>
-    <body></body>
+    <body>
+        <nav class="container">
+            <p id="colors">
+                <span id="green" class="green selected"></span>
+                <span id="blue" class="blue"></span>
+                <span id="purple" class="purple"></span>
+            </p>
+            <p id="shapes">
+                <span id="circle" class="circle selected"></span>
+                <span id="square" class="square"></span>
+                <span id="star" class="star"></span>
+            </p>
+            <p class="text-end" id="resetContainer"><span id="reset">Reset</span></p>
+        </nav>
+        <main id="canvas"></main>
+    </body>
 </html>
