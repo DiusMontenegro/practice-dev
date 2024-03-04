@@ -141,6 +141,7 @@ class Instrument extends Note {
         return this.nameList;
     }
 
+    // Fisher Yates Shuffle: https://bost.ocks.org/mike/shuffle/
     shuffleRecord() {
         var m = this.nameList.length,
             t,
