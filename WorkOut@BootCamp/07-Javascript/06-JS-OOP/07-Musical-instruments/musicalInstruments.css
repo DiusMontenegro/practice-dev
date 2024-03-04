@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 100px;
+}
+
+.container {
+    margin: 0px auto;
+}
+
+main {
+    width: 650px;
+}
+
+    .controls {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .controls span{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 50%;
+        padding: 2px;
+        margin: 0px 4px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .tiles {
+        height: 250px;
+        position: relative;
+    }
+
+    .tiles span {
+        display: inline-block;
+        vertical-align: top;
+        height: 100%;
+        width: 13.68%;
+        cursor: pointer;
+        border-radius: 4px;
+        -webkit-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.75);
+        border: 1px solid #1c1c1c;
+    }
+
+    .tiles .sharp {
+        position: absolute;
+        display: inline-block;
+        vertical-align: top;
+        background-color: black;
+        height: 60%;
+        width: 4%;
+        top: -10px;
+    }
+
+    .sharp.C {
+        left: 11.9%;
+    }
+
+    .sharp.D {
+        left: 26.4%;
+    }
+
+    .sharp.F {
+        left: 55.3%;
+    }
+    .sharp.G {
+        left: 69.2%;
+    }
+    .sharp.A {
+        left: 83.5%;
+    }

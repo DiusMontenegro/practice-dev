@@ -1,5 +1,4 @@
 class Shapes {
-
     constructor() {
         this.canvas = document.getElementById('canvas');
         this.green = document.getElementById('green');
@@ -58,17 +57,17 @@ class Shapes {
         });
 
         this.circle.addEventListener('click', function () {
-            self.selectShape(self.circle, 'circle')
-        })
+            self.selectShape(self.circle, 'circle');
+        });
 
         this.square.addEventListener('click', function () {
-            self.selectShape(self.square, 'square')
+            self.selectShape(self.square, 'square');
             self.borderRadius = 'none';
-        })
+        });
 
         this.star.addEventListener('click', function () {
-            self.selectShape(self.star, 'star')
-        })
+            self.selectShape(self.star, 'star');
+        });
 
         this.reset.addEventListener('click', function () {
             for (let i = 0; i < self.shapes.length; i++) {
@@ -86,7 +85,11 @@ class Shapes {
 
         for (let i = 0; i < elements.length; i++) {
             const element = elements[i];
-            if (element && typeof element === 'object' && element.classList.contains(this.selected)) {
+            if (
+                element &&
+                typeof element === 'object' &&
+                element.classList.contains(this.selected)
+            ) {
                 element.classList.remove(this.selected);
             }
         }
@@ -98,22 +101,26 @@ class Shapes {
                 shapeElements[i].style.backgroundColor = this.color;
             }
         }
-    };
+    }
 
     selectShape(shapeElement, shape) {
         const shapes = [this.circle, this.square, this.star];
         for (let i = 0; i < shapes.length; i++) {
             const shape = shapes[i];
             shape.style.backgroundColor = 'white';
-            if (shape && typeof shape === 'object' && shape.classList.contains(this.selected)) {
+            if (
+                shape &&
+                typeof shape === 'object' &&
+                shape.classList.contains(this.selected)
+            ) {
                 shape.classList.remove(this.selected);
             }
         }
 
         shapeElement.classList.add(this.selected);
-        shapeElement.style.backgroundColor = this.color
+        shapeElement.style.backgroundColor = this.color;
         this.shape = shape;
-    };
+    }
 
     shrinkShape(shape) {
         shape.size -= 1;
@@ -125,27 +132,27 @@ class Shapes {
             clearInterval(shape.interval);
             this.canvas.removeChild(shape.paragraphElement);
         }
-    };
+    }
 
-    randomSize () {
+    randomSize() {
         this.size = Math.floor(Math.random() * 191) + 10;
-    };
+    }
 }
 
 class Circle extends Shapes {
-    constructor () {
+    constructor() {
         super();
     }
 }
 
 class Square extends Shapes {
-    constructor () {
+    constructor() {
         super();
     }
 }
 
 class Star extends Shapes {
-    constructor () {
+    constructor() {
         super();
     }
 }
