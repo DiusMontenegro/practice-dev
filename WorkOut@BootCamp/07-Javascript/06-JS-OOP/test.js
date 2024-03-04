@@ -1,134 +1,185 @@
-class Shapes {
-    constructor() {
-        this.canvas = document.getElementById('canvas');
-        this.green = document.getElementById('green');
-        this.blue = document.getElementById('blue');
-        this.purple = document.getElementById('purple');
-        this.circle = document.getElementById('circle');
-        this.square = document.getElementById('square');
-        this.star = document.getElementById('star');
-        this.reset = document.getElementById('reset');
-        this.selected = 'selected';
-        this.shapes = [];
-        this.borderRadius = '50%';
-        this.size = 10;
-        this.color = '#b6d6a7';
-        this.shape = 'circle';
+class Note {
+    constructor () {
+        this.nameList = [];
+        this.name = ["do", "re", "mi", "fa", "so", "la", "ti"];
+        this.pitch = [1, 2, 3, 4, 5, 6, 7];
+    }
 
-        this.randomSize = function () {
-            this.size = Math.floor(Math.random() * 191) + 10;
-        };
-
-        this.selectColor = function (colorElement, colorCode) {
-            const elements = [this.green, this.blue, this.purple];
-            const shapeElements = [this.circle, this.square, this.star];
-
-            for (let i = 0; i < elements.length; i++) {
-                const element = elements[i];
-                if (element && typeof element === 'object' && element.classList.contains(this.selected)) {
-                    element.classList.remove(this.selected);
-                }
-            }
-
-            colorElement.classList.add(this.selected);
-            this.color = colorCode;
-            for (let i = 0; i < shapeElements.length; i++) {
-                if (shapeElements[i].classList.contains(this.selected)) {
-                    shapeElements[i].style.backgroundColor = this.color;
-                }
-            }
-        };
-
-        this.selectShape = function (shapeElement, shape) {
-            const shapes = [this.circle, this.square, this.star];
-            for (let i = 0; i < shapes.length; i++) {
-                const shape = shapes[i];
-                shape.style.backgroundColor = 'white';
-                if (shape && typeof shape === 'object' && shape.classList.contains(this.selected)) {
-                    shape.classList.remove(this.selected);
-                }
-            }
-
-            shapeElement.classList.add(this.selected);
-            shapeElement.style.backgroundColor = this.color
-            this.shape = shape;
-        };
-
-        this.shrinkShape = function (shape) {
-            shape.size -= 1;
-
-            if (shape.size > 0) {
-                shape.paragraphElement.style.width = `${shape.size}px`;
-                shape.paragraphElement.style.height = `${shape.size}px`;
-            } else {
-                clearInterval(shape.interval);
-                this.canvas.removeChild(shape.paragraphElement);
-            }
-        };
-
-        const self = this; // To capture the 'this' reference for use inside the event listener
-
-        this.canvas.addEventListener('click', function (event) {
-            self.randomSize();
-
-            const paragraphElement = document.createElement('p');
-
-            paragraphElement.style.position = 'absolute';
-            paragraphElement.style.top = `${event.clientY - self.size / 4}px`;
-            paragraphElement.style.left = `${event.clientX - self.size / 2}px`;
-            paragraphElement.style.width = `${self.size}px`;
-            paragraphElement.style.height = `${self.size}px`;
-            paragraphElement.style.borderRadius = self.borderRadius;
-            paragraphElement.style.border = '1px solid black';
-            paragraphElement.style.backgroundColor = self.color;
-            paragraphElement.classList.add(self.shape);
-
-            self.canvas.appendChild(paragraphElement);
-
-            const shape = {
-                paragraphElement: paragraphElement,
-                size: self.size,
-                interval: setInterval(function () {
-                    self.shrinkShape(shape);
-                }, 100),
-            };
-            self.shapes[i] = shape;
-        });
-
-        this.green.addEventListener('click', function () {
-            self.selectColor(self.green, '#b6d6a7');
-        });
-
-        this.blue.addEventListener('click', function () {
-            self.selectColor(self.blue, '#9fc4f6');
-        });
-
-        this.purple.addEventListener('click', function () {
-            self.selectColor(self.purple, '#b3a7d5');
-        });
-
-        this.circle.addEventListener('click', function () {
-            self.selectShape(self.circle, 'circle')
-        })
-
-        this.square.addEventListener('click', function () {
-            self.selectShape(self.square, 'square')
-            self.borderRadius = 'none';
-        })
-
-        this.star.addEventListener('click', function () {
-            self.selectShape(self.star, 'star')
-        })
-
-        this.reset.addEventListener('click', function () {
-            for (let i = 0; i < self.shapes.length; i++) {
-                const circle = self.shapes[i];
-                clearInterval(circle.interval);
-            }
-            self.shapes = [];
-            self.canvas.innerHTML = '';
-        });
+    show(name, pitch) {
+        console.log(`Note: ${name}, pitch: ${pitch}`);
     }
 }
 
-new Shapes();
+class Instrument extends Note {
+
+    constructor (brand, model, color) {
+        super();
+        this.brand = brand;
+        this.model = model;
+        this.color = color;
+        this.record = false;
+        this.play = false;
+        this.stop = false;
+        let self = this;
+
+        document.querySelector('#do').addEventListener('click', function () {
+            var audio = new Audio('./assets/piano/do.mp3');
+            audio.play();
+            if (self.record == true) {
+                self.addNote("do", 1);
+            }
+            self.recordedNotes();
+            return self.nameList;
+        })
+        document.querySelector('#re').addEventListener('click', function () {
+            var audio = new Audio('./assets/piano/re.mp3');
+            audio.play();
+            if (self.record == true) {
+                self.addNote("re", 1);
+            }
+            self.recordedNotes();
+            return self.nameList;
+        })
+        document.querySelector('#mi').addEventListener('click', function () {
+            var audio = new Audio('./assets/piano/mi.mp3');
+            audio.play();
+            if (self.record == true) {
+                self.addNote("mi", 1);
+            }
+            self.recordedNotes();
+            return self.nameList;
+        })
+        document.querySelector('#fa').addEventListener('click', function () {
+            var audio = new Audio('./assets/piano/fa.mp3');
+            audio.play();
+            if (self.record == true) {
+                self.addNote("fa", 1);
+            }
+            self.recordedNotes();
+            return self.nameList;
+        })
+        document.querySelector('#sol').addEventListener('click', function () {
+            var audio = new Audio('./assets/piano/sol.mp3');
+            audio.play();
+            if (self.record == true) {
+                self.addNote("sol", 1);
+            }
+            self.recordedNotes();
+            return self.nameList;
+        })
+        document.querySelector('#la').addEventListener('click', function () {
+            var audio = new Audio('./assets/piano/la.mp3');
+            audio.play();
+            if (self.record == true) {
+                self.addNote("la", 1);
+            }
+            self.recordedNotes();
+            return self.nameList;
+        })
+        document.querySelector('#ti').addEventListener('click', function () {
+            var audio = new Audio('./assets/piano/ti.mp3');
+            audio.play();
+            if (self.record == true) {
+                self.addNote("ti", 1);
+            }
+            self.recordedNotes();
+            return self.nameList;
+        })
+        document.querySelector('#play').addEventListener('click', function () {
+            self.stop = false;
+            self.record = false;
+            this.style.backgroundColor = 'gray';
+
+            if (self.nameList.length === 0) {
+                alert('Please record a note first.');
+            }
+
+            self.removeStyle();
+
+            for (let i = 0; i < self.nameList.length; i++) {
+                setTimeout(function () {
+                    var audio = new Audio(`./assets/piano/${self.nameList[i][0]}.mp3`);
+                    audio.play();
+                }, 400 * i);
+            }
+
+            return self.play = true;
+        })
+        document.querySelector('#stop').addEventListener('click', function () {
+            self.play = false;
+            self.record = false;
+            self.removeStyle();
+            this.style.backgroundColor = 'gray';
+
+            return self.stop = true;
+        })
+        document.querySelector('#record').addEventListener('click', function () {
+            self.play = false;
+            self.stop = false;
+            self.removeStyle();
+            this.style.backgroundColor = 'gray';
+
+            return self.record = true;
+        })
+    }
+
+    addNote(note, pitch) {
+        this.nameList[this.nameList.length] = [`${note}`, `${pitch}`];
+        return this.nameList;
+    }
+
+    removeLastNote() {
+        this.nameList[this.nameList.length] = '';
+        return this.nameList;
+    }
+
+    changeNote(index, note, pitch) {
+        this.nameList[index] = [`${note}`, `${pitch}`];
+        return this.nameList;
+    }
+
+    shuffleRecord() {
+        var m = this.nameList.length, t, i;
+
+        // While there remain elements to shuffle…
+        while (m) {
+
+            // Pick a remaining element…
+            i = Math.floor(Math.random() * m--);
+
+            // And swap it with the current element.
+            t = this.nameList[m];
+            this.nameList[m] = this.nameList[i];
+            this.nameList[i] = t;
+        }
+        return this.nameList;
+    }
+
+    autoCompose(num) {
+        this.nameList = [];
+        for (let i = 0; i < num; i++) {
+            this.nameList[i] = [`${this.name[Math.floor(Math.random() * this.name.length)]}`, 1];
+        }
+        return this.nameList;
+    }
+
+    recordedNotes() {
+        console.log(this.nameList);
+    }
+
+    removeStyle() {
+        const play = document.querySelector('#play');
+        const stop = document.querySelector('#stop');
+        const record = document.querySelector('#record');
+
+        const elementArr = [play, stop, record];
+
+        for (let i = 0; i< elementArr.length; i++) {
+            elementArr[i].style.background = 'none';
+        }
+    }
+}
+
+let piano = new Instrument('yamaha', 'x5s', 'blue');
+console.log(piano.shuffleRecord(5));
+

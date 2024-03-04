@@ -1,4 +1,5 @@
 class Shapes {
+
     constructor() {
         this.canvas = document.getElementById('canvas');
         this.green = document.getElementById('green');
@@ -14,57 +15,6 @@ class Shapes {
         this.size = 10;
         this.color = '#b6d6a7';
         this.shape = 'circle';
-
-        this.randomSize = function () {
-            this.size = Math.floor(Math.random() * 191) + 10;
-        };
-
-        this.selectColor = function (colorElement, colorCode) {
-            const elements = [this.green, this.blue, this.purple];
-            const shapeElements = [this.circle, this.square, this.star];
-
-            for (let i = 0; i < elements.length; i++) {
-                const element = elements[i];
-                if (element && typeof element === 'object' && element.classList.contains(this.selected)) {
-                    element.classList.remove(this.selected);
-                }
-            }
-
-            colorElement.classList.add(this.selected);
-            this.color = colorCode;
-            for (let i = 0; i < shapeElements.length; i++) {
-                if (shapeElements[i].classList.contains(this.selected)) {
-                    shapeElements[i].style.backgroundColor = this.color;
-                }
-            }
-        };
-
-        this.selectShape = function (shapeElement, shape) {
-            const shapes = [this.circle, this.square, this.star];
-            for (let i = 0; i < shapes.length; i++) {
-                const shape = shapes[i];
-                shape.style.backgroundColor = 'white';
-                if (shape && typeof shape === 'object' && shape.classList.contains(this.selected)) {
-                    shape.classList.remove(this.selected);
-                }
-            }
-
-            shapeElement.classList.add(this.selected);
-            shapeElement.style.backgroundColor = this.color
-            this.shape = shape;
-        };
-
-        this.shrinkShape = function (shape) {
-            shape.size -= 1;
-
-            if (shape.size > 0) {
-                shape.paragraphElement.style.width = `${shape.size}px`;
-                shape.paragraphElement.style.height = `${shape.size}px`;
-            } else {
-                clearInterval(shape.interval);
-                this.canvas.removeChild(shape.paragraphElement);
-            }
-        };
 
         const self = this; // To capture the 'this' reference for use inside the event listener
 
@@ -128,6 +78,75 @@ class Shapes {
             self.shapes = [];
             self.canvas.innerHTML = '';
         });
+    }
+
+    selectColor(colorElement, colorCode) {
+        const elements = [this.green, this.blue, this.purple];
+        const shapeElements = [this.circle, this.square, this.star];
+
+        for (let i = 0; i < elements.length; i++) {
+            const element = elements[i];
+            if (element && typeof element === 'object' && element.classList.contains(this.selected)) {
+                element.classList.remove(this.selected);
+            }
+        }
+
+        colorElement.classList.add(this.selected);
+        this.color = colorCode;
+        for (let i = 0; i < shapeElements.length; i++) {
+            if (shapeElements[i].classList.contains(this.selected)) {
+                shapeElements[i].style.backgroundColor = this.color;
+            }
+        }
+    };
+
+    selectShape(shapeElement, shape) {
+        const shapes = [this.circle, this.square, this.star];
+        for (let i = 0; i < shapes.length; i++) {
+            const shape = shapes[i];
+            shape.style.backgroundColor = 'white';
+            if (shape && typeof shape === 'object' && shape.classList.contains(this.selected)) {
+                shape.classList.remove(this.selected);
+            }
+        }
+
+        shapeElement.classList.add(this.selected);
+        shapeElement.style.backgroundColor = this.color
+        this.shape = shape;
+    };
+
+    shrinkShape(shape) {
+        shape.size -= 1;
+
+        if (shape.size > 0) {
+            shape.paragraphElement.style.width = `${shape.size}px`;
+            shape.paragraphElement.style.height = `${shape.size}px`;
+        } else {
+            clearInterval(shape.interval);
+            this.canvas.removeChild(shape.paragraphElement);
+        }
+    };
+
+    randomSize () {
+        this.size = Math.floor(Math.random() * 191) + 10;
+    };
+}
+
+class Circle extends Shapes {
+    constructor () {
+        super();
+    }
+}
+
+class Square extends Shapes {
+    constructor () {
+        super();
+    }
+}
+
+class Star extends Shapes {
+    constructor () {
+        super();
     }
 }
 

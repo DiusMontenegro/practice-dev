@@ -4,110 +4,78 @@
     box-sizing: border-box;
 }
 
-.text-end {
-    text-align: end;
-}
-
 body {
-    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    padding-top: 100px;
 }
 
-nav {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 10;
+.container {
+    margin: 0px auto;
 }
 
-    span {
+main {
+    width: 650px;
+}
+
+    .controls {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .controls span{
+        width: 50px;
+        height: 50px;
+        text-align: center;
         display: inline-block;
-        vertical-align: middle;
-        height: 40px;
-        width:100px;
-        margin: 8px;
+        vertical-align: top;
+        border-radius: 50%;
+        padding: 2px;
+        margin: 0px 4px;
+        font-size: 30px;
         cursor: pointer;
     }
 
-    span.selected {
-        border: 2px solid black;
+    .tiles {
+        height: 250px;
+        position: relative;
     }
 
-    nav p {
+    .tiles span {
         display: inline-block;
         vertical-align: top;
-    }
-
-    #shapes, #colors {
-        text-align: center;
-        width: 40%
-    }
-
-    #shapes {
-        background-color: rgba(0, 0, 0, 0.8);
+        height: 100%;
+        width: 13.68%;
+        cursor: pointer;
         border-radius: 4px;
+        -webkit-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.75);
+        border: 1px solid #1c1c1c;
     }
 
-    #shapes span {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    #reset {
-        text-align: center;
-        font-size: 18px;
-        padding: 8px 0px;
-        color: white;
-        border: 1px solid white;
-    }
-
-    #resetContainer {
-        width: 19.09%;
-    }
-
-    .circle {
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-        border: none;
-        background-color: #b6d6a7;
-    }
-
-    .square {
-        height: 40px;
-        width: 40px;
-        background-color: white;
-        border: none;
-    }
-
-    .star {
-        height: 40px;
-        width: 40px;
-        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-        background-color: white;
-    }
-
-    .container {
-        width: 1000px;
-        margin: 0px auto;
-    }
-
-    .green {
-        background-color: #b6d6a7;
-    }
-
-    .blue {
-        background-color: #9fc4f6;
-    }
-
-    .purple {
-        background-color: #b3a7d5;
-    }
-
-main {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-}
-
-    main p {
+    .tiles .sharp {
         position: absolute;
+        display: inline-block;
+        vertical-align: top;
+        background-color: black;
+        height: 60%;
+        width: 4%;
+        top: -10px;
+    }
+
+    .sharp.C {
+        left: 11.9%;
+    }
+
+    .sharp.D {
+        left: 26.4%;
+    }
+
+    .sharp.F {
+        left: 55.3%;
+    }
+    .sharp.G {
+        left: 69.2%;
+    }
+    .sharp.A {
+        left: 83.5%;
     }
