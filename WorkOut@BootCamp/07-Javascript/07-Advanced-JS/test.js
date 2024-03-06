@@ -1,65 +1,66 @@
-class World {
-    constructor(num) {
-        this.cities = [];
+function emitRandomNumber1(callback, attempts = 1) {
+    setTimeout(() => {
+        const randomNum = Math.floor(Math.random() * 101);
+        console.log(`Attempt #${attempts}. EmitRandomNumber is called.`);
+        console.log(`2 seconds have lapsed.`);
+        console.log(`Random number generated is ${randomNum}.`);
+        console.log(`- - - - -`);
 
-        for (let i = 0; i < num; i++) {
-            this.cities[i] = new City();
+        if (randomNum <= 80 && attempts <= 10) {
+            emitRandomNumber1(callback, attempts + 1);
+        } else {
+            callback();
         }
-    }
-
-    add_city(cityName) {
-        this.cities.push(new City(cityName));
-    }
-
-    random_city() {
-        return this.cities[Math.floor(Math.random() * this.cities.length)];
-    }
-
-    total_cities() {
-        return this.cities.length;
-    }
+    }, 2000);
 }
 
-class City {
-    constructor(name = "") {
-        this.citizens = [];
+emitRandomNumber1(() => {
+    console.log(`Limit maximum number has been reached!`);
+});
 
-        for (let i = 0; i < 51; i++) {
-            this.citizens[i] = new Citizen();
-        }
 
-        if (!name) {
-            name = "";
+function emitRandomNumber2(attempts = 1) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const randomNum = Math.floor(Math.random() * 101);
+            console.log(`Attempt #${attempts}. EmitRandomNumber is called.`);
+            console.log(`2 seconds have lapsed.`);
+            console.log(`Random number generated is ${randomNum}.`);
+            console.log(`- - - - -`);
 
-            for (let i = 0; i < 5; i++) {
-                name += String.fromCharCode(Math.floor(Math.random() * 26) + 97); // Change from 65 to 97
+            if (randomNum <= 80 && attempts <= 10) {
+                emitRandomNumber2(attempts + 1).then(resolve).catch(reject);
+            } else {
+                resolve();
             }
+        }, 2000);
+    })
+}
+
+emitRandomNumber2().then(() => {
+    console.log(`Limit maximum number has been reached!`);
+});
+
+
+async function emitRandomNumber3(attempts = 1) {
+    if (attempts <= 10) {
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        const randomNum = Math.floor(Math.random() * 101);
+        console.log(`Attempt #${attempts}. EmitRandomNumber is called.`);
+        console.log(`2 seconds have lapsed.`);
+        console.log(`Random number generated is ${randomNum}.`);
+        console.log(`- - - - -`);
+
+        if (randomNum > 80) {
+            console.log(`Limit maximum number has been reached!`);
+            return;
         }
 
-        this.name = name;
-    }
-
-    add_citizen() {
-        this.citizens.push(new Citizen());
+        await emitRandomNumber3(attempts + 1);
+    } else {
+        console.log(`Limit maximum number has been reached!`);
     }
 }
 
-class Citizen {
-    constructor() {
-        this.age = Math.floor(Math.random() * 101);
-    }
-}
-
-let world = new World(100);
-
-//adds a new city called 'hackerhero'
-world.add_city('hackerhero');
-
-//should pull out a random city object within the world and log its value
-console.log('Random city name: ', world.random_city().name);
-
-//should pull out a random city object within the world and log its value
-console.log('Age of first citizen in another random city: ',  world.random_city().citizens[0].age);
-
-//should log 101 as there are 101  cities now
-console.log('# of Cities: ', world.total_cities());
+emitRandomNumber3();
