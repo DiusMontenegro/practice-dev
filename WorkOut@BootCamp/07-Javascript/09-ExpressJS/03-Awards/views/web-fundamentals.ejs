@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main class="details container">
+        <h1>Details about <%= award[0].Exam %></h1>
+        <img src="./images/Web-fundamentals.png" alt="Webfun">
+        <h4>Date: <%= award[1].Date %></h4>
+        <h4>Awarded By: <%= award[2].Awarded_by %></h4>
+        <h4>Technologies:</h4>
+        <ul>
+<%  for (let i = 0; i < award[3].Technologies.length; i++) {%>
+            <li><%= award[3].Technologies[i] %></li>
+<%  }%>
+        </ul>
+    </main>
+</body>
+</html>
