@@ -14,6 +14,7 @@ const contentTypeMapping = {
     '/images/gmall-digos.jpg': { path: './images/gmall-digos.jpg', type: 'image/jpg' }
 };
 
+
 const server = http.createServer(function(request, response) {
     console.log(`Client request URL: ${request.url}`);
 
