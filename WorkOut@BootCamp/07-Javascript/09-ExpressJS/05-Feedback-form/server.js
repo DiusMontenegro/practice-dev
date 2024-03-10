@@ -18,6 +18,10 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
+app.get('/result', function (req, res) {
+    res.redirect('/');
+});
+
 // post route for adding a user
 app.post('/result', function (req, res) {
     const post = req.body;
