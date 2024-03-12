@@ -15,7 +15,6 @@ app.set('views', path.join(__dirname, './views'));
 app.set('view engine', 'ejs');
 // root route to render the index.ejs view
 app.get('/', function (req, res) {
-    let data =
     res.render('index', );
 });
 // post route for adding a user
