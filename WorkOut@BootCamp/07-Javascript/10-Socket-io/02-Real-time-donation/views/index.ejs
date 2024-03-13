@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time donation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Total Cash Donation: $<span id="fund"></span></h1>
+        <h4>Give according to one's capacity;</h4>
+        <h4>Take according to one's need</h4>
+        <button id="donate">Donate $10</button>
+        <button id="redeem">Redeem $10</button>
+    </main>
+</body>
+</html>
