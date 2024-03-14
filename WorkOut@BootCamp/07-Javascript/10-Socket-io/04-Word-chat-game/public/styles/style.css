@@ -1,0 +1,165 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+}
+
+body {
+    padding-top: 60px;
+}
+
+.container {
+    margin: 0px auto;
+}
+
+form {
+    width: 430px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: end;
+}
+
+h1, label {
+    font-size: 28px;
+    text-align: start;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+label, #name {
+    display: block;
+}
+
+input, button {
+    cursor: pointer;
+}
+
+#name {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding-left: 4px;
+}
+
+button, #submit {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    padding: 4px 10px;
+    font-weight: bold;
+    margin: 0px 8px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    -webkit-box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.75);
+}
+
+main {
+    width: 956.406px;
+    height: 530px;
+}
+
+aside, .game {
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+aside {
+    width: 209.594px;
+    padding: 6px 10px;
+    overflow-y: auto;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.game {
+    width: 734.812px;
+    padding: 10px 30px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+h4 {
+    text-align: center;
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+.chats {
+    border: 1px solid black;
+    padding: 5px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+span {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid black;
+    height: 40px;
+    font-size: 20px;
+}
+
+.user {
+    width: 20%;
+}
+
+.message {
+    width: 79.3%;
+    overflow-x: auto;
+}
+
+#answer {
+    border: none;
+    height: auto;
+    padding: 0px;
+    text-align: end;
+    border-radius: 0px;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+#answer input {
+    height: 35px;
+    margin: 0px;
+    padding: 4px 6px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#answer .submit {
+    margin-top: 10px;
+    width: 12%;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    -webkit-box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.75);
+}

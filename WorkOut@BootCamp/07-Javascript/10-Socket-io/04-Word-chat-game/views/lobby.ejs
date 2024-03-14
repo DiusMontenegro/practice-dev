@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Chat Lobby</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main class="container">
+        <aside>
+            <h2>Dius</h2>
+            <h2>Filwayne</h2>
+            <h2>Josiah</h2>
+            <h2>Johanna</h2>
+        </aside>
+        <div class="game">
+            <h3>Guess the Word:</h3>
+            <h4>s _ _ _ e _</h4>
+            <div class="chats">
+                <p>
+                    <span class="user">Dius</span>
+                    <span class="message">hello</span>
+                </p>
+                <p>
+                    <span class="user">Dius</span>
+                    <span class="message">hello</span>
+                </p>
+                <p class="correct">✅ Dius got the right answer. The correct word is "socket".</p>
+            </div>
+            <form id="answer">
+                <input type="text"> <input class="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

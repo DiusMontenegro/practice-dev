@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Chat Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <form id="user" action='/lobby' method="post" class="container">
+        <h1>Kung ang "House" ay bahay,</h1>
+        <label>Please enter your name
+            <input id="name" type="text" name="name" maxlength="20">
+        </label>
+        <button type="button" id="cancel">Cancel</button>
+        <input id="submit" type="submit" name="submit" value="Ok">
+    </form>
+</body>
+</html>
