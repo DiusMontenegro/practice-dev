@@ -1,8 +1,9 @@
 $(document).ready(function () {
     const socket = io();
+    const body = document.querySelector('body')
 
     $('#light-mode').click(() => {
-        socket.emit('light-mode', { light: '#ffffff' });
+        socket.emit('light-mode');
     })
 
     $('#random-mode').click(() => {
@@ -10,24 +11,22 @@ $(document).ready(function () {
     })
 
     $('#dark-mode').click(() => {
-        socket.emit('dark-mode', { dark: '#000000' });
+        socket.emit('dark-mode');
     })
 
     socket.on('set_background_color', (data) => {
-        document.querySelector('body').style.backgroundColor = data.background;
+        body.style.backgroundColor = data.background;
     })
 
     socket.on('set_light_mode', (data) => {
-        document.querySelector('body').style.backgroundColor = data.background;
+        body.style.backgroundColor = data.background;
     })
 
     socket.on('set_random_mode', (data) => {
-        console.log(data.background);
-        document.querySelector('body').style.backgroundColor = data.background;
+        body.style.backgroundColor = data.background;
     })
 
     socket.on('set_dark_mode', (data) => {
-        console.log(data.background);
-        document.querySelector('body').style.backgroundColor = data.background;
+        body.style.backgroundColor = data.background;
     })
 });

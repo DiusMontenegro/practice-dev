@@ -68,17 +68,11 @@ main {
     height: 530px;
 }
 
-aside, .game {
+.game {
     height: 100%;
     display: inline-block;
     vertical-align: top;
     border: 1px solid black;
-}
-
-aside {
-    width: 209.594px;
-    padding: 6px 10px;
-    overflow-y: auto;
 }
 
 h2 {
@@ -86,7 +80,7 @@ h2 {
 }
 
 .game {
-    width: 734.812px;
+    width: 100%;
     padding: 10px 30px;
 }
 

@@ -8,6 +8,8 @@ app.use(express.static(path.join(__dirname, './public')));
 app.set('views', path.join(__dirname, './views'));
 app.set('view engine', 'ejs');
 
+const light = '#ffffff';
+const dark = '#000000';
 let backgroundColor = '';
 
 function randomColor() {
@@ -30,8 +32,8 @@ app.get('/', (req, res) => {
 io.on('connection', function (socket) {
     socket.emit('set_background_color', { background: backgroundColor });
 
-    socket.on('light-mode', (data) => {
-        backgroundColor = data.light;
+    socket.on('light-mode', () => {
+        backgroundColor = light;
         io.emit('set_light_mode', { background: backgroundColor });
     })
 
@@ -40,8 +42,8 @@ io.on('connection', function (socket) {
         io.emit('set_random_mode', { background: backgroundColor });
     })
 
-    socket.on('dark-mode', (data) => {
-        backgroundColor = data.dark;
+    socket.on('dark-mode', () => {
+        backgroundColor = dark;
         io.emit('set_dark_mode', { background: backgroundColor});
     })
 });
