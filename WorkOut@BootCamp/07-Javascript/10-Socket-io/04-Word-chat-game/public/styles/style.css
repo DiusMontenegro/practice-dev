@@ -21,7 +21,8 @@ form {
     text-align: end;
 }
 
-h1, label {
+h1,
+label {
     font-size: 28px;
     text-align: start;
 }
@@ -30,11 +31,13 @@ h1 {
     margin-bottom: 10px;
 }
 
-label, #name {
+label,
+#name {
     display: block;
 }
 
-input, button {
+input,
+button {
     cursor: pointer;
 }
 
@@ -46,7 +49,8 @@ input, button {
     padding-left: 4px;
 }
 
-button, #submit {
+button,
+#submit {
     display: inline-block;
     vertical-align: top;
     font-size: 20px;
@@ -56,11 +60,11 @@ button, #submit {
     border-radius: 4px;
     border: none;
     color: white;
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    -webkit-box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.75);
-    box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.75);
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 0.75);
 }
 
 main {
@@ -151,9 +155,9 @@ span {
     font-weight: bold;
     border: none;
     color: white;
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    -webkit-box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.75);
-    box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.75);
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 0.75);
 }
