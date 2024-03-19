@@ -8,12 +8,12 @@ function Desk(name) {
         this.x = x;
         this.y = y;
         return this;
-    }
+    };
 
     this.updateColor = function (new_color) {
         this.color = new_color;
         return this;
-    }
+    };
 }
 var desk1 = new Desk('oak desk');
 var desk2 = new Desk('maple desk');
