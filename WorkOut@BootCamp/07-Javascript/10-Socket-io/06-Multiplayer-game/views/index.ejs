@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Multiplayer Game</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script src="./js/classes/Player.js" defer></script>
+        <script src="./js/classes/Projectile.js" defer></script>
+        <script src="./js/client.js" defer></script>
+        <script src="./js/eventListeners.js" defer></script>
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
+            integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <dialog id="modal" data-modal>
+            <div class="chats"></div>
+            <lord-icon
+                id="close-modal"
+                src="https://cdn.lordicon.com/nqtddedc.json"
+                trigger="hover"
+                state="hover-cross-2"
+                data-close-modal>
+            </lord-icon>
+            <form id="messageForm">
+                <input id="messageInput" type="text" placeholder="Enter your message">
+                <input id="messageSubmit" type="submit" value="Submit">
+            </form>
+        </dialog>
+        <div>
+            <div class="main">
+                <div id="leaderboard">V88 Leaderboard:</div>
+                <div id="playerLabels"></div>
+            </div>
+            <canvas></canvas>
+            <div class="formContainer">
+                <form id="usernameForm">
+                    <div>
+                        <input id="usernameInput" type="text" placeholder="Username"/>
+                    </div>
+                    <div style="text-align: center; margin-top: 8px">
+                        <button type="submit">Start!</button>
+                    </div>
+                </form>
+            </div>
+            <footer>&copy;V88 Dius Montenegro 2024</footer>
+        </div>
+        <lord-icon id="chatbox" src="https://cdn.lordicon.com/fdxqrdfe.json" trigger="hover" data-open-modal>
+    </body>
+</html>
