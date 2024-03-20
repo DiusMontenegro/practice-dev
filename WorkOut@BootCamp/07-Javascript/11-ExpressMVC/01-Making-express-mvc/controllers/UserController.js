@@ -5,16 +5,8 @@ class UserController {
         res.render('index');
     }
 
-    viewLoginPage(req, res) {
-        res.render('login');
-    }
-
-    viewRegisterPage(req, res) {
-        res.render('register');
-    }
-
-    processLogoff(req, res) {
-        // Logic to process logoff
+    viewResultPage(req, res) {
+        res.render('result', { data: req.body });
     }
 }
 

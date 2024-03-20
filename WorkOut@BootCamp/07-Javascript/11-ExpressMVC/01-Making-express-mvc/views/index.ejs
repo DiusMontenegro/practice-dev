@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Page</title>
-</head>
-<body>
-    <h1>Index</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <form class="container" action="/result" method="post">
+            <label> Your name:
+                <input name="name" type="text" placeholder="Please enter your name">
+            </label>
+            <label> Dojo Location:
+                <select name="location">
+                    <option value="Mountain View">Mountain View</option>
+                    <option value="V88 La Union">V88 La Union</option>
+                </select>
+            </label>
+            <label> Favorite Language:
+                <select name="programmingLanguage">
+                    <option value="Javascript">Javascript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                </select>
+            </label>
+            <label>Comment (optional):
+                <textarea name="comment"></textarea>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
 </html>

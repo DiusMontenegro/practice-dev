@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Result Page</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <div class="result container">
+            <h2>Submitted Information</h2>
+            <div>
+                <p>Name:</p>
+                <p>Dojo Location:</p>
+                <p>Favorite Language:</p>
+                <p>Comment:</p>
+            </div>
+            <div>
+                <p><%= data.name %></p>
+                <p><%= data.location %></p>
+                <p><%= data.programmingLanguage %></p>
+                <p><%= data.comment %></p>
+            </div>
+            <a href="/">Go back</a>
+        </div>
+    </body>
+</html>
