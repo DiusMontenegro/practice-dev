@@ -10,7 +10,6 @@ app.use(express.static(path.join(__dirname, './public')));
 
 const players = {}
 const projectiles = {};
-const users = {};
 
 const speed = 15;
 const radius = 5;
