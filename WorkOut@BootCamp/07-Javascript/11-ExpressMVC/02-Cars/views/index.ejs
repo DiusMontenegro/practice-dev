@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main class="container">
+        <div>
+            <h2>You did <span><%= count %>x</span> visting this page.</h2>
+            <h2>You have <span><%= cars.length %></span> cars!</h2>
+            <h3>The cars in the database are as follows:</h3>
+<%  for (let i = 0; i < cars.length; i++) {%>
+            <ul>
+                <li><%= cars[i].name %> - <%= cars[i].year %></li>
+            </ul>
+<%  }%>
+        </div>
+        <div>
+            <a href="/reset">Reset</a>
+        </div>
+    </main>
+</body>
+</html>
