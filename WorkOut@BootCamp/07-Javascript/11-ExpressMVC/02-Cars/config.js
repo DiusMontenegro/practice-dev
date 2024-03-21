@@ -6,6 +6,6 @@ module.exports = {
         database: 'express_mvc_cars',
     },
     server: {
-        port: process.env.PORT || 3306,
+        port: process.env.PORT || 8080,
     },
 };

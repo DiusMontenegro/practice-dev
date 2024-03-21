@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const routes = require('./routes');
 const session = require('express-session');
+const config = require('./config');
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
@@ -20,7 +21,7 @@ app.use(
 app.use('/', routes);
 
 // Server
-const PORT = process.env.PORT || 8080;
+const PORT = config.server;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });

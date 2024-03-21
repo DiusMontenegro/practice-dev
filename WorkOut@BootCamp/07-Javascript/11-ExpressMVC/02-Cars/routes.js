@@ -5,12 +5,7 @@ const config = require('./config');
 const mysql = require('mysql2');
 
 // MySQL Connection
-const connection = mysql.createConnection({
-    host: config.mysql.host,
-    user: config.mysql.user,
-    password: config.mysql.password,
-    database: config.mysql.database,
-});
+const connection = mysql.createConnection(config.mysql);
 
 connection.connect((err) => {
     if (err) {
