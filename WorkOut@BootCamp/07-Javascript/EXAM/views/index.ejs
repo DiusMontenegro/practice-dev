@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cars</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    <main class="container">
-        <div>
-            <h2>You did <span><%= count %>x</span> visting this page.</h2>
-            <h2>You have <span><%= cars.length %></span> cars!</h2>
-            <h3>The cars in the database are as follows:</h3>
-<%  for (let i = 0; i < cars.length; i++) {%>
-            <ul>
-                <li><%= cars[i].name %> - <%= cars[i].year %></li>
-            </ul>
-<%  }%>
-        </div>
-        <div>
-            <a href="/reset">Reset</a>
-        </div>
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Javascript Exam</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/squares.js"></script>
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <nav class="container">
+            <h1 class="d-inline-block">Build your Empire!</h1>
+            <div class="d-inline-block font-bold text-white">
+                <span id="brick" class="border-radius-sm d-inline-block">Brick</span>
+                <span id="grass" class="border-radius-sm d-inline-block">Grass</span>
+                <span id="gravel" class="border-radius-sm d-inline-block">Gravel</span>
+                <button id="clear" class="btn border-radius-sm bg-red font-bold text-white">Clear</button>
+            </div>
+        </nav>
+        <main class="container">
+            <div id="canvas" class="d-inline-block"></div>
+            <aside id="users" class="d-inline-block">
+                <h5>List of active players</h5>
+                <ul id="connectedUsers"></ul>
+            </aside>
+        </main>
+    </body>
 </html>

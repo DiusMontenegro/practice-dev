@@ -1,27 +1,45 @@
 const express = require('express');
+const path = require('path');
 const app = express();
-const routes = require('./routes');
-const session = require('express-session');
-const config = require('./config');
+const server = app.listen(8000);
+const io = require('socket.io')(server);
+const Square = require('./public/js/squares');
 
-// Middleware
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static('assets'));
+const users = {};
+let squares = [];
+
+app.set('views', path.join(__dirname, './views'));
 app.set('view engine', 'ejs');
-app.use(
-    session({
-        secret: 'sikrit1234',
-        resave: false,
-        saveUninitialized: true,
-        cookie: { maxAge: 60000 },
-    })
-);
+app.use(express.static(path.join(__dirname, './public')));
 
-// Routes
-app.use('/', routes);
+app.get('/', (req, res) => {
+    res.render('index');
+});
 
-// Server
-const PORT = config.server.port;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+io.on('connection', function (socket) {
+    socket.on('login', (name) => {
+        users[socket.id] = name;
+        socket.broadcast.emit('user-connected', socket.id, name);
+        io.emit('all-users', users);
+
+        squares.forEach(square => {
+            socket.emit('new-square', square.getInfo());
+        });
+    });
+
+    socket.on('disconnect', () => {
+        console.log(`${users[socket.id]} disconnected`);
+        delete users[socket.id];
+        socket.broadcast.emit('user-disconnected', socket.id);
+        io.emit('all-users', users);
+    });
+
+    socket.on('canvas-click', (data) => {
+        squares.push(new Square(io, data.clientX, data.clientY, data.color));
+    });
+
+    socket.on('clear-squares', () => {
+        squares = [];
+        io.emit('clear-canvas');
+    });
 });

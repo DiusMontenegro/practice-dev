@@ -1,0 +1,160 @@
+/* Utility Classes */
+
+/* text */
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text-white {
+    color: white;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+/* Backgrounds */
+.bg-red {
+    background-color: #cf2a29;
+}
+
+/* Display */
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* border */
+.border-none {
+    border: none;
+}
+
+.border-radius-sm {
+    border-radius: 4px;
+}
+
+.border-radius-md {
+    border-radius: 20px;
+}
+
+/* button */
+.btn {
+    padding: 4px 6px;
+    cursor: pointer;
+    -webkit-box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 1);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+}
+
+body {
+    padding-top: 20px;
+}
+
+nav {
+    height: 40px;
+}
+
+.container {
+    margin: 0px auto;
+    width: 1028px;
+}
+
+h1 {
+    height: 100%;
+    font-size: 30px;
+    width: 30%;
+}
+
+nav div {
+    height: 100%;
+    margin-left: 10%;
+}
+
+span, button {
+    font-size: 18px;
+    border: 1px solid black;
+    height: 100%;
+    margin: 0px 10px;
+}
+
+span {
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+button {
+    width: 70px;
+}
+
+main {
+    height: 550px;
+}
+
+#canvas {
+    border: 1px solid black;
+    width: 80%;
+    height: 100%;
+}
+
+#brick {
+    background-image: url('../img/brick.jpeg');
+    text-shadow: 0px 1px 6px rgba(0,0,0,0.71);
+}
+
+#grass {
+    background-image: url('../img/grass.jpeg');
+    text-shadow: 0px 1px 6px rgba(0,0,0,0.71);
+}
+
+#gravel {
+    background-image: url('../img/gravel.jpeg');
+    text-shadow: 0px 1px 6px rgba(0,0,0,0.71);
+}
+
+#users {
+    border: 1px solid black;
+    width: 19%;
+    height: 100%;
+    padding: 4px;
+}
+
+h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    padding-left: 4px;
+}
+
+.cursor {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
