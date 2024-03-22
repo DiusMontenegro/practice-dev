@@ -2,7 +2,7 @@ $(document).ready(function () {
     const socket = io();
     let name = prompt(`What is your name?`);
     let users = {};
-    let backgroundColor = '#b45f05'
+    let backgroundColor = '#b45f05';
 
     if (!name) {
         alert(`Please enter your name.`);
@@ -32,16 +32,16 @@ $(document).ready(function () {
     }
 
     $('#brick').click(() => {
-        backgroundColor = '#b45f05'
-    })
+        backgroundColor = '#b45f05';
+    });
 
     $('#grass').click(() => {
-        backgroundColor = '#009d0e'
-    })
+        backgroundColor = '#009d0e';
+    });
 
     $('#gravel').click(() => {
-        backgroundColor = '#989999'
-    })
+        backgroundColor = '#989999';
+    });
 
     socket.emit('login', name);
 
@@ -55,6 +55,7 @@ $(document).ready(function () {
         delete users[userId];
         updateUserList();
         console.log(`${disconnectedUserName} disconnected`);
+        $(`#${userId}`).remove(); // Remove cursor element on disconnect
     });
 
     socket.on('all-users', allUsers => {
@@ -62,10 +63,14 @@ $(document).ready(function () {
         updateUserList();
     });
 
-    $('#canvas').click((event) => {
+    $('#canvas').mousemove((event) => {
         const clientX = event.clientX;
         const clientY = event.clientY;
-        socket.emit('canvas-click', { clientX, clientY, color: backgroundColor});
+        socket.emit('cursor-move', { clientX, clientY, name });
+    });
+
+    $('#canvas').click((event) => {
+        socket.emit('canvas-click', { clientX: event.clientX, clientY: event.clientY, color: backgroundColor });
     });
 
     $('#clear').click(() => {
@@ -91,4 +96,20 @@ $(document).ready(function () {
         $('#canvas').empty();
     });
 
+    socket.on('cursor-moved', (userData) => {
+        const cursor = $(`#${userData.id}`);
+        if (cursor.length) {
+            cursor.css({ left: userData.clientX - 5, top: userData.clientY + 12 });
+        } else {
+            const cursorDiv = $(`<div class="cursor" id="${userData.id}">${userData.name}</div>`);
+            const nameOffsetX = 10;
+            const nameOffsetY = -20;
+            cursorDiv.css({ left: userData.clientX + nameOffsetX, top: userData.clientY + nameOffsetY });
+            $('#canvas').append(cursorDiv);
+        }
+    });
+
+    socket.on('cursor-removed', (userId) => {
+        $(`#${userId}`).remove();
+    });
 });

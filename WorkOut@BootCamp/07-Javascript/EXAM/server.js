@@ -32,14 +32,20 @@ io.on('connection', function (socket) {
         delete users[socket.id];
         socket.broadcast.emit('user-disconnected', socket.id);
         io.emit('all-users', users);
+        io.emit('cursor-removed', socket.id);
     });
 
     socket.on('canvas-click', (data) => {
         squares.push(new Square(io, data.clientX, data.clientY, data.color));
+        io.emit('new-square', { clientX: data.clientX, clientY: data.clientY, size: 50, color: data.color });
     });
 
     socket.on('clear-squares', () => {
         squares = [];
         io.emit('clear-canvas');
+    });
+
+    socket.on('cursor-move', (userData) => {
+        io.emit('cursor-moved', { id: socket.id, clientX: userData.clientX, clientY: userData.clientY, name: userData.name });
     });
 });
