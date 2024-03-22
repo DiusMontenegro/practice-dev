@@ -154,7 +154,9 @@ li {
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: red;
+    background-color: red; /* Customize as needed */
     border-radius: 50%;
+    z-index: 9999; /* Ensure cursor appears on top of canvas */
 }
+
 

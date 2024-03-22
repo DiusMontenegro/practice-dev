@@ -14,6 +14,15 @@ class Square {
             color: this.color,
         });
     }
+
+    getInfo() {
+        return {
+            clientX: this.clientX,
+            clientY: this.clientY,
+            size: 50,
+            color: this.color,
+        };
+    }
 }
 
 module.exports = Square;
