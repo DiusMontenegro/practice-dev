@@ -55,7 +55,7 @@ $(document).ready(function () {
         delete users[userId];
         updateUserList();
         console.log(`${disconnectedUserName} disconnected`);
-        $(`#${userId}`).remove(); // Remove cursor element on disconnect
+        $(`#${userId}`).remove();
     });
 
     socket.on('all-users', allUsers => {
