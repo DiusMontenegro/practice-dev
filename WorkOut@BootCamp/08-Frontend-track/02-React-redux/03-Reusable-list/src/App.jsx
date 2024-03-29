@@ -17,8 +17,8 @@ const formattedDateTime = currentDate.toLocaleString('en-US', {
 
 const listItems = [
     { name: 'Dius Montenegro', image: dius, message: 'All goods na all goods' },
-    { name: 'Johanna Quitoviera', image: johanna, message: 'Ginclick ko ma' },
     { name: 'Dave Lexter Supsup', image: dave, message: 'Yung kuwan' },
+    { name: 'Johanna Quitoviera', image: johanna, message: 'Ginclick ko ma' },
     { name: 'Filwayne De lara', image: filwayne, message: 'Tataa' },
 ];
 
