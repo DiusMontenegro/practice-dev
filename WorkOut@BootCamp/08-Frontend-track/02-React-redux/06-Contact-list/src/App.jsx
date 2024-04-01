@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Form from './components/Form';
+import Navigation from './components/Navigation';
 import Contacts from './components/Contact';
 
 const App = () => {
@@ -11,8 +12,11 @@ const App = () => {
 
     return (
         <div>
-            <Form onSubmit={handleSubmit} />
-            <Contacts contacts={contacts} />
+            <Navigation />
+            <div className="flex flex-col lg:flex-row">
+                <Form onSubmit={handleSubmit} />
+                <Contacts contacts={contacts} />
+            </div>
         </div>
     );
 };
