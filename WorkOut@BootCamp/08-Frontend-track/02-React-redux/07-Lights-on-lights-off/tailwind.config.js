@@ -8,7 +8,17 @@ export default {
         './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
-        extend: {},
+        extend: {
+            container: {
+                center: true,
+                padding: '1rem',
+                screens: {
+                    lg: '1124px',
+                    xl: '1124px',
+                    '2xl': '1124px',
+                },
+            },
+        },
     },
     darkMode: 'class',
     plugins: [nextui()],

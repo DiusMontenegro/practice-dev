@@ -1,7 +1,21 @@
-const App = () => {
-  return (
-    <div className="text-blue-400">App</div>
-  )
-}
+import Navbar from './components/Navbar';
+import { useState } from 'react';
 
-export default App
+const App = () => {
+    const [dark, setDark] = useState(false);
+
+    return (
+        <div className={`h-screen ${dark ? 'dark' : ''}`}>
+            <Navbar setDark={setDark} />
+            <div className="flex justify-center items-center">
+                {dark ? (
+                    <img className='rounded-md' src="./src/assets/dark-mode.png" alt="dark" />
+                ) : (
+                    <img className='rounded-md' src="./src/assets/light-mode.png" alt="light" />
+                )}
+            </div>
+        </div>
+    );
+};
+
+export default App;
