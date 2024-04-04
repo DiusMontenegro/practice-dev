@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list {
+    @apply h-[40px] aspect-square bg-[#e7e7e7] rounded-full flex items-center justify-center text-[18px]
+}
+
+.list.active {
+    @apply bg-red-500 text-white
+}
+
+.message {
+    @apply text-center text-[20px] my-[40px] mx-0 font-bold flex flex-col items-center
+}
+
+.button {
+    @apply border-0 cursor-pointer py-[10px] px-[15px] rounded-[100px] text-[14px] font-bold flex items-center gap-[10px]
+}
