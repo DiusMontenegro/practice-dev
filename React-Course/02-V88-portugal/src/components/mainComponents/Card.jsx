@@ -1,6 +1,8 @@
-const Card = ({ person }) => {
+const Card = ({ person, grayscale }) => {
     return (
-        <div className="flex gap-2 ml-[20px] border w-[280px] h-[70px] hover:bg-gray-200 cursor-pointer rounded-md">
+        <li
+            className={`flex gap-2 ml-[20px] border w-[280px] h-[70px] hover:bg-gray-200 cursor-pointer rounded-md ${grayscale}`}
+        >
             <img
                 className="w-[70px] h-full rounded-sm"
                 src={person.photoName}
@@ -14,7 +16,7 @@ const Card = ({ person }) => {
                 </p>
                 <p>{person.inRelationship ? 'In a relationship' : 'Single'}</p>
             </div>
-        </div>
+        </li>
     );
 };
 

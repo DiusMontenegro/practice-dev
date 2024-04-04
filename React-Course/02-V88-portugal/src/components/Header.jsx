@@ -1,8 +1,8 @@
 const Header = () => {
     return (
-        <div>
+        <header>
             <h1 className="text-center text-[#00AEEF] font-semibold text-3xl mb-3 tracking-wider">
-                — V88 Portugal. —
+                — Village88 Portugal. —
             </h1>
             <h2 className="border-[2px] border-x-0 border-y-[#1c1c1c] text-xs text-[#1c1c1c] font-semibold text-center py-1 w-[90px] mx-auto my-2 mb-3">
                 TOP MEMBERS
@@ -12,7 +12,7 @@ const Header = () => {
                 are skilled, innovative, and dedicated. A Team with passion for
                 excellence.
             </p>
-        </div>
+        </header>
     );
 };
 

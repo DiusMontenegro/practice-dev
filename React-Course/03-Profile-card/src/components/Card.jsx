@@ -1,18 +1,19 @@
 import { GiTargetShot } from 'react-icons/gi';
 
-const Card = ({ info }) => {
+const Card = ({ person }) => {
     return (
-        <div className="border-[2px] rounded-md shadow-lg border-[#1c1c1c] w-[250px]">
-            <img src={info.image} alt={info.name} />
+        <li className="border-[2px] rounded-md shadow-lg border-[#1c1c1c] w-[250px]">
+            <img src={person.image} alt={person.name} />
             <div className="p-3">
-                <h1 className="font-semibold mb-2 text-lg">{info.name}</h1>
-                <p className="text-xs mb-2">{info.description}</p>
+                <h1 className="font-semibold mb-2 text-lg">{person.name}</h1>
+                <p className="text-xs mb-2">{person.description}</p>
                 <div className="w-full p-1">
-                    {info.skills.map((skill) => {
+                    {person.skills.map((skill) => {
                         let skillClass = '';
                         switch (skill) {
                             case 'HTML+CSS':
-                                skillClass = 'hover:bg-blue-400';
+                                skillClass =
+                                    'hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500';
                                 break;
                             case 'Javascript':
                                 skillClass = 'hover:bg-yellow-400';
@@ -38,7 +39,7 @@ const Card = ({ info }) => {
                         return (
                             <p
                                 key={skill}
-                                className={`border-[#1c1c1c] font-semibold inline-block border text-xs mx-1 mb-1 p-1 cursor-pointer hover:text-white hover:border-gray-200 rounded-sm ${skillClass}`}
+                                className={`border-[#1c1c1c] font-semibold inline-block border text-xs mx-1 mb-1 p-1 cursor-pointer hover:text-white hover:border-gray-200 rounded-sm ${skillClass} shadow-sm`}
                             >
                                 {skill}
                                 <GiTargetShot className="inline-block align-middle ml-1" />
@@ -47,7 +48,7 @@ const Card = ({ info }) => {
                     })}
                 </div>
             </div>
-        </div>
+        </li>
     );
 };
 
