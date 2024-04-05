@@ -1,6 +1,11 @@
+import { useState } from 'react';
+
 const List = ({ place, selectedId, setSelectedId }) => {
+    const [isClicked, setIsClicked] = useState(false);
+
     function handleClick() {
         setSelectedId(place.id);
+        setIsClicked((clicked) => !clicked);
     }
 
     return (
@@ -12,7 +17,7 @@ const List = ({ place, selectedId, setSelectedId }) => {
             }`}
             onClick={handleClick}
         >
-            {selectedId === place.id ? (
+            {selectedId === place.id && isClicked ? (
                 <p>{place.location}</p>
             ) : (
                 <img
