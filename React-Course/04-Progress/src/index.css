@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.list {
+li {
     @apply h-[40px] aspect-square bg-[#e7e7e7] rounded-full flex items-center justify-center text-[18px]
 }
 
-.list.active {
+li.active {
     @apply bg-red-500 text-white
 }
 

@@ -1,43 +1,32 @@
-import message from './constants/data';
+import Content from './components/Content';
+import { useState } from 'react';
+import { IoIosCloseCircleOutline } from 'react-icons/io';
+import { FaBookOpen } from 'react-icons/fa';
 
 const App = () => {
-    let stage = 2;
+    const [isOpen, setIsOpen] = useState(true);
+    const [stage, setStage] = useState(1);
 
-    function handlePrevious() {
-        alert('Previous');
-    }
-
-    function handleNext() {
-        alert('Next');
+    function handleOpen() {
+        setIsOpen((isOpen) => !isOpen);
     }
 
     return (
-        <div className="w-[600px] bg-[#f7f7f7] rounded-[7px] py-[25px] px-[100px] my-[100px] mx-auto">
-            <ul className="flex justify-between">
-                <li className={`list ${stage === 1 ? 'active' : ''}`}>1</li>
-                <li className={`list ${stage === 2 ? 'active' : ''}`}>2</li>
-                <li className={`list ${stage === 3 ? 'active' : ''}`}>3</li>
-                <li className={`list ${stage === 4 ? 'active' : ''}`}>4</li>
-            </ul>
-
-            <p className="message">
-                Stage {stage}: {message[stage - 1]}
+        <div className="py-[25px] px-[100px] my-[90px] mx-auto w-[600px] h-auto">
+            <p className="mb-4 flex justify-end">
+                {isOpen ? (
+                    <IoIosCloseCircleOutline
+                        onClick={handleOpen}
+                        className="cursor-pointer hover:text-red-500"
+                    />
+                ) : (
+                    <FaBookOpen
+                        onClick={handleOpen}
+                        className="cursor-pointer hover:text-red-500"
+                    />
+                )}
             </p>
-
-            <div className="flex justify-between">
-                <button
-                    className="button bg-red-500 text-white"
-                    onClick={handlePrevious}
-                >
-                    Previous
-                </button>
-                <button
-                    className="button bg-red-500 text-white"
-                    onClick={handleNext}
-                >
-                    Next
-                </button>
-            </div>
+            {isOpen ? <Content stage={stage} setStage={setStage} /> : null}
         </div>
     );
 };
