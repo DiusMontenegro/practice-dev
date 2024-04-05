@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+    @apply h-[25px] text-center w-[25px] border border-black inline-block align-middle mx-4 rounded-sm
+}
