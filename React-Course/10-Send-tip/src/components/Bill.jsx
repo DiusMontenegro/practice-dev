@@ -7,7 +7,7 @@ const Bill = ({ bill, onPayment }) => {
         >
             How much was the bill?
             <input
-                type="text"
+                type="number"
                 className="border border-black mt-1 pl-2"
                 value={bill}
                 onChange={(e) => onPayment(Number(e.target.value))}
