@@ -13,6 +13,7 @@ import WatchedList from './components/Sidebar/WatchedList';
 import Button from './components/utils/Button';
 import Summary from './components/Main/Summary';
 import Movies from './components/Main/Movies';
+import MovieCard from './components/Main/MovieCard';
 
 export {
     Navbar,
@@ -27,4 +28,5 @@ export {
     Button,
     Summary,
     Movies,
+    MovieCard,
 };

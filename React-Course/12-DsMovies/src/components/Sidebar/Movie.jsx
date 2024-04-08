@@ -1,6 +1,6 @@
 const Movie = ({ movie }) => {
     return (
-        <li className="flex p-2 shadow-md gap-2 text-[#f1f1f1] h-[60px] cursor-pointer py-1 bg-slate-100 bg-opacity-5 rounded-md">
+        <li className="flex p-2 shadow-md gap-2 text-[#f1f1f1] h-[60px] cursor-pointer py-1 bg-slate-100 bg-opacity-5 hover:bg-opacity-10 rounded-md">
             <img
                 className="w-[38px]"
                 src={movie.Poster}

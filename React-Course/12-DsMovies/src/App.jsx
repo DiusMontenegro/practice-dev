@@ -1,5 +1,5 @@
 import { tempData, tempWatchedData } from './constants';
-import { Navbar, Main, Footer, Brand, NumResults, Search } from './imports';
+import { Navbar, Main, Footer, NumResults, Movies } from './imports';
 import { useState } from 'react';
 
 export default function App() {
@@ -9,11 +9,13 @@ export default function App() {
     return (
         <>
             <Navbar>
-                <Brand />
-                <Search />
                 <NumResults movies={movies} />
             </Navbar>
-            <Main movies={movies} watched={watched} />
+            <Main
+                movies={movies}
+                watched={watched}
+                element={<Movies movies={movies} />}
+            ></Main>
             <Footer />
         </>
     );
