@@ -10,10 +10,18 @@ import Search from './components/Navbar/Search';
 import Result from './components/Main/Result';
 import Sidebar from './components/Sidebar/Sidebar';
 import WatchedList from './components/Sidebar/WatchedList';
-import Button from './components/utils/Button';
 import Summary from './components/Main/Summary';
 import Movies from './components/Main/Movies';
 import MovieCard from './components/Main/MovieCard';
+import MovieDetails from './components/Main/MovieDetails';
+
+//Utils
+import Button from './components/utils/Button';
+import Error from './components/utils/Error';
+import Star from './components/utils/Star';
+
+//NEXT UI
+import { CircularProgress } from '@nextui-org/react';
 
 export {
     Navbar,
@@ -29,4 +37,8 @@ export {
     Summary,
     Movies,
     MovieCard,
+    MovieDetails,
+    CircularProgress,
+    Error,
+    Star,
 };

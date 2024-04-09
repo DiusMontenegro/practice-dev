@@ -8,6 +8,7 @@ const Content = ({ selectedFriend, onSplit, setSelectedFriend }) => {
                     selectedFriend={selectedFriend}
                     setSelectedFriend={setSelectedFriend}
                     onSplit={onSplit}
+                    key={selectedFriend.id}
                 />
             ) : (
                 <h2 className="text-center text-2xl font-semibold py-20">

@@ -18,7 +18,7 @@ const Star = ({
     }
 
     return (
-        <div className={className}>
+        <div className={`${className} flex gap-1 justify-center`}>
             <div className="flex gap-[2px] h-[26px] items-center">
                 {Array.from({ length: maxStars }, (_, i) => (
                     <span
@@ -27,7 +27,7 @@ const Star = ({
                         onClick={() => handleRating(i + 1)}
                         onMouseEnter={() => setTempRating(i + 1)}
                         onMouseLeave={() => setTempRating(0)}
-                        className={`text-[${color}] text-[${size}px]`}
+                        className={className}
                     >
                         {tempRating < i + 1 && rating < i + 1 ? (
                             <FaRegStar />
@@ -40,7 +40,7 @@ const Star = ({
             <div
                 className={`text-[${color}] text-[${
                     size / 1.5
-                }px] font-semibold text-center w-[80px]`}
+                }px] font-semibold text-center w-[25px]`}
             >
                 {messages.length === maxStars
                     ? messages[tempRating ? tempRating - 1 : rating - 1]
