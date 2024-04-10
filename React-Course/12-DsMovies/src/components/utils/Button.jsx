@@ -1,5 +1,4 @@
-import { IoOpenOutline } from 'react-icons/io5';
-import { MdOutlineClose } from 'react-icons/md';
+import { IoOpenOutline, MdOutlineClose } from '../../imports';
 
 const Button = ({ setIsOpen, isOpen }) => {
     return (

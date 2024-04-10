@@ -3,10 +3,11 @@ import Axios from 'axios';
 const key = import.meta.env.VITE_API_KEY;
 
 // Get movies by search
-const fetchMovies = async (query) => {
+const fetchMovies = async (query, signal) => {
     try {
         const response = await Axios.get(
-            `http://www.omdbapi.com/?apikey=${key}&s=${query}`
+            `http://www.omdbapi.com/?apikey=${key}&s=${query}`,
+            { signal }
         );
         return response.data.Search;
     } catch (error) {

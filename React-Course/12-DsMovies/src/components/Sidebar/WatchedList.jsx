@@ -1,10 +1,14 @@
 import Movie from './Movie';
 
-const WatchedList = ({ watched }) => {
+const WatchedList = ({ watched, deleteMovie }) => {
     return (
-        <ul className="flex flex-col gap-2 overflow-y-auto h-[290px] p-1">
+        <ul className="flex flex-col gap-2 overflow-y-auto h-[300px] p-1">
             {watched.map((movie) => (
-                <Movie key={movie.imdbID} movie={movie} />
+                <Movie
+                    key={movie.imdbID}
+                    movie={movie}
+                    deleteMovie={deleteMovie}
+                />
             ))}
         </ul>
     );

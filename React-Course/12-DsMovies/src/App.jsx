@@ -1,4 +1,4 @@
-import { tempData, tempWatchedData } from './constants';
+import { tempData } from './constants';
 import { Navbar, Main, Footer, NumResults, Movies } from './imports';
 import { useEffect, useState } from 'react';
 import { fetchMovies } from './API/api';
@@ -6,7 +6,7 @@ import { fetchMovies } from './API/api';
 export default function App() {
     const [query, setQuery] = useState('');
     const [movies, setMovies] = useState(tempData);
-    const [watched, setWatched] = useState(tempWatchedData);
+    const [watched, setWatched] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const [selectedId, setSelectedId] = useState('');
@@ -19,12 +19,23 @@ export default function App() {
         setSelectedId('');
     }
 
+    function handleAddWatched(movie) {
+        setWatched((watched) => [...watched, movie]);
+    }
+
+    function handleRemoveMovie(id) {
+        setWatched((watched) => watched.filter((movie) => movie.imdbID !== id));
+    }
+
     useEffect(() => {
+        const abortController = new AbortController();
+        const signal = abortController.signal;
+
         const fetchData = async () => {
             try {
                 setIsLoading(true);
                 setErrorMessage('');
-                const moviesData = await fetchMovies(query);
+                const moviesData = await fetchMovies(query, signal);
 
                 if (!moviesData) {
                     setErrorMessage('Movie not found');
@@ -33,8 +44,11 @@ export default function App() {
 
                 setMovies(moviesData);
                 setIsLoading(false);
+                setErrorMessage('');
             } catch (error) {
-                setErrorMessage('Error fetching movies', error);
+                if (error.name !== 'AbortError') {
+                    setErrorMessage('Error fetching movies', error);
+                }
             }
         };
 
@@ -44,7 +58,13 @@ export default function App() {
             return;
         }
 
+        handleCloseMovie();
+
         fetchData();
+
+        return () => {
+            abortController.abort();
+        };
     }, [query]);
 
     return (
@@ -62,6 +82,8 @@ export default function App() {
                 error={errorMessage}
                 selectedId={selectedId}
                 onCloseMovie={handleCloseMovie}
+                onAddWatched={handleAddWatched}
+                onDeleteWatched={handleRemoveMovie}
             ></Main>
             <Footer />
         </>

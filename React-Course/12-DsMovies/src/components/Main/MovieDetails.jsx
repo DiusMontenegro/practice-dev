@@ -1,14 +1,28 @@
 import { useEffect, useState } from 'react';
 import { fetchMovie } from '../../API/api';
-import { IoArrowBackCircleOutline } from 'react-icons/io5';
-import { Star, CircularProgress } from '../../imports';
+import {
+    Star,
+    CircularProgress,
+    IoArrowBackCircleOutline,
+} from '../../imports';
 
-const MovieDetails = ({ selectedId, onCloseMovie }) => {
+const MovieDetails = ({ selectedId, onCloseMovie, onAddWatched, watched }) => {
     const [movie, setMovie] = useState({});
     const [loadMovie, setLoadMovie] = useState(false);
+    const [userRating, setUserRating] = useState(0);
+
+    const isWatched = watched.map((movie) => movie.imdbID).includes(selectedId);
+    const watchedUserRating = watched.find(
+        (movie) => movie.imdbID === selectedId
+    )?.userRating;
+
+    function handleUserRating(value) {
+        setUserRating(value);
+    }
 
     const {
         Title: title,
+        Year: year,
         Poster: poster,
         Runtime: runtime,
         imdbRating,
@@ -18,6 +32,38 @@ const MovieDetails = ({ selectedId, onCloseMovie }) => {
         Director: director,
         Genre: genre,
     } = movie;
+
+    function handleAdd() {
+        const newMovie = {
+            imdbID: selectedId,
+            title,
+            year,
+            poster,
+            imdbRating: Number(imdbRating),
+            runtime: Number(runtime.split(' ').at(0)),
+            userRating,
+        };
+        onAddWatched(newMovie);
+
+        onCloseMovie();
+    }
+
+    useEffect(
+        function () {
+            function callback(e) {
+                if (e.code === 'Escape') {
+                    onCloseMovie();
+                }
+            }
+
+            document.addEventListener('keydown', callback);
+
+            return function () {
+                document.removeEventListener('keydown', callback);
+            };
+        },
+        [onCloseMovie]
+    );
 
     useEffect(
         function () {
@@ -34,6 +80,18 @@ const MovieDetails = ({ selectedId, onCloseMovie }) => {
             getMovie();
         },
         [selectedId]
+    );
+
+    useEffect(
+        function () {
+            if (!title) return;
+            document.title = `MOVIE | ${title}`;
+
+            return function () {
+                document.title = 'DS Movies';
+            };
+        },
+        [title]
     );
 
     return (
@@ -66,11 +124,29 @@ const MovieDetails = ({ selectedId, onCloseMovie }) => {
                         </div>
                     </header>
                     <section className="p-3 text-white">
-                        <Star
-                            className="text-yellow-500 my-1 flex py-2"
-                            maxStars={10}
-                            key={selectedId}
-                        />
+                        {isWatched ? (
+                            <p className="text-center border px-2 py-1 text-xs my-4 cursor-default">
+                                You already rated this movie {watchedUserRating}
+                                ⭐
+                            </p>
+                        ) : (
+                            <>
+                                <Star
+                                    className="text-yellow-500 my-1 flex py-2"
+                                    maxStars={10}
+                                    key={selectedId}
+                                    onSetRating={handleUserRating}
+                                />
+                                {userRating > 0 ? (
+                                    <button
+                                        onClick={() => handleAdd()}
+                                        className="text-xs mb-3 hover:bg-slate-200 hover:bg-opacity-10 px-2 py-1 border block mx-auto"
+                                    >
+                                        + Add to Watched List
+                                    </button>
+                                ) : null}
+                            </>
+                        )}
                         <p className="italic text-xs tracking-wide mb-2">
                             {plot}
                         </p>

@@ -1,3 +1,5 @@
+import { MdLocalMovies } from '../../imports';
+
 const average = (arr) =>
     arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
@@ -11,8 +13,8 @@ const Summary = ({ watched }) => {
             <h2 className="text-xl font-semibold">Movies you watched</h2>
             <div className="flex text-sm gap-2">
                 <p>
-                    <span>#️⃣</span>
-                    <span>{watched.length} movies</span>
+                    <MdLocalMovies className="inline-block" />
+                    <span> {watched.length} movies</span>
                 </p>
                 <p>
                     <span>⭐️</span>
@@ -24,7 +26,7 @@ const Summary = ({ watched }) => {
                 </p>
                 <p>
                     <span>⏳</span>
-                    <span>{avgRuntime} min</span>
+                    <span>{avgRuntime.toFixed(1)} min</span>
                 </p>
             </div>
         </div>

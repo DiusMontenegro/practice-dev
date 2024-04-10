@@ -17,12 +17,14 @@ const Main = ({
     error,
     selectedId,
     onCloseMovie,
+    onAddWatched,
+    onDeleteWatched,
 }) => {
     const [sideBarOpen, setSideBarOpen] = useState(true);
     const [resultIsOpen, setResultIsOpen] = useState(true);
 
     return (
-        <main className="grid grid-cols-12 justify-center gap-4 mt-4 w-[960px] mx-auto h-[386px]">
+        <main className="grid grid-cols-12 justify-center gap-4 mt-4 w-[960px] mx-auto h-[100vh]">
             <Sidebar>
                 <Button setIsOpen={setSideBarOpen} isOpen={sideBarOpen} />
                 {sideBarOpen ? (
@@ -30,11 +32,16 @@ const Main = ({
                         <MovieDetails
                             onCloseMovie={onCloseMovie}
                             selectedId={selectedId}
+                            onAddWatched={onAddWatched}
+                            watched={watched}
                         />
                     ) : (
                         <>
                             <Summary watched={watched} />
-                            <WatchedList watched={watched} />
+                            <WatchedList
+                                deleteMovie={onDeleteWatched}
+                                watched={watched}
+                            />
                         </>
                     )
                 ) : null}

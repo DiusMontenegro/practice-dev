@@ -23,6 +23,13 @@ import Star from './components/utils/Star';
 //NEXT UI
 import { CircularProgress } from '@nextui-org/react';
 
+//React icons
+import { IoArrowBackCircleOutline } from 'react-icons/io5';
+import { MdLocalMovies } from 'react-icons/md';
+import { IoOpenOutline } from 'react-icons/io5';
+import { MdOutlineClose } from 'react-icons/md';
+import { MdDeleteOutline } from 'react-icons/md';
+
 export {
     Navbar,
     Main,
@@ -41,4 +48,9 @@ export {
     CircularProgress,
     Error,
     Star,
+    IoArrowBackCircleOutline,
+    MdLocalMovies,
+    IoOpenOutline,
+    MdOutlineClose,
+    MdDeleteOutline,
 };
