@@ -1,15 +1,16 @@
-import { tempData } from './constants';
+import { useLocalStorageState } from './components/hooks/useLocalStorageState';
+import { useMovies } from './components/hooks/useMovies';
 import { Navbar, Main, Footer, NumResults, Movies } from './imports';
-import { useEffect, useState } from 'react';
-import { fetchMovies } from './API/api';
+import { useState } from 'react';
 
 export default function App() {
     const [query, setQuery] = useState('');
-    const [movies, setMovies] = useState(tempData);
-    const [watched, setWatched] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
-    const [errorMessage, setErrorMessage] = useState('');
     const [selectedId, setSelectedId] = useState('');
+    const [watched, setWatched] = useLocalStorageState([], 'watched');
+    const { movies, isLoading, errorMessage } = useMovies(
+        query,
+        handleCloseMovie
+    );
 
     function handleSelectMovie(id) {
         setSelectedId(selectedId !== id ? id : '');
@@ -26,46 +27,6 @@ export default function App() {
     function handleRemoveMovie(id) {
         setWatched((watched) => watched.filter((movie) => movie.imdbID !== id));
     }
-
-    useEffect(() => {
-        const abortController = new AbortController();
-        const signal = abortController.signal;
-
-        const fetchData = async () => {
-            try {
-                setIsLoading(true);
-                setErrorMessage('');
-                const moviesData = await fetchMovies(query, signal);
-
-                if (!moviesData) {
-                    setErrorMessage('Movie not found');
-                    return;
-                }
-
-                setMovies(moviesData);
-                setIsLoading(false);
-                setErrorMessage('');
-            } catch (error) {
-                if (error.name !== 'AbortError') {
-                    setErrorMessage('Error fetching movies', error);
-                }
-            }
-        };
-
-        if (query.length <= 3) {
-            setMovies([]);
-            setErrorMessage('');
-            return;
-        }
-
-        handleCloseMovie();
-
-        fetchData();
-
-        return () => {
-            abortController.abort();
-        };
-    }, [query]);
 
     return (
         <>

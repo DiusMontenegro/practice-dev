@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { fetchMovie } from '../../API/api';
 import {
     Star,
@@ -10,6 +10,15 @@ const MovieDetails = ({ selectedId, onCloseMovie, onAddWatched, watched }) => {
     const [movie, setMovie] = useState({});
     const [loadMovie, setLoadMovie] = useState(false);
     const [userRating, setUserRating] = useState(0);
+
+    const countRef = useRef(0);
+
+    useEffect(
+        function () {
+            if (userRating) countRef.current++;
+        },
+        [userRating]
+    );
 
     const isWatched = watched.map((movie) => movie.imdbID).includes(selectedId);
     const watchedUserRating = watched.find(
@@ -42,6 +51,7 @@ const MovieDetails = ({ selectedId, onCloseMovie, onAddWatched, watched }) => {
             imdbRating: Number(imdbRating),
             runtime: Number(runtime.split(' ').at(0)),
             userRating,
+            rateDecisions: countRef.current,
         };
         onAddWatched(newMovie);
 
