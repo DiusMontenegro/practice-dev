@@ -5,6 +5,7 @@ import {
     CircularProgress,
     IoArrowBackCircleOutline,
 } from '../../imports';
+import { useKey } from '../hooks/useKey';
 
 const MovieDetails = ({ selectedId, onCloseMovie, onAddWatched, watched }) => {
     const [movie, setMovie] = useState({});
@@ -12,6 +13,7 @@ const MovieDetails = ({ selectedId, onCloseMovie, onAddWatched, watched }) => {
     const [userRating, setUserRating] = useState(0);
 
     const countRef = useRef(0);
+    useKey('Escape', onCloseMovie);
 
     useEffect(
         function () {
@@ -57,23 +59,6 @@ const MovieDetails = ({ selectedId, onCloseMovie, onAddWatched, watched }) => {
 
         onCloseMovie();
     }
-
-    useEffect(
-        function () {
-            function callback(e) {
-                if (e.code === 'Escape') {
-                    onCloseMovie();
-                }
-            }
-
-            document.addEventListener('keydown', callback);
-
-            return function () {
-                document.removeEventListener('keydown', callback);
-            };
-        },
-        [onCloseMovie]
-    );
 
     useEffect(
         function () {
