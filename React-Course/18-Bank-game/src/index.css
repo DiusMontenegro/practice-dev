@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+    @apply border rounded-md px-[8px] py-[4px] my-2 shadow-lg font-semibold
+}
