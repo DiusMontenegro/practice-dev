@@ -14,6 +14,7 @@ const useCurrentTime = () => {
     return currentTime;
 };
 
+// App component
 const App = () => {
     const currentTime = useCurrentTime();
 
