@@ -9,6 +9,7 @@ import AppLayout from './pages/AppLayout';
 import Login from './pages/Login';
 import CityList from './components/CityList';
 import axios from 'axios';
+import CountryList from './components/CountryList';
 
 const App = () => {
     const [cities, setCities] = useState([]);
@@ -52,7 +53,15 @@ const App = () => {
                             <CityList cities={cities} isLoading={isLoading} />
                         }
                     />
-                    <Route path="countries" element={<p>Country List</p>} />
+                    <Route
+                        path="countries"
+                        element={
+                            <CountryList
+                                cities={cities}
+                                isLoading={isLoading}
+                            />
+                        }
+                    />
                     <Route path="countries" element={<p>Form</p>} />
                 </Route>
                 <Route path="*" element={<PageNotFound />}></Route>
