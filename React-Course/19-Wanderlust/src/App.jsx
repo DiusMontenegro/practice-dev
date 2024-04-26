@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import CityList from './components/CityList';
 import axios from 'axios';
 import CountryList from './components/CountryList';
+import City from './components/City';
 
 const App = () => {
     const [cities, setCities] = useState([]);
@@ -37,10 +38,10 @@ const App = () => {
         <BrowserRouter>
             <Routes>
                 <Route index element={<Homepage />}></Route>
-                <Route path="/product" element={<Product />}></Route>
-                <Route path="/pricing" element={<Pricing />}></Route>
-                <Route path="/login" element={<Login />}></Route>
-                <Route path="/app" element={<AppLayout />}>
+                <Route path="product" element={<Product />}></Route>
+                <Route path="pricing" element={<Pricing />}></Route>
+                <Route path="login" element={<Login />}></Route>
+                <Route path="app" element={<AppLayout />}>
                     <Route
                         index
                         element={
@@ -53,6 +54,7 @@ const App = () => {
                             <CityList cities={cities} isLoading={isLoading} />
                         }
                     />
+                    <Route path="cities/:id" element={<City />} />
                     <Route
                         path="countries"
                         element={
