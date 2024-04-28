@@ -40,6 +40,7 @@ function CitiesProvider({ children }) {
 
     async function createCity(newCity) {
         try {
+            setIsLoading(true);
             const res = await axios.post(
                 `${BASE_URL}/cities`,
                 JSON.stringify(newCity),
@@ -53,13 +54,35 @@ function CitiesProvider({ children }) {
 
             setCities((cities) => [...cities, data]);
         } catch {
-            throw new Error('unable to add city');
+            throw new Error('There was an error creating the city');
+        } finally {
+            setIsLoading(false);
+        }
+    }
+
+    async function deleteCity(id) {
+        try {
+            setIsLoading(true);
+            await axios.delete(`${BASE_URL}/cities/${id}`);
+
+            setCities((cities) => cities.filter((city) => city.id !== id));
+        } catch {
+            throw new Error('There was an error deleting the city');
+        } finally {
+            setIsLoading(false);
         }
     }
 
     return (
         <CitiesContext.Provider
-            value={{ cities, isLoading, currentCity, getCity, createCity }}
+            value={{
+                cities,
+                isLoading,
+                currentCity,
+                getCity,
+                createCity,
+                deleteCity,
+            }}
         >
             {children}
         </CitiesContext.Provider>
