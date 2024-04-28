@@ -38,9 +38,28 @@ function CitiesProvider({ children }) {
         }
     }
 
+    async function createCity(newCity) {
+        try {
+            const res = await axios.post(
+                `${BASE_URL}/cities`,
+                JSON.stringify(newCity),
+                {
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                }
+            );
+            const data = await res.data;
+
+            setCities((cities) => [...cities, data]);
+        } catch {
+            throw new Error('unable to add city');
+        }
+    }
+
     return (
         <CitiesContext.Provider
-            value={{ cities, isLoading, currentCity, getCity }}
+            value={{ cities, isLoading, currentCity, getCity, createCity }}
         >
             {children}
         </CitiesContext.Provider>

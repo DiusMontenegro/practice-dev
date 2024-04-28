@@ -1,40 +1,136 @@
 {
-    "cities": [
-        {
-            "cityName": "Lisbon",
-            "country": "Portugal",
-            "emoji": "🇵🇹",
-            "date": "2027-10-31T15:59:59.138Z",
-            "notes": "My favorite city so far!",
-            "position": {
-                "lat": 38.727881642324164,
-                "lng": -9.140900099907554
-            },
-            "id": 73930385
-        },
-        {
-            "cityName": "Madrid",
-            "country": "Spain",
-            "emoji": "🇪🇸",
-            "date": "2027-07-15T08:22:53.976Z",
-            "notes": "",
-            "position": {
-                "lat": 40.46635901755316,
-                "lng": -3.7133789062500004
-            },
-            "id": 17806751
-        },
-        {
-            "cityName": "Berlin",
-            "country": "Germany",
-            "emoji": "🇩🇪",
-            "date": "2027-02-12T09:24:11.863Z",
-            "notes": "Amazing 😃",
-            "position": {
-                "lat": 52.53586782505711,
-                "lng": 13.376933665713324
-            },
-            "id": 98443197
-        }
-    ]
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
+      },
+      "id": "73930385"
+    },
+    {
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2027-07-15T08:22:53.976Z",
+      "notes": "",
+      "position": {
+        "lat": 40.46635901755316,
+        "lng": -3.7133789062500004
+      },
+      "id": "17806751"
+    },
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2027-02-12T09:24:11.863Z",
+      "notes": "Amazing 😃",
+      "position": {
+        "lat": 52.53586782505711,
+        "lng": 13.376933665713324
+      },
+      "id": "98443197"
+    },
+    {
+      "id": "9b87",
+      "cityName": "Castle Bytham",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "GB",
+      "date": "2024-04-28T15:37:00.047Z",
+      "notes": "asdsa",
+      "position": {
+        "lat": "52.75570499669124",
+        "lng": "-0.5493164062500001"
+      }
+    },
+    {
+      "id": "9e6b",
+      "cityName": "Lambeth",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "GB",
+      "date": "2024-04-28T15:42:54.361Z",
+      "notes": "titit",
+      "position": {
+        "lat": "51.49199020333613",
+        "lng": "-0.10986328125000001"
+      }
+    },
+    {
+      "id": "56ff",
+      "cityName": "Gabalfa",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "GB",
+      "date": "2024-04-28T15:48:28.328Z",
+      "notes": "Cardiff",
+      "position": {
+        "lat": "51.496434421417206",
+        "lng": "-3.1860351562500004"
+      }
+    },
+    {
+      "id": "f73d",
+      "cityName": "Wallasey",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "GB",
+      "date": "2024-04-28T15:49:52.020Z",
+      "notes": "Liverpool",
+      "position": {
+        "lat": "53.38408329334093",
+        "lng": "-3.0322265625000004"
+      }
+    },
+    {
+      "id": "a6dc",
+      "cityName": "Lancaster",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "GB",
+      "date": "2024-04-28T15:50:37.785Z",
+      "notes": "Lancaster",
+      "position": {
+        "lat": "54.05950748835334",
+        "lng": "-2.7850341796875004"
+      }
+    },
+    {
+      "id": "726f",
+      "cityName": "Carlisle",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "GB",
+      "date": "2024-04-28T15:51:01.829Z",
+      "notes": "carlaisle",
+      "position": {
+        "lat": "54.89004678502397",
+        "lng": "-2.9003906250000004"
+      }
+    },
+    {
+      "id": "a88a",
+      "cityName": "Tromso Municipality",
+      "country": "Norway",
+      "emoji": "NO",
+      "date": "2024-04-28T15:53:32.375Z",
+      "notes": "Tromso",
+      "position": {
+        "lat": "69.63341571931973",
+        "lng": "18.940429687500004"
+      }
+    },
+    {
+      "id": "0368",
+      "cityName": "Porsanger Municipality",
+      "country": "Norway",
+      "emoji": "NO",
+      "date": "2024-04-17T15:56:35.000Z",
+      "notes": "FinnMark",
+      "position": {
+        "lat": "69.97600761862586",
+        "lng": "25.136718750000004"
+      }
+    }
+  ]
 }
