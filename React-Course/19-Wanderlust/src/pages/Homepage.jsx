@@ -19,7 +19,7 @@ export default function Homepage() {
                     through countless cities. Invite friends to relive your
                     global adventures together.
                 </h2>
-                <Link to="/app">
+                <Link to="/login">
                     <Button className="cta bg-[#7f5539] hover:bg-[#7f5539] font-semibold h-[30px] hover:bg-opacity-60 text-3xl py-4">
                         Get started tracking.
                     </Button>

@@ -1,3 +1,40 @@
 {
-  "cities": []
+  "cities": [
+    {
+      "id": "b770",
+      "cityName": "City of London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2024-05-03T05:52:01.464Z",
+      "notes": "sadasds",
+      "position": {
+        "lat": "51.52241608253256",
+        "lng": "-0.087890625"
+      }
+    },
+    {
+      "id": "fc42",
+      "cityName": "Wilton",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2024-05-03T05:52:04.327Z",
+      "notes": "sadasdsa",
+      "position": {
+        "lat": "51.089722918116315",
+        "lng": "-1.8457031250000002"
+      }
+    },
+    {
+      "id": "a5b5",
+      "cityName": "Poblacion District",
+      "country": "Philippines (the)",
+      "emoji": "🇵🇭",
+      "date": "2024-05-03T05:53:53.501Z",
+      "notes": "Davao",
+      "position": {
+        "lat": "7.07099619716018",
+        "lng": "125.60878157615663"
+      }
+    }
+  ]
 }
