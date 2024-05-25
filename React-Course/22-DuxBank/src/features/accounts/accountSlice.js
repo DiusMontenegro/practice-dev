@@ -30,17 +30,6 @@ export default function accountReducer(state = initialStateAccount, action) {
     }
 }
 
-// store.dispatch({ type: 'account/deposit', payload: 500 });
-// store.dispatch({ type: 'account/withdraw', payload: 200 });
-// store.dispatch({
-//     type: 'account/requestLoan',
-//     payload: { amount: 1000, purpose: 'Buy a Laptop' },
-// });
-// store.dispatch({
-//     type: 'account/payLoan',
-// });
-
-// Action Creator function
 export function deposit(amount) {
     return { type: 'account/deposit', payload: amount };
 }
