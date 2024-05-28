@@ -20,6 +20,7 @@ function SearchOrder() {
             <input
                 placeholder="Search order number"
                 type="text"
+                className="input-neutral input input-sm input-bordered"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
             />
