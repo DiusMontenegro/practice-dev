@@ -3,14 +3,14 @@ import SearchOrder from '../features/order/SearchOrder';
 
 function Header() {
     return (
-        <header className="bg-accent px-4 py-3">
-            <Link to="/" className="font-semibold uppercase tracking-widest">
+        <header className="flex items-center justify-between bg-accent px-4 py-3 sm:px-6">
+            <Link to="/" className="font-light uppercase tracking-widest">
                 Pizza Express
             </Link>
 
             <SearchOrder />
 
-            <p className="hidden">Dre</p>
+            <p className="hidden font-bold md:block">Dre</p>
         </header>
     );
 }

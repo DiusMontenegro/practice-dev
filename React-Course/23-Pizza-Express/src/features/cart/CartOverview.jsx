@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom';
 
 function CartOverview() {
     return (
-        <div className="bg-stone-300 p-4 font-semibold">
-            <p className="mb-1 space-x-4">
+        <div className="flex items-center justify-between bg-stone-300 px-4 py-4 text-sm font-semibold uppercase sm:px-6 md:text-base">
+            <p className="mb-1 space-x-4 sm:space-x-6">
                 <span>23 pizzas</span>
                 <span>$23.45</span>
             </p>
             <Link
                 to="/cart"
-                className="btn btn-sm cursor-pointer border-0 bg-accent shadow-md outline-0 hover:bg-accent hover:bg-opacity-80"
+                className="btn btn-accent btn-xs cursor-pointer border-0 shadow-md md:btn-sm"
             >
                 Open cart &rarr;
             </Link>

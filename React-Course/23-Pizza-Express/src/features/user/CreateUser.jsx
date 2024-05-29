@@ -9,19 +9,23 @@ function CreateUser() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <p>👋 Welcome! Please start by telling us your name:</p>
+            <p className="mb-4 text-sm md:text-base">
+                👋 Welcome! Please start by telling us your name:
+            </p>
 
             <input
                 type="text"
                 placeholder="Your full name"
-                className="input-neutral input input-sm input-bordered"
+                className="input input-sm input-bordered input-accent mb-8 w-72"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
             />
 
             {username !== '' && (
                 <div>
-                    <button>Start ordering</button>
+                    <button className="btn btn-accent btn-sm">
+                        Start ordering
+                    </button>
                 </div>
             )}
         </form>

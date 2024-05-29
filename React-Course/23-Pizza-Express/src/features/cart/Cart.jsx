@@ -29,13 +29,17 @@ function Cart() {
 
     return (
         <div>
-            <Link to="/menu">&larr; Back to menu</Link>
+            <Link to="/menu" className="link link-info no-underline">
+                &larr; Back to menu
+            </Link>
 
             <h2>Your cart, %NAME%</h2>
 
-            <div>
-                <Link to="/order/new">Order pizzas</Link>
-                <button>Clear cart</button>
+            <div className="space-x-2">
+                <Link to="/order/new" className="btn btn-accent btn-sm">
+                    Order pizzas
+                </Link>
+                <button className="btn btn-error btn-sm">Clear cart</button>
             </div>
         </div>
     );
