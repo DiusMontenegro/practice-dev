@@ -7,8 +7,6 @@ function Navbar() {
         <div className="mb-10 flex items-center justify-between">
             <Link href="/">QueryAI</Link>
 
-            <Link href="/search?q=Headset">Search</Link>
-
             <ul className="flex items-center gap-2">
                 {navLinks.map((item, index) => (
                     <li key={index}>
