@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { navLinks } from "@/constants/data";
+import { UserButton } from "@clerk/nextjs";
 
 function Navbar() {
     return (
@@ -13,6 +14,9 @@ function Navbar() {
                         <Link href={`/${item}`}>{item}</Link>
                     </li>
                 ))}
+                <li>
+                    <UserButton />
+                </li>
             </ul>
         </div>
     );
